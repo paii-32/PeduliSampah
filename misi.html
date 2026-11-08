@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Misi Lingkungan — PeduliSampah</title>
+
+    <!-- HyperLink Stylesheet -->
+    <link rel="stylesheet" href="CSS/misi.css">
+    <link rel="stylesheet" href="CSS/style.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Baloo+2:wght@600;700;800&family=Plus+Jakarta+Sans:wght@500;600;700&display=swap">
+</head>
+<body>
+    <!-- navbar -->
+    <nav>
+        <h2 class="head-nav">Peduli <span>Sampah</span></h2>
+        <div class="nav-ul">
+            <ul>
+                <li><a class="nav-link" href="index.html">Home</a></li>
+                <li><a class="nav-link" href="belajar.html">Belajar</a></li>
+                <li><a class="nav-link" href="katalog.html">Kategori</a></li>
+                <li><a class="nav-link" href="kuis.html">Kuiz</a></li>
+                <li><a class="nav-link active" href="misi.html">Misi</a></li>
+                <li><a class="nav-link" href="tips.html">Tips</a></li>
+            </ul>
+        </div>
+
+        <div class="btn-nav">
+            <div class="btn-nav1">
+                <a href="belajar.html">Jelajahi Materi</a>
+            </div>
+
+            <div class="btn-nav2">
+                <a href="misi.html">Lihat Misi</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Content -->
+    <main class="main-content">
+
+        <section class="misi-hero">
+            <div class="hero-left">
+                <span class="badge-tag">Aksi Nyata Lingkungan</span>
+                <h1 class="hero-title">Petualangan Misi Bersama <br> Dengan <span class="highlight">PeduliSampah</span></h1>
+                <p class="hero-desc">
+                    Ayo selesaikan misi wajib, harian, mingguan, dan bulanan! Kumpulkan lencana keren saat kamu membantu menjaga kebersihan lingkungan sekitar bersama Rani si beruang merah!
+                </p>
+
+                <div class="hero-stats-card">
+                    <div class="stat-info">
+                        <span class="stat-title">Progres Penyelesaian Misi</span>
+                        <span class="stat-value" id="progress-text">0 / 16 Misi Selesai</span>
+                    </div>
+
+                    <div class="progress-bar-bg">
+                        <div class="progress-bar-fill" id="progress-fill" style="width: 0%;"></div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="hero-right">
+                <!-- Tombol interaktif untuk melihat semua lencana -->
+                <button class="btn-showcase-badge" id="btn-open-badge-modal">
+                    <div class="badge-icon-preview">🏆</div>
+                    <div class="badge-btn-text">
+                        <strong>Koleksi Lencana</strong>
+                        <small id="badge-count-text">0 Lencana Terbuka</small>
+                    </div>
+                </button>
+            </div>
+        </section>
+
+        <!-- Tab Kategori Misi (Menambahkan Tab Wajib agar 16 misi tampil semua) -->
+        <section class="misi-controls">
+            <div class="misi-tabs">
+                <button class="tab-btn active" data-tab="harian">
+                    📅 Harian <span class="tab-badge" id="badge-count-harian">0/4</span>
+                </button>
+
+                <button class="tab-btn" data-tab="mingguan">
+                    🗓️ Mingguan <span class="tab-badge" id="badge-count-mingguan">0/5</span>
+                </button>
+
+                <button class="tab-btn" data-tab="bulanan">
+                    📆 Bulanan <span class="tab-badge" id="badge-count-bulanan">0/5</span>
+                </button>
+
+                <button class="tab-btn" data-tab="wajib">
+                    ⭐ Wajib <span class="tab-badge" id="badge-count-wajib">0/2</span>
+                </button>
+            </div>
+        </section>
+
+        <!-- Grid Card Mission -->
+        <section class="misi-grid" id="misi-container">
+            <!-- Mission Card otomatis dimuat oleh js dari file missions.json -->
+        </section>
+    </main>
+
+    <!-- Footer Section -->
+        <footer class="footer">
+            <div class="footer-content">
+                <div class="top-left-footer">
+                    <h3 class="title-footer-bottom">Peduli<span>Sampah</span></h3>
+                    <p>Aplikasi edukasi pengelolaan sampah untuk masa depan yang lebih hijau.</p>
+                </div>
+                
+                <div class="sdg-badges">
+                    <span class="sdg-tag">SDG 11: Kota & Permukiman Berkelanjutan</span>
+                    <span class="sdg-tag">SDG 12: Konsumsi & Produksi Bertanggung Jawab</span>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <p class="title-footer-bottom">&copy; 2026 PeduliSampah. Dibuat dengan semangat <span class="subtitle-footer-bottom">Eco-Tech</span>.</p>
+            </div>
+        </footer>
+
+    <!-- Modal Gallery Lencana -->
+    <div class="modal-overlay" id="badge-modal">
+        <div class="modal-content modal-badge">
+            <button class="btn-close" id="btn-close-badge-modal">&times;</button>
+
+            <div class="modal-header">
+                <h2>🏆 Galeri Lencana Kamu</h2>
+                <p>Kumpulkan semua lencana dengan menyelesaikan aksi nyata pembersihan sampah!</p>
+            </div>
+
+            <div class="badge-grid-showcase" id="badge-showcase-container">
+                <!-- Daftar lencana otomatis dimuat oleh js -->
+            </div>
+
+            <div class="modal-footer-action">
+                <button class="btn-back-mission" id="btn-back-mission">Kembali ke Misi</button>
+            </div>
+        </div>
+    </div>
+
+    <script src="JS/misi.js"></script>
+</body>
+</html>

@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Katalog Sampah — PeduliSampah</title>
+  
+    <!-- CSS Global & Khusus Katalog -->
+    <link rel="stylesheet" href="CSS/katalog.css">
+    <link rel="stylesheet" href="CSS/style.css">
+</head>
+<body>
+
+  <!-- navbar -->
+  <nav>
+    <h2 class="head-nav">Peduli <span>Sampah</span></h2>
+      <div class="nav-ul">
+          <ul>
+              <li><a class="nav-link" href="index.html">Home</a></li>
+              <li><a class="nav-link" href="belajar.html">Belajar</a></li>
+              <li><a class="nav-link active" href="katalog.html">Kategori</a></li>
+              <li><a class="nav-link" href="kuis.html">Kuiz</a></li>
+              <li><a class="nav-link" href="misi.html">Misi</a></li>
+              <li><a class="nav-link" href="tips.html">Tips</a></li>
+          </ul>
+      </div>
+
+      <div class="btn-nav">
+          <div class="btn-nav1">
+              <a href="belajar.html">Jelajahi Materi</a>
+          </div>
+          <div class="btn-nav2">
+              <a href="misi.html">Lihat Misi</a>
+          </div>
+      </div>
+  </nav>
+
+  <main class="main-content">
+    
+    <!-- Hero Banner Katalog Sampah -->
+    <section class="belajar-hero">
+        <div class="hero-left">
+            <h1 class="hero-title">Belajar dan Mengenal <br> Kategori Sampah di <span class="highlight-belajar">PeduliSampah</span></h1>
+            <div class="line-belajar"></div>
+            <p class="hero-desc">
+                Di halaman ini, kita akan belajar bersama untuk mengenal dan mempelajari 5 jenis sampah berdasarkan jenis nya dan cara menanganinya!
+            </p>
+          
+            <div class="hero-actions">
+                <a href="#katalog-controls" class="btn-petualangan-belajar">Cari Sampah ↓</a>
+                <a href="kuis.html" class="btn-materi-belajar">Mulai Kuis</a>
+            </div>
+        </div>
+      
+        <div class="hero-right">
+            <div class="hero-card-img">
+                <img src="ASSETS/mascotBelajar/Kategori_sampah.webp" alt="Rani membaca buku" class="mascot-img">
+                <div class="mascot-tip">
+                    <p><strong>Rani's Tip:</strong><br> Ayo kita belajar bersama mengenal jenis sampah!</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Kontrol Pencarian, Filter & Sortir -->
+    <section class="katalog-controls" id="katalog-controls">
+      
+      <div class="search-sort-row">
+        <div class="search-box">
+          <span class="search-icon">🔍</span>
+          <input type="text" id="input-pencarian" placeholder="Cari sampah (misal: botol, kulit pisang, kardus, baterai)...">
+          <button id="btn-clear-search" class="btn-clear" aria-label="Bersihkan pencarian" hidden>&times;</button>
+        </div>
+
+        <div class="action-buttons">
+          <button id="btn-sort" class="control-btn">
+            <span class="btn-icon">⇅</span> Urut A-Z
+          </button>
+          <button id="btn-reset" class="control-btn btn-reset">
+            <span class="btn-icon">↺</span> Reset
+          </button>
+        </div>
+      </div>
+
+      <!-- Baris Filter Chip Kategori -->
+      <div class="category-chips-row">
+        
+        <button class="chip-filter active" data-kategori="semua">
+          <span class="chip-icon">🌿</span>
+          <span class="chip-label">Semua Sampah</span>
+          <span class="chip-count" id="count-semua">12</span>
+        </button>
+
+        <button class="chip-filter chip-organik" data-kategori="organik">
+          <span class="chip-icon">🍃</span>
+          <span class="chip-label">Organik</span>
+          <span class="chip-count" id="count-organik">2</span>
+        </button>
+
+        <button class="chip-filter chip-anorganik" data-kategori="anorganik">
+          <span class="chip-icon">♻️</span>
+          <span class="chip-label">Anorganik</span>
+          <span class="chip-count" id="count-anorganik">5</span>
+        </button>
+
+        <button class="chip-filter chip-b3" data-kategori="b3">
+          <span class="chip-icon">⚠️</span>
+          <span class="chip-label">Bahaya B3</span>
+          <span class="chip-count" id="count-b3">2</span>
+        </button>
+
+        <button class="chip-filter chip-residu" data-kategori="residu">
+          <span class="chip-icon">🗑️</span>
+          <span class="chip-label">Residu</span>
+          <span class="chip-count" id="count-residu">1</span>
+        </button>
+
+        <button class="chip-filter chip-ewaste" data-kategori="ewaste">
+          <span class="chip-icon">🔌</span>
+          <span class="chip-label">E-Waste</span>
+          <span class="chip-count" id="count-ewaste">1</span>
+        </button>
+
+      </div>
+
+    </section>
+
+    <div class="results-info-bar">
+      <p id="results-count-text" class="count-text">Menampilkan 12 jenis sampah terdaftar</p>
+      <p class="hint-text">💡 Klik kartu untuk melihat tips daur ulang</p>
+    </div>
+
+    <section class="katalog-grid-container">
+      <div id="katalog-grid" class="katalog-grid">
+        <!-- Kartu-kartu sampah akan di-render secara dinamis dari sampah.json oleh katalog.js -->
+      </div>
+
+      <!-- State Jika Pencarian sampah Tidak Ditemukan -->
+      <div id="empty-state" class="empty-state" hidden>
+        <img src="ASSETS/mascotBelajar/Rina_bingung.webp" alt="Rani Bingung" class="empty-img">
+        <h3>Hmm, Rani belum menemukan sampah itu!</h3>
+        <p>Coba gunakan kata kunci lain seperti <em>"botol"</em>, <em>"baterai"</em>, atau <em>"kardus"</em>.</p>
+        <button id="btn-reset-empty" class="btn-reset">Reset Pencarian</button>
+      </div>
+    </section>
+
+    <!-- Banner Ajak Kuis di Bagian Bawah -->
+    <section class="banner-kuis">
+      <div class="banner-left">
+
+        <div class="banner-icon-bg">
+          <span class="banner-icon">🎮</span>
+        </div>
+
+        <div class="banner-text">
+          <h2>Sudah Paham Cara Memilah?</h2>
+          <p>Uji ketangkasanmu memasukkan sampah ke tong yang tepat di Game Kuis Interaktif kami!</p>
+        </div>
+
+      </div>
+
+      <a href="kuis.html" class="btn btn-orange-banner">Main Kuis Sekarang &rarr;</a>
+    </section>
+
+  </main>
+
+  <!-- Footer -->
+    <footer class="footer">
+        <div class="footer-content">
+            <p><strong class="top-left-footer">Peduli<span>Sampah</span></strong> - Edukasi Lingkungan Interaktif untuk Generasi Bersih Indonesia</p>
+            <div class="sdg-badges">
+                <span class="sdg-tag"><strong class="head-sdg">SDG 12: </strong>Konsumsi & Produksi Bertanggung Jawab</span>
+                <span class="sdg-tag"><strong class="head-sdg">SDG 13: </strong>Penanganan Perubahan Iklim</span>
+            </div> 
+        </div>
+
+        <div class="footer-bottom">
+            <p>&copy; 2026 <span class="title-footer-bottom">Peduli<span class="subtitle-footer-bottom">Sampah</span></span>. Semua hak dilindungi. Bersama Rani Red Panda menjaga bumi tetap asri.</p>
+        </div>
+    </footer>
+
+  <!-- Pop-Up Modal Detail Sampah -->
+  <div id="modal-detail-sampah" class="modal-overlay">
+    <div class="modal-content modal-detail">
+      <button id="close-modal-detail" class="btn-close" aria-label="Tutup Modal">&times;</button>
+      
+      <div class="modal-detail-body">
+        <div class="detail-header-row">
+          <div class="detail-emoji-box" id="detail-emoji">🍌</div>
+          <div class="detail-title-group">
+            <span id="detail-badge-kategori" class="badge-cat-modal">Organik</span>
+            <h2 id="detail-nama">Kulit Pisang</h2>
+          </div>
+        </div>
+
+        <div id="detail-peringatan-b3" class="warning-banner-modal" hidden>
+          <span class="warning-icon">⚠️</span>
+          <p id="detail-peringatan-text">Jangan disentuh langsung! Minta bantuan orang dewasa.</p>
+        </div>
+
+        <div class="detail-info-grid">
+          <div class="info-item">
+            <strong>Tong Sampah:</strong>
+            <p id="detail-tong">Tong Hijau</p>
+          </div>
+          <div class="info-item">
+            <strong>Waktu Terurai:</strong>
+            <p id="detail-terurai">2 - 5 minggu</p>
+          </div>
+        </div>
+
+        <div class="detail-section">
+          <h4>Deskripsi</h4>
+          <p id="detail-deskripsi">Deskripsi lengkap sampah...</p>
+        </div>
+
+        <div class="detail-section">
+          <h4>Cara Menangani</h4>
+          <ul id="detail-cara-tangani">
+            <!-- List cara menangani -->
+          </ul>
+        </div>
+
+        <div class="detail-section fun-fact-box">
+          <h4>💡 Fakta Seru Rani:</h4>
+          <p id="detail-fakta-seru">Fakta menarik tentang sampah ini...</p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script src="JS/katalog.js"></script>
+</body>
+</html>

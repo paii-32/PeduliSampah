@@ -1,0 +1,413 @@
+
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Kuis Interaktif - SampahKu</title>
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="CSS/style.css">
+    <link rel="stylesheet" href="CSS/kuis.css">
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link href="https://fonts.googleapis.com/css2?family=Baloo+2:wght@700;800&family=Nunito:wght@400;700;800&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+    <!-- navbar -->
+    <nav>
+
+        <h2 class="head-nav">Peduli <span>Sampah</span></h2>
+
+        <div class="nav-ul">
+            <ul>
+                <li><a class="nav-link" href="index.html">Home</a></li>
+                <li><a class="nav-link" href="belajar.html">Belajar</a></li>
+                <li><a class="nav-link" href="katalog.html">Kategori</a></li>
+                <li><a class="nav-link active" href="kuis.html">Kuiz</a></li>
+                <li><a class="nav-link" href="misi.html">Misi</a></li>
+                <li><a class="nav-link" href="tips.html">Tips</a></li>
+            </ul>
+        </div>
+
+        <div class="btn-nav">
+            <div class="btn-nav1">
+                <a href="belajar.html">Jelajahi Materi</a>
+            </div>
+
+            <div class="btn-nav2">
+                <a href="misi.html">Lihat Misi</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Musik Latar Kuis -->
+    <video id="quiz-music" autoplay muted loop playsinline>
+        <source src="ASSETS/audio/musik-kuis.mp4" type="video/mp4">
+    </video>
+    
+
+    <!-- KONTEN UTAMA -->
+    <main>
+
+        <!-- HERO BANNER -->
+        <section class="hero-banner">
+
+            <div class="hero-content">
+
+                <h1 class="hero-title">
+                    Hallo! Selamat datang di halaman kuis,
+                    <span>
+                        ayo uji pengetahuan yang kamu miliki!
+                    </span>
+                </h1>
+
+                <p class="hero-desc">
+                    Asah kemampuanmu dalam memilah sampah Organik,
+                    Anorganik, B3, Daur Ulang, dan Residu.
+                    Kumpulkan poin sebanyak mungkin dan jadilah
+                    pahlawan lingkungan bersama SampahKu!
+                </p>
+
+                <div class="hero-buttons">
+
+                    <a href="#kuis-box" class="btn-hero-primary">
+                        Mulai Kuis
+                    </a>
+
+                    <a href="katalog.html" class="btn-hero-primary">
+                        Lihat Kategori
+                    </a>
+
+                    <a href="belajar.html" class="btn-hero-primary">
+                        Lihat Materi
+                    </a>
+
+                </div>
+
+            </div>
+
+
+            <!-- MASKOT RANI -->
+            <div class="hero-visual">
+
+                <div class="avatar-wrapper">
+                    <img
+                        src="ASSETS/Maskot/maskot1.png"
+                        alt="Maskot Rani SampahKu"
+                    >
+                </div>
+
+                <span class="rani-tag">
+                    Maskot Rani
+                </span>
+
+            </div>
+
+        </section>
+
+
+        <!-- PILIHAN TINGKAT PENDIDIKAN -->
+        <div class="level-selection-bar">
+
+            <span class="level-label">
+                Pilih Tingkat Pendidikan:
+            </span>
+
+            <div class="level-button-group">
+
+                <button
+                    class="btn-level active"
+                    data-level="tunas"
+                    type="button"
+                >
+                    Level Tunas (SD & MI)
+                </button>
+
+                <button
+                    class="btn-level"
+                    data-level="pohon"
+                    type="button"
+                >
+                    Level Pohon (SMP & MTs)
+                </button>
+
+            </div>
+
+        </div>
+
+
+        <!-- AREA KUIS -->
+        <section id="kuis-box" class="quiz-section">
+
+            <div class="quiz-box">
+
+                <!-- HEADER KUIS -->
+                <div class="quiz-header">
+
+                    <span
+                        class="quiz-progress"
+                        id="quiz-progress"
+                    >
+                        Pertanyaan 1 dari 10
+                    </span>
+
+                    <span class="badge-pill">
+                        Skor:
+                        <span id="session-score">0</span>
+                    </span>
+
+                </div>
+
+
+                <!-- PERTANYAAN -->
+                <h2
+                    class="question-title"
+                    id="question-text"
+                >
+                    Memuat pertanyaan...
+                </h2>
+
+
+                <!-- GAMBAR DAN NAMA BENDA -->
+                <div class="question-media">
+
+                    <div
+                        class="question-image-container"
+                        id="question-emoji"
+                    >
+                        <img
+                            src=""
+                            alt="Gambar benda yang sedang ditanyakan"
+                            class="question-image"
+                        >
+
+                    </div>
+
+                    <div
+                        class="question-item-name"
+                        id="question-item-name"
+                    >
+                        Memuat item...
+                    </div>
+
+                </div>
+
+
+                <!-- PILIHAN JAWABAN -->
+                <div
+                    class="options-grid"
+                    id="options-container"
+                >
+                    <!-- Pilihan jawaban dibuat melalui JavaScript -->
+                </div>
+
+
+               <!-- FEEDBACK JAWABAN -->
+                <div
+                    class="feedback-banner"
+                    id="feedback-banner"
+                >
+                            
+                    <div class="feedback-avatar">
+                        <img
+                            id="feedback-mascot"
+                            src="ASSETS/Maskot/maskot-memberi-tahu.png"
+                            alt="Maskot RANI"
+                        >
+                    </div>
+                
+                    <div class="feedback-text">
+                    
+                        <h4 id="feedback-title">
+                            Jawaban Benar!
+                        </h4>
+                    
+                        <p id="feedback-desc">
+                            Umpan balik dari kuis.
+                        </p>
+                    
+                    </div>
+                
+                </div>
+
+
+                <!-- TOMBOL KUIS -->
+                <div class="quiz-footer">
+
+                    <button
+                        class="btn-exit"
+                        id="btn-exit"
+                        type="button"
+                    >
+                        Keluar Kuis
+                    </button>
+
+                    <button
+                        class="btn-submit"
+                        id="btn-submit"
+                        type="button"
+                        disabled
+                    >
+                        Jawab Pertanyaan
+                    </button>
+
+                </div>
+
+            </div>
+
+        </section>
+
+    </main>
+
+
+
+    <!-- MODAL HASIL KUIS -->
+    <div
+        class="modal-overlay"
+        id="result-modal"
+    >
+
+        <div class="modal-card">
+
+
+            <!-- STATISTIK HASIL -->
+            <div class="stats-container">
+
+                <div class="stat-box">
+
+                    <div
+                        class="stat-number"
+                        id="stat-total"
+                    >
+                        10 Soal
+                    </div>
+
+                    <div class="stat-label">
+                        Total Soal
+                    </div>
+
+                </div>
+
+
+                <div class="stat-box">
+
+                    <div
+                        class="stat-number"
+                        id="stat-correct"
+                    >
+                        0
+                    </div>
+
+                    <div class="stat-label">
+                        Soal Benar
+                    </div>
+
+                </div>
+
+
+                <div class="stat-box">
+
+                    <div
+                        class="stat-number"
+                        id="stat-wrong"
+                    >
+                        0
+                    </div>
+
+                    <div class="stat-label">
+                        Soal Salah
+                    </div>
+
+                </div>
+
+            </div>
+
+
+            <!-- TOTAL NILAI -->
+            <div class="total-score-badge">
+
+                <div class="total-score-title">
+                    TOTAL NILAI KAMU
+                </div>
+
+                <div
+                    class="total-score-num"
+                    id="final-score"
+                >
+                    0
+                </div>
+
+            </div>
+
+
+            <!-- ILUSTRASI HASIL -->
+            <div class="result-rani-circle">
+
+                <img src="ASSETS/Maskot/maskot3.png" alt="">
+            </div>
+
+
+            <!-- PESAN HASIL -->
+            <div
+                class="result-message"
+                id="rani-result-text"
+            >
+                Selamat ya! Kamu mendapat nilai
+                <span id="text-score">0</span>.
+                Terus semangat untuk belajar!
+            </div>
+
+
+            <!-- TOMBOL HASIL -->
+            <div class="result-buttons">
+
+                <button
+                    class="btn-hero-primary"
+                    id="btn-restart"
+                    type="button"
+                >
+                    Main Lagi
+                </button>
+
+                <button
+                    class="btn-hero-primary"
+                    id="btn-home"
+                    type="button"
+                >
+                    Ke Beranda
+                </button>
+
+            </div>
+
+        </div>
+
+    </div>
+
+    <!-- Footer -->
+        <footer class="footer">
+        <div class="footer-content">
+            <p><strong class="top-left-footer">Peduli<span>Sampah</span></strong> - Edukasi Lingkungan Interaktif untuk Generasi Bersih Indonesia</p>
+            <div class="sdg-badges">
+                <span class="sdg-tag"><strong class="head-sdg">SDG 12: </strong>Konsumsi & Produksi Bertanggung Jawab</span>
+                <span class="sdg-tag"><strong class="head-sdg">SDG 13: </strong>Penanganan Perubahan Iklim</span>
+            </div> 
+        </div>
+
+        <div class="footer-bottom">
+            <p>&copy; 2026 <span class="title-footer-bottom">Peduli<span class="subtitle-footer-bottom">Sampah</span></span>. Semua hak dilindungi. Bersama Rani Red Panda menjaga bumi tetap asri.</p>
+        </div>
+    </footer>
+
+
+    <!-- JAVASCRIPT -->
+    <script src="../JS/kuis.js"></script>
+
+</body>
+</html>
