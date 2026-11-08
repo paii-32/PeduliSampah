@@ -1,0 +1,94 @@
+/* 
+================
+VARIABELS ROOT
+================
+*/
+
+:root {
+  /* — Hijau (merek dan aksi) — */
+    --color-forest: #14532D;          /* judul, sidebar, penekanan */
+    --color-primary: #1F7A4D;         /* tombol utama, tautan, tab aktif ghost */
+    --color-primary-hover: #186540;
+    --color-primary-active: #134D32;
+    --color-leaf: #3FA34D;            /* isi bilah kemajuan, ilustrasi */
+    --color-mint: #E6F6EC;            /* latar lembut, hover permukaan */
+    --color-mint-hover: #D3EEDB;
+
+  /* — Latar dan permukaan — */
+    --color-bg: #FFF8EC;              /* Cream: latar halaman */
+    --color-surface: #FFFFFF;         /* kartu, kolom isian, balon ucapan */
+
+  /* — Hangat (maskot dan penghargaan) — */
+    --color-orange: #F2762E;          /* CTA sekunder; teks di atasnya: --color-text */
+    --color-orange-hover: #F58A47;
+    --color-orange-active: #F9A06B;
+    --color-yellow: #FFC93C;          /* bintang, poin; teks di atasnya: --color-text */
+    --color-yellow-hover: #FFD45C;
+
+  /* — Dekoratif saja — */
+    --color-teal: #2BB3C0;            /* ornamen sirkuit-daun; DILARANG untuk teks */
+
+  /* — Teks — */
+    --color-text: #1F2937;            /* Ink */
+    --color-text-muted: #4B5563;
+    --color-text-on-primary: #FFFFFF;
+    --color-text-on-dark: #FFF8EC;    /* di atas forest (sidebar) */
+    --color-placeholder: #5F6B64;
+
+    /* — Garis — */
+    --color-border-subtle: #D8E5DB;   /* hanya dekoratif (pemisah, tepi kartu) */
+    --color-border-strong: #7A8B80;   /* kolom isian, chip, kontrol (≥ 3:1) */
+    --color-focus: #14532D;           /* cincin fokus pada latar terang */
+    --color-focus-on-dark: #FFC93C;   /* cincin fokus pada sidebar forest */
+
+    /* — Status — */
+    --color-success-bg: #E6F6EC;  --color-success-border: #1F7A4D;  --color-success-ink: #14532D;
+    --color-retry-bg:   #FFEFD9;  --color-retry-border:   #A94A08;  --color-retry-ink:   #7C2D12;
+    --color-warning-bg: #FFF4CC;  --color-warning-border: #A67500;  --color-warning-ink: #5C4300;
+    --color-danger-bg:  #FDECEC;  --color-danger-border:  #D64545;  --color-danger-ink:  #7F1D1D;
+
+    /* — Kategori sampah (wajib konsisten) — */
+    --cat-organik:        #3FA34D;  --cat-organik-tint:   #E4F2E6;  --cat-organik-strong:   #3FA34D;
+    --cat-anorganik:      #F5B700;  --cat-anorganik-tint: #FEF5DB;  --cat-anorganik-strong: #A67500;
+    --cat-b3:             #D64545;  --cat-b3-tint:        #F9E5E5;  --cat-b3-strong:        #D64545;
+    --cat-residu:         #6B7280;  --cat-residu-tint:    #EAEBED;  --cat-residu-strong:    #6B7280;
+    --cat-ewaste:         #3B82F6;  --cat-ewaste-tint:    #E4EEFE;  --cat-ewaste-strong:    #3B82F6;
+
+    /* — Tipografi & Font — */
+    --font-display: 'Baloo 2', 'Nunito', system-ui, sans-serif;
+    --font-body: 'Nunito', system-ui, -apple-system, 'Segoe UI', Roboto, sans-serif;
+    --font-emoji: 'Apple Color Emoji', 'Segoe UI Emoji', 'Noto Color Emoji', sans-serif;
+
+    /* — Jarak (skala 4/8 px) — */
+    --space-1: 4px;  --space-2: 8px;  --space-3: 12px; --space-4: 16px;
+    --space-5: 24px; --space-6: 32px; --space-7: 48px; --space-8: 64px; --space-9: 96px;
+
+    /* — Radius — */
+    --radius-sm: 10px;    /* badge */
+    --radius-md: 16px;    /* tombol, kolom isian, ubin emoji */
+    --radius-lg: 20px;    /* kartu */
+    --radius-xl: 24px;    /* dialog, panel besar, drawer */
+    --radius-full: 999px; /* HANYA chip filter */
+
+    /* — Bayangan: hanya hover dan overlay — */
+    --shadow-hover:   0 4px 12px rgba(20, 83, 45, 0.12);
+    --shadow-overlay: 0 12px 32px rgba(20, 83, 45, 0.20);
+
+    /* — Lapisan (z-index) — */
+    --z-header: 40; 
+    --z-overlay: 50; 
+    --z-drawer: 60; 
+    --z-dialog: 70;
+
+    /* — Lebar — */
+    --w-content: 1120px;  /* area konten maksimum */
+    --w-reading: 720px;   /* kolom baca: detail, kuis, misi, panduan */
+    --w-dialog: 440px;
+    --w-sidebar: 264px;
+    --h-header: 56px;
+}
+
+html {
+  scroll-behavior: smooth;
+  scroll-padding-top: 100px;
+}

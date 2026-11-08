@@ -1,0 +1,1586 @@
+{
+  "meta": {
+    "versi": "1.0",
+    "tingkat": "smp",
+    "diperbarui": "2026-11-03",
+    "total_soal": 50
+  },
+  "aturan": {
+    "soal_per_sesi": 10,
+    "poin_per_benar": 10,
+    "acak_soal": true,
+    "acak_pilihan": true
+  },
+  "pesan_hasil": [
+    {
+      "min_persen": 0,
+      "judul": "Perlu Analisis Lagi!",
+      "isi": "Yuk pelajari kembali dampak kimia dan pengelolaan limbah modern.",
+      "ekspresi_maskot": "semangat"
+    },
+    {
+      "min_persen": 60,
+      "judul": "Analisis yang Baik!",
+      "isi": "Kamu sudah memahami sebagian besar konsep sains lingkungan dan pemilahan.",
+      "ekspresi_maskot": "senang"
+    },
+    {
+      "min_persen": 90,
+      "judul": "Ahli Ekologi Muda!",
+      "isi": "Luar biasa! Pemahamanmu tentang pengelolaan limbah sudah setingkat peneliti.",
+      "ekspresi_maskot": "merayakan"
+    }
+  ],
+  "soal": [
+    {
+      "id": "smp-001",
+      "level": "pohon",
+      "kategori_id": "b3",
+      "sampah_id": "baterai-bekas",
+      "pertanyaan": "Mengapa sampah baterai bekas dilarang keras dibuang ke TPA umum karena ancaman ekologisnya?",
+      "pilihan": [
+        {
+          "id": "a",
+          "teks": "Mengandung logam berat seperti kadmium dan merkuri yang merembes mencemari air tanah"
+        },
+        {
+          "id": "b",
+          "teks": "Karena baterai dapat menyerap oksigen di udara secara berlebihan"
+        },
+        {
+          "id": "c",
+          "teks": "Karena berat baterai merusak lapisan tanah humus"
+        },
+        {
+          "id": "d",
+          "teks": "Karena baterai memicu pertumbuhan gulma liar"
+        }
+      ],
+      "jawaban_benar": "a",
+      "umpan_balik": {
+        "benar": "Analisis tepat! Logam berat beracun pada baterai merusak ekosistem air tanah secara permanen.",
+        "salah": "Baterai mengandung logam berat beracun yang mengkontaminasi sumber air tanah jika masuk TPA umum."
+      },
+      "gambar": "ASSETS/kuisSMP/baterai bekas.png"
+    },
+    {
+      "id": "smp-002",
+      "level": "pohon",
+      "kategori_id": "organik",
+      "sampah_id": "kulit-pisang",
+      "pertanyaan": "Gas rumah kaca apakah yang dominan dihasilkan saat sampah organik menumpuk secara anaerob di TPA?",
+      "pilihan": [
+        {
+          "id": "a",
+          "teks": "Gas Metana (CH4)"
+        },
+        {
+          "id": "b",
+          "teks": "Gas Oksigen Murni (O2)"
+        },
+        {
+          "id": "c",
+          "teks": "Gas Helium (He)"
+        },
+        {
+          "id": "d",
+          "teks": "Gas Nitrogen (N2)"
+        }
+      ],
+      "jawaban_benar": "a",
+      "umpan_balik": {
+        "benar": "Sangat akurat! Pembusukan tanpa oksigen di tumpukan sampah menghasilkan gas Metana.",
+        "salah": "Proses penguraian organik tanpa oksigen (anaerob) di TPA menghasilkan gas Metana (CH4)."
+      },
+      "gambar": "ASSETS/kuisSMP/kulit pisang.png"
+    },
+    {
+      "id": "smp-003",
+      "level": "pohon",
+      "kategori_id": "anorganik",
+      "sampah_id": "botol-plastik",
+      "pertanyaan": "Apa dampak utama akumulasi mikroplastik bagi rantai makanan di ekosistem laut?",
+      "pilihan": [
+        {
+          "id": "a",
+          "teks": "Tertelan oleh plankton dan ikan, lalu racunnya terakumulasi ke tubuh manusia"
+        },
+        {
+          "id": "b",
+          "teks": "Membuat air laut menjadi tawar dan jernih"
+        },
+        {
+          "id": "c",
+          "teks": "Meningkatkan populasi terumbu karang secara instan"
+        },
+        {
+          "id": "d",
+          "teks": "Mengubah struktur salinitas air laut"
+        }
+      ],
+      "jawaban_benar": "a",
+      "umpan_balik": {
+        "benar": "Tepat! Mikroplastik masuk ke rantai makanan laut dan membahayakan kesehatan organisme termasuk manusia.",
+        "salah": "Mikroplastik termakan biota laut dan zat kimianya merambat naik ke rantai makanan."
+      },
+      "gambar": "ASSETS/kuisSMP/botol plastik.png"
+    },
+    {
+      "id": "smp-004",
+      "level": "pohon",
+      "kategori_id": "ewaste",
+      "sampah_id": "hp-tua-rusak",
+      "pertanyaan": "Apa tujuan utama dari konsep 'Urban Mining' dalam pengolahan E-Waste modern?",
+      "pilihan": [
+        {
+          "id": "a",
+          "teks": "Mengekstrak logam berharga (emas, tembaga) dari perangkat elektronik bekas"
+        },
+        {
+          "id": "b",
+          "teks": "Menimbun seluruh komputer rusak ke dalam sumur tua perkotaan"
+        },
+        {
+          "id": "c",
+          "teks": "Menanam sirkuit PCB agar tumbuh menjadi logam murni"
+        },
+        {
+          "id": "d",
+          "teks": "Membangun gedung pencakar langit dari casing plastik"
+        }
+      ],
+      "jawaban_benar": "a",
+      "umpan_balik": {
+        "benar": "Cerdas! Urban Mining mendaur ulang logam mulia dari sampah elektronik tanpa perlu menambang alam.",
+        "salah": "Urban Mining adalah metode perolehan kembali logam bernilai tinggi dari limbah elektronik."
+      },
+      "gambar": "ASSETS/kuisSMP/hp rusak.png"
+    },
+    {
+      "id": "smp-005",
+      "level": "pohon",
+      "kategori_id": "residu",
+      "sampah_id": "sachet-kopi-minyak",
+      "pertanyaan": "Mengapa kemasan sachet plastik-foil multi-lapis (komposit) dikategorikan sebagai sampah Residu?",
+      "pilihan": [
+        {
+          "id": "a",
+          "teks": "Lapisan plastik dan aluminiumnya terikat sangat kuat sehingga sulit dipisahkan mesin daur ulang"
+        },
+        {
+          "id": "b",
+          "teks": "Karena kemasan sachet terbuat dari bahan organik nabati"
+        },
+        {
+          "id": "c",
+          "teks": "Karena sachet dapat larut secara otomatis di dalam air sabun"
+        },
+        {
+          "id": "d",
+          "teks": "Karena ukuran sachet terlalu besar untuk mesin pencacah"
+        }
+      ],
+      "jawaban_benar": "a",
+      "umpan_balik": {
+        "benar": "Analisis tepat! Gabungan bahan foil dan plastik membuat daur ulangnya secara ekonomis sangat sulit.",
+        "salah": "Sachet komposit menggabungkan bahan berbeda yang sulit dipisahkan, sehingga masuk Residu."
+      },
+      "gambar": "ASSETS/kuis/sachet-kopi-minyak.png" 
+    },
+    {
+      "id": "smp-006",
+      "level": "pohon",
+      "kategori_id": "anorganik",
+      "sampah_id": "kardus-bekas",
+      "pertanyaan": "Berdasarkan data lingkungan, mendaur ulang 1 ton kertas/kardus dapat menyelamatkan berapa banyak pohon dewasa?",
+      "pilihan": [
+        {
+          "id": "a",
+          "teks": "Sekitar 17 pohon dewasa"
+        },
+        {
+          "id": "b",
+          "teks": "Hanya 1 pohon kecil"
+        },
+        {
+          "id": "c",
+          "teks": "Tidak berpengaruh pada pohon"
+        },
+        {
+          "id": "d",
+          "teks": "Sekitar 1.000 pohon hutan"
+        }
+      ],
+      "jawaban_benar": "a",
+      "umpan_balik": {
+        "benar": "Luar biasa! Daur ulang kertas menekan angka penebangan hutan secara signifikan.",
+        "salah": "Satu ton daur ulang kertas terbukti menyelamatkan sekitar 17 pohon dewasa di alam."
+      },
+      "gambar": "ASSETS/kuisSMP/kardus bekas.png"
+    },
+    {
+      "id": "smp-007",
+      "level": "pohon",
+      "kategori_id": "b3",
+      "sampah_id": "termometer-raksa",
+      "pertanyaan": "Kerusakan organ utama apa yang ditimbulkan jika uap merkuri/raksa terhirup oleh manusia?",
+      "pilihan": [
+        {
+          "id": "a",
+          "teks": "Sistem saraf pusat dan jaringan ginjal"
+        },
+        {
+          "id": "b",
+          "teks": "Perubahan warna kornea mata"
+        },
+        {
+          "id": "c",
+          "teks": "Penurunan elastisitas kulit tangan"
+        },
+        {
+          "id": "d",
+          "teks": "Peningkatan pertumbuhan kuku"
+        }
+      ],
+      "jawaban_benar": "a",
+      "umpan_balik": {
+        "benar": "Tepat! Toksisitas merkuri menyerang sistem saraf pusat dan organ vital seperti ginjal.",
+        "salah": "Merkuri adalah neurotoksin berbahaya yang menyerang sistem saraf pusat dan ginjal."
+      },
+      "gambar": "ASSETS/kuisSMP/termometer raksa.png"
+    },
+    {
+      "id": "smp-008",
+      "level": "pohon",
+      "kategori_id": "organik",
+      "sampah_id": "sisa-sayuran",
+      "pertanyaan": "Perbedaan fundamental antara metode pengomposan Aerob dan Anaerob terletak pada...",
+      "pilihan": [
+        {
+          "id": "a",
+          "teks": "Kebutuhan pasokan oksigen bebas"
+        },
+        {
+          "id": "b",
+          "teks": "Suhu ruangan tempat penyimpanan"
+        },
+        {
+          "id": "c",
+          "teks": "Warna wadah penampung kompos"
+        },
+        {
+          "id": "d",
+          "teks": "Volume air yang disiramkan"
+        }
+      ],
+      "jawaban_benar": "a",
+      "umpan_balik": {
+        "benar": "Analisis benar! Pengomposan aerob membutuhkan suplai oksigen, sedangkan anaerob tanpa oksigen.",
+        "salah": "Aerob memerlukan oksigen untuk aktivitas mikroba, sedangkan anaerob berlangsung tertutup tanpa udara."
+      },
+      "gambar": "ASSETS/kuisSMP/sisa sayuran.png"
+    },
+    {
+      "id": "smp-009",
+      "level": "pohon",
+      "kategori_id": "anorganik",
+      "sampah_id": "kaleng-minuman",
+      "pertanyaan": "Berapa persentase penghematan energi yang diperoleh saat mendaur ulang aluminium dibanding menambang bijih bauksit baru?",
+      "pilihan": [
+        {
+          "id": "a",
+          "teks": "Sekitar 95% penghematan energi"
+        },
+        {
+          "id": "b",
+          "teks": "Hanya 5% penghematan energi"
+        },
+        {
+          "id": "c",
+          "teks": "Tidak ada penghematan energi sama sekali"
+        },
+        {
+          "id": "d",
+          "teks": "Malah membutuhkan energi 2 kali lipat"
+        }
+      ],
+      "jawaban_benar": "a",
+      "umpan_balik": {
+        "benar": "Luar biasa! Daur ulang aluminium sangat efisien dan menghemat hingga 95% energi listrik.",
+        "salah": "Daur ulang aluminium menghemat hingga 95% energi dibanding proses penambangan bauksit dari awal."
+      },
+      "gambar": "ASSETS/kuisSMP/kaleng minuman.png"
+    },
+    {
+      "id": "smp-010",
+      "level": "pohon",
+      "kategori_id": "residu",
+      "sampah_id": "styrofoam-makanan",
+      "pertanyaan": "Polimer plastik Polistirena (kode daur ulang #6) pada Styrofoam memiliki sifat kimia yang...",
+      "pilihan": [
+        {
+          "id": "a",
+          "teks": "Sangat sulit terurai dan berpotensi melepas zat stirena toksik jika terkena panas"
+        },
+        {
+          "id": "b",
+          "teks": "Dapat larut sempurna dalam air dingin dalam waktu singkat"
+        },
+        {
+          "id": "c",
+          "teks": "Aman digunakan sebagai media tanam hidroponik organik"
+        },
+        {
+          "id": "d",
+          "teks": "Mudah diuraikan oleh cacing tanah dalam sebulan"
+        }
+      ],
+      "jawaban_benar": "a",
+      "umpan_balik": {
+        "benar": "Tepat! Polistirena sulit didaur ulang secara ekonomis dan rentan melepas racun saat bersentuhan dengan makanan panas.",
+        "salah": "Styrofoam (#6) tahan urai dan melepaskan senyawa kimia berbahaya bila terpapar panas."
+      },
+      "gambar": "ASSETS/kuisSMP/styrofoam.png"
+    },
+    {
+      "id": "smp-011",
+      "level": "pohon",
+      "kategori_id": "b3",
+      "sampah_id": "oli-bekas",
+      "pertanyaan": "Berapa kapasitas pencemaran air bersih yang diakibatkan oleh 1 liter limbah oli mesin jika dibuang sembarangan ke tanah?",
+      "pilihan": [
+        {
+          "id": "a",
+          "teks": "Hingga 1 juta liter air bersih"
+        },
+        {
+          "id": "b",
+          "teks": "Hanya 1 gelas air mineral"
+        },
+        {
+          "id": "c",
+          "teks": "Tidak mencemari air sama sekali"
+        },
+        {
+          "id": "d",
+          "teks": "Sekitar 10 liter air"
+        }
+      ],
+      "jawaban_benar": "a",
+      "umpan_balik": {
+        "benar": "Analisis tepat! Oli membentuk lapisan tipis kedap air yang merusak jutaan liter cadangan air tanah.",
+        "salah": "Satu liter oli dapat mencemari hingga 1 juta liter sumber air bersih di dalam tanah."
+      },
+      "gambar": "Asset/Asset kuiz/oli-bekas.png"
+    },
+    {
+      "id": "smp-012",
+      "level": "pohon",
+      "kategori_id": "ewaste",
+      "sampah_id": "baterai-laptop",
+      "pertanyaan": "Fenomena 'Thermal Runaway' pada baterai Lithium-ion yang rusak atau kembung dapat memicu...",
+      "pilihan": [
+        {
+          "id": "a",
+          "teks": "Reaksi berantai tak terkendali yang menghasilkan panas ekstrem dan ledakan api"
+        },
+        {
+          "id": "b",
+          "teks": "Penurunan suhu baterai hingga mencapai titik beku es"
+        },
+        {
+          "id": "c",
+          "teks": "Perubahan fungsi baterai menjadi sumber energi surya"
+        },
+        {
+          "id": "d",
+          "teks": "Peningkatan kapasitas simpan daya listrik secara otomatis"
+        }
+      ],
+      "jawaban_benar": "a",
+      "umpan_balik": {
+        "benar": "Tepat sekali! Thermal runaway adalah kegagalan sel yang memicu kebakaran hebat pada baterai litium.",
+        "salah": "Baterai kembung berisiko mengalami thermal runaway, yaitu kenaikan suhu drastis berujung ledakan."
+      },
+      "gambar": "Asset/Asset kuiz/baterai-laptop.png"
+    },
+    {
+      "id": "smp-013",
+      "level": "pohon",
+      "kategori_id": "organik",
+      "sampah_id": "kulit-jeruk",
+      "pertanyaan": "Senyawa aktif alami apakah yang terkandung dalam kulit jeruk sehingga efektif dijadikan pelarut pembersih ramah lingkungan?",
+      "pilihan": [
+        {
+          "id": "a",
+          "teks": "Minyak D-Limonene"
+        },
+        {
+          "id": "b",
+          "teks": "Zat Asam Sulfat Pekat"
+        },
+        {
+          "id": "c",
+          "teks": "Senyawa Metanol Murni"
+        },
+        {
+          "id": "d",
+          "teks": "Kloroform Cair"
+        }
+      ],
+      "jawaban_benar": "a",
+      "umpan_balik": {
+        "benar": "Cerdas! D-Limonene adalah pelarut organik alami yang sangat kuat mengangkat noda minyak.",
+        "salah": "Kulit jeruk kaya akan kandungan D-Limonene, pelarut alami yang efektif melarutkan lemak."
+      },
+      "gambar": "ASSETS/kuisSMP/kulit jeruk.png"
+    },
+    {
+      "id": "smp-014",
+      "level": "pohon",
+      "kategori_id": "anorganik",
+      "sampah_id": "sedotan-plastik",
+      "pertanyaan": "Poin Sustainable Development Goals (SDG) berapa yang secara langsung berfokus pada 'Konsumsi dan Produksi yang Bertanggung Jawab'?",
+      "pilihan": [
+        {
+          "id": "a",
+          "teks": "SDG 12"
+        },
+        {
+          "id": "b",
+          "teks": "SDG 1"
+        },
+        {
+          "id": "c",
+          "teks": "SDG 5"
+        },
+        {
+          "id": "d",
+          "teks": "SDG 9"
+        }
+      ],
+      "jawaban_benar": "a",
+      "umpan_balik": {
+        "benar": "Tepat! SDG 12 mengatur pola konsumsi dan produksi berkelanjutan termasuk pengurangan limbah plastik.",
+        "salah": "Pengelolaan sampah dan pola konsumsi berkelanjutan diatur dalam target global SDG 12."
+      },
+      "gambar": "ASSETS/kuisSMP/sedotan plastik.png"
+    },
+    {
+      "id": "smp-015",
+      "level": "pohon",
+      "kategori_id": "residu",
+      "sampah_id": "pembalut-wanita",
+      "pertanyaan": "Mengapa sampah sanitasi sekali pakai wajib dikemas rapat sebelum dibuang ke pembuangan akhir?",
+      "pilihan": [
+        {
+          "id": "a",
+          "teks": "Mencegah transmisi patogen penyakit menular dan melindungi kesehatan petugas kebersihan"
+        },
+        {
+          "id": "b",
+          "teks": "Agar dapat diproses ulang menjadi kain tenun steril di pabrik"
+        },
+        {
+          "id": "c",
+          "teks": "Agar tidak memancarkan cahaya di dalam gelap"
+        },
+        {
+          "id": "d",
+          "teks": "Agar memiliki nilai jual ekonomis yang tinggi"
+        }
+      ],
+      "jawaban_benar": "a",
+      "umpan_balik": {
+        "benar": "Analisis benar! Pembungkusan rapat mengeliminasi risiko penularan agen patogen bagi petugas pengangkut.",
+        "salah": "Sampah sanitasi mengandung cairan biologis yang berisiko menularkan patogen jika tidak dibungkus aman."
+      },
+      "gambar": "Asset/Asset kuiz/pembalut-wanita.png"
+    },
+    {
+      "id": "smp-016",
+      "level": "pohon",
+      "kategori_id": "b3",
+      "sampah_id": "kaleng-cat",
+      "pertanyaan": "Senyawa VOC (Volatile Organic Compounds) yang terkandung dalam uap pelarut cat tiner berdampak buruk pada...",
+      "pilihan": [
+        {
+          "id": "a",
+          "teks": "Sistem pernapasan manusia dan memicu polusi udara perkotaan (smog)"
+        },
+        {
+          "id": "b",
+          "teks": "Penurunan kadar garam air laut secara drastis"
+        },
+        {
+          "id": "c",
+          "teks": "Percepatan pertumbuhan ekosistem tanaman air"
+        },
+        {
+          "id": "d",
+          "teks": "Penguatan lapisan ozon di stratosfer"
+        }
+      ],
+      "jawaban_benar": "a",
+      "umpan_balik": {
+        "benar": "Tepat! VOC adalah gas organik mudah menguap yang memicu gangguan napas dan pencemaran udara.",
+        "salah": "Senyawa VOC pada pelarut kimia melepaskan gas beracun yang mencemari udara dan mengganggu respirasi."
+      },
+      "gambar": "Asset/Asset kuiz/kaleng-cat.png"
+    },
+    {
+      "id": "smp-017",
+      "level": "pohon",
+      "kategori_id": "ewaste",
+      "sampah_id": "printer-bekas",
+      "pertanyaan": "Partikel debu halus yang terkandung di dalam serbuk toner printer bekas berisiko memicu gangguan kesehatan berupa...",
+      "pilihan": [
+        {
+          "id": "a",
+          "teks": "Iritasi saluran pernapasan kronis jika terhirup masuk ke alveoli paru-paru"
+        },
+        {
+          "id": "b",
+          "teks": "Peningkatan ketajaman penglihatan mata malam"
+        },
+        {
+          "id": "c",
+          "teks": "Penguatan struktur tulang rangka manusia"
+        },
+        {
+          "id": "d",
+          "teks": "Perubahan warna kulit menjadi lebih cerah"
+        }
+      ],
+      "jawaban_benar": "a",
+      "umpan_balik": {
+        "benar": "Analisis tepat! Toner mengandung partikel karbon mikro yang berbahaya jika mengendap di paru-paru.",
+        "salah": "Debu toner printer adalah partikel halus karbon yang memicu gangguan respirasi kronis."
+      },
+      "gambar": "Asset/Asset kuiz/printer-bekas.png"
+    },
+    {
+      "id": "smp-018",
+      "level": "pohon",
+      "kategori_id": "organik",
+      "sampah_id": "tempurung-kelapa",
+      "pertanyaan": "Proses pirolisis tempurung kelapa tanpa oksigen menghasilkan arang aktif yang berfungsi secara efektif untuk...",
+      "pilihan": [
+        {
+          "id": "a",
+          "teks": "Adsorpsi (penyerapan) polutan kimia dan penjernihan air kotor"
+        },
+        {
+          "id": "b",
+          "teks": "Bahan baku utama pembuatan kain sintetis poliester"
+        },
+        {
+          "id": "c",
+          "teks": "Pemanis buatan dalam industri makanan ringan"
+        },
+        {
+          "id": "d",
+          "teks": "Pelumas mesin industri berat"
+        }
+      ],
+      "jawaban_benar": "a",
+      "umpan_balik": {
+        "benar": "Cerdas! Struktur pori-pori arang aktif sangat ampuh mengadsorpsi zat warna dan racun air.",
+        "salah": "Arang aktif dari tempurung kelapa memiliki luas permukaan pori tinggi untuk mengadsorpsi polutan."
+      },
+      "gambar": "Asset/Asset kuiz/tempurung-kelapa.png"
+    },
+    {
+      "id": "smp-019",
+      "level": "pohon",
+      "kategori_id": "anorganik",
+      "sampah_id": "tutup-botol",
+      "pertanyaan": "Mengapa plastik jenis HDPE (High-Density Polyethylene) pada botol susu tebal sangat diminati industri daur ulang?",
+      "pilihan": [
+        {
+          "id": "a",
+          "teks": "Memiliki struktur polimer kuat, titik leleh stabil, dan bernilai ekonomis tinggi"
+        },
+        {
+          "id": "b",
+          "teks": "Karena plastik HDPE dapat larut sendiri di dalam tanah humus"
+        },
+        {
+          "id": "c",
+          "teks": "Karena HDPE dapat diubah menjadi bahan bakar minyak solar secara instan"
+        },
+        {
+          "id": "d",
+          "teks": "Karena bobot HDPE sangat berat seperti besi baja"
+        }
+      ],
+      "jawaban_benar": "a",
+      "umpan_balik": {
+        "benar": "Tepat! HDPE memiliki kekuatan struktur tinggi dan sangat stabil untuk dilebur kembali.",
+        "salah": "Plastik HDPE (#2) memiliki ketahanan polimer yang kuat dan sangat ekonomis untuk didaur ulang."
+      },
+      "gambar": "ASSETS/kuisSMP/tutup botol.png"
+    },
+    {
+      "id": "smp-020",
+      "level": "pohon",
+      "kategori_id": "residu",
+      "sampah_id": "puntung-rokok",
+      "pertanyaan": "Material sintetis apa yang menyusun filter puntung rokok sehingga tahan urai di alam selama bertahun-tahun?",
+      "pilihan": [
+        {
+          "id": "a",
+          "teks": "Selulosa Asetat (sejenis serat plastik)"
+        },
+        {
+          "id": "b",
+          "teks": "Kapas murni organik tumbuhan"
+        },
+        {
+          "id": "c",
+          "teks": "Kertas sigaret amilum"
+        },
+        {
+          "id": "d",
+          "teks": "Getah karet alam mentah"
+        }
+      ],
+      "jawaban_benar": "a",
+      "umpan_balik": {
+        "benar": "Analisis benar! Filter rokok terbuat dari selulosa asetat yang merupakan turunan plastik sintesis.",
+        "salah": "Filter rokok bukan kapas alami, melainkan serat plastik selulosa asetat yang sulit terurai."
+      },
+      "gambar": "ASSETS/kuisSMP/puntung rokok.png"
+    },
+    {
+      "id": "smp-021",
+      "level": "pohon",
+      "kategori_id": "b3",
+      "sampah_id": "obat-kadaluarsa",
+      "pertanyaan": "Apa risiko ekologis jika limbah obat antibiotik kadaluarsa dibuang sembarangan ke saluran air publik?",
+      "pilihan": [
+        {
+          "id": "a",
+          "teks": "Memicu resistensi bakteri terhadap antibiotik di lingkungan perairan"
+        },
+        {
+          "id": "b",
+          "teks": "Membuat air sungai bercita rasa manis dan segar"
+        },
+        {
+          "id": "c",
+          "teks": "Mempercepat pertumbuhan populasi ikan air tawar"
+        },
+        {
+          "id": "d",
+          "teks": "Menjernihkan kekeruhan air sungai secara instan"
+        }
+      ],
+      "jawaban_benar": "a",
+      "umpan_balik": {
+        "benar": "Tepat! Residu antibiotik di perairan memicu mutasi bakteri kebal obat (antibiotic resistance).",
+        "salah": "Limbah antibiotik mencemari ekosistem dan menciptakan strain bakteri resisten obat yang berbahaya."
+      },
+      "gambar": "Asset/Asset kuiz/obat-kadaluarsa.png"
+    },
+    {
+      "id": "smp-022",
+      "level": "pohon",
+      "kategori_id": "ewaste",
+      "sampah_id": "kipas-angin-rusak",
+      "pertanyaan": "Logam bernilai ekonomis tinggi apa yang dominan pada kumparan dinamo di dalam perangkat kipas angin bekas?",
+      "pilihan": [
+        {
+          "id": "a",
+          "teks": "Kawat Tembaga murni"
+        },
+        {
+          "id": "b",
+          "teks": "Logam Timbal hitam"
+        },
+        {
+          "id": "c",
+          "teks": "Serbuk Besi berkarat"
+        },
+        {
+          "id": "d",
+          "teks": "Alum foil tipis"
+        }
+      ],
+      "jawaban_benar": "a",
+      "umpan_balik": {
+        "benar": "Cerdas! Lilitan kawat tembaga pada dinamo adalah incaran utama pengepul e-waste.",
+        "salah": "Dinamo motor listrik kipas angin menggunakan gulungan kawat tembaga bernilai tinggi."
+      },
+      "gambar": "Asset/Asset kuiz/kipas-angin-rusak.png"
+    },
+    {
+      "id": "smp-023",
+      "level": "pohon",
+      "kategori_id": "organik",
+      "sampah_id": "ampas-kopi",
+      "pertanyaan": "Kandungan unsur hara utama apa pada ampas kopi yang sangat disukai oleh cacing tanah dalam proses vermikompos?",
+      "pilihan": [
+        {
+          "id": "a",
+          "teks": "Unsur Nitrogen tinggi"
+        },
+        {
+          "id": "b",
+          "teks": "Kadar Garam dapur murni"
+        },
+        {
+          "id": "c",
+          "teks": "Senyawa Minyak Bumi"
+        },
+        {
+          "id": "d",
+          "teks": "Logam Timbal berat"
+        }
+      ],
+      "jawaban_benar": "a",
+      "umpan_balik": {
+        "benar": "Tepat! Ampas kopi kaya nitrogen yang mempercepat proses penguraian nutrisi tanah.",
+        "salah": "Ampas kopi menyumbangkan suplai Nitrogen tinggi yang sangat baik untuk nutrisi media cacing."
+      },
+      "gambar": "Asset/Asset kuiz/ampas-kopi.png"
+    },
+    {
+      "id": "smp-024",
+      "level": "pohon",
+      "kategori_id": "anorganik",
+      "sampah_id": "gantungan-baju-plastik",
+      "pertanyaan": "Plastik kaku jenis PP (Polypropylene) pada gantungan baju memiliki karakteristik tahan panas yang membuatnya...",
+      "pilihan": [
+        {
+          "id": "a",
+          "teks": "Aman dicetak ulang melalui pelelehan termal pada industri daur ulang"
+        },
+        {
+          "id": "b",
+          "teks": "Dapat meleleh hanya dengan suhu sinar matahari pagi"
+        },
+        {
+          "id": "c",
+          "teks": "Berubah menjadi gas beracun klorin saat dijemur"
+        },
+        {
+          "id": "d",
+          "teks": "Mudah hancur menjadi bubuk saat terkena angin"
+        }
+      ],
+      "jawaban_benar": "a",
+      "umpan_balik": {
+        "benar": "Analisis benar! Polipropilena (PP) adalah termoplastik yang stabil dan mudah dilebur ulang.",
+        "salah": "Plastik PP memiliki titik leleh stabil sehingga ideal diproses kembali dalam industri termoplastik."
+      },
+      "gambar": "Asset/Asset kuiz/gantungan-baju-plastik.png"
+    },
+    {
+      "id": "smp-025",
+      "level": "pohon",
+      "kategori_id": "residu",
+      "sampah_id": "kaca-cermin-pecah",
+      "pertanyaan": "Mengapa pecahan kaca cermin rias tidak boleh dicampur ke dalam proses peleburan daur ulang botol kaca polos?",
+      "pilihan": [
+        {
+          "id": "a",
+          "teks": "Lapisan cat dan bahan reflektif perak di belakang cermin merusak komposisi kimia lelehan kaca"
+        },
+        {
+          "id": "b",
+          "teks": "Karena cermin memiliki titik leleh yang lebih tinggi dari matahari"
+        },
+        {
+          "id": "c",
+          "teks": "Karena cermin memancarkan gelombang magnetik aktif"
+        },
+        {
+          "id": "d",
+          "teks": "Karena cermin terbuat dari bahan baku pasir kuarsa palsu"
+        }
+      ],
+      "jawaban_benar": "a",
+      "umpan_balik": {
+        "benar": "Tepat! Lapisan pelapis logam reflektif pada cermin mencemari kemurnian lelehan kaca daur ulang.",
+        "salah": "Cermin dilapisi bahan kimia reflektif di bagian belakang yang merusak kualitas lelehan kaca."
+      },
+      "gambar": "Asset/Asset kuiz/kaca-cermin-pecah.png"
+    },
+    {
+      "id": "smp-026",
+      "level": "pohon",
+      "kategori_id": "b3",
+      "sampah_id": "aki-kendaraan",
+      "pertanyaan": "Zat kimia berbahaya apakah yang dominan mengisi bagian dalam dari aki (accu) kendaraan bermotor bekas?",
+      "pilihan": [
+        {
+          "id": "a",
+          "teks": "Larutan Asam Sulfat (H2SO4) dan lempengan timbal (Pb)"
+        },
+        {
+          "id": "b",
+          "teks": "Air kelapa murni berfermentasi"
+        },
+        {
+          "id": "c",
+          "teks": "Minyak pelumas mesin diesel"
+        },
+        {
+          "id": "d",
+          "teks": "Alkohol etanol antiseptik"
+        }
+      ],
+      "jawaban_benar": "a",
+      "umpan_balik": {
+        "benar": "Analisis tepat! Aki berisi asam sulfat korosif dan timbal berat yang sangat beracun bagi lingkungan.",
+        "salah": "Aki bekas mengandung elektrolit asam sulfat yang sangat korosif dan logam timbal berbahaya."
+      },
+      "gambar": "Asset/Asset kuiz/aki-kendaraan.png"
+    },
+    {
+      "id": "smp-027",
+      "level": "pohon",
+      "kategori_id": "organik",
+      "sampah_id": "cangkang-kelapa-sawit",
+      "pertanyaan": "Pemanfaatan limbah biomassa cangkang kelapa sawit di pabrik modern umumnya diarahkan sebagai...",
+      "pilihan": [
+        {
+          "id": "a",
+          "teks": "Bahan bakar alternatif ramah lingkungan (biomassa boiler)"
+        },
+        {
+          "id": "b",
+          "teks": "Bahan baku utama pembuatan kaca jendela"
+        },
+        {
+          "id": "c",
+          "teks": "Campuran pakan ternak unggas instan"
+        },
+        {
+          "id": "d",
+          "teks": "Bahan pembuat serat kain sutra"
+        }
+      ],
+      "jawaban_benar": "a",
+      "umpan_balik": {
+        "benar": "Tepat! Cangkang sawit memiliki nilai kalori tinggi sebagai bahan bakar boiler biomassa.",
+        "salah": "Limbah cangkang sawit dimanfaatkan sebagai bahan bakar biomassa terbarukan."
+      },
+      "gambar": "Asset/Asset kuiz/cangkang-kelapa-sawit.png"
+    },
+    {
+      "id": "smp-028",
+      "level": "pohon",
+      "kategori_id": "anorganik",
+      "sampah_id": "kaleng-susu-bubuk",
+      "pertanyaan": "Lapisan timah tipis pada kaleng baja bekas susu bubuk berfungsi utama untuk...",
+      "pilihan": [
+        {
+          "id": "a",
+          "teks": "Mencegah terjadinya korosi (karat) pada material baja di bawahnya"
+        },
+        {
+          "id": "b",
+          "teks": "Membuat kaleng dapat mengapung di atas air"
+        },
+        {
+          "id": "c",
+          "teks": "Mengubah warna kaleng menjadi transparan"
+        },
+        {
+          "id": "d",
+          "teks": "Meningkatkan bobot kaleng secara drastis"
+        }
+      ],
+      "jawaban_benar": "a",
+      "umpan_balik": {
+        "benar": "Cerdas! Timah pelapis melindungi baja agar tidak mudah teroksidasi dan berkarat.",
+        "salah": "Lapisan timah pada kaleng baja berfungsi sebagai proteksi anti-korosi (karat)."
+      },
+      "gambar": "Asset/Asset kuiz/kaleng-susu-bubuk.png"
+    },
+    {
+      "id": "smp-029",
+      "level": "pohon",
+      "kategori_id": "ewaste",
+      "sampah_id": "motherboard-komputer",
+      "pertanyaan": "Logam mulia berharga apa saja yang umumnya terkandung dalam papan sirkuit cetak (PCB) komputer bekas?",
+      "pilihan": [
+        {
+          "id": "a",
+          "teks": "Emas, perak, paladium, dan tembaga"
+        },
+        {
+          "id": "b",
+          "teks": "Besi cor dan timah hitam biasa"
+        },
+        {
+          "id": "c",
+          "teks": "Aluminium foil murni"
+        },
+        {
+          "id": "d",
+          "teks": "Magnesium dan seng murni"
+        }
+      ],
+      "jawaban_benar": "a",
+      "umpan_balik": {
+        "benar": "Analisis tepat! Sirkuit PCB komputer kaya akan kandungan emas dan perak mikroskopis.",
+        "salah": "Papan sirkuit elektronik mengandung jejak logam mulia bernilai tinggi seperti emas dan paladium."
+      },
+      "gambar": "Asset/Asset kuiz/motherboard-komputer.png"
+    },
+    {
+      "id": "smp-030",
+      "level": "pohon",
+      "kategori_id": "residu",
+      "sampah_id": "kertas-karbon",
+      "pertanyaan": "Mengapa kertas karbon bekas pencetak struk/faktur tidak dapat dilebur bersama kertas daur ulang biasa?",
+      "pilihan": [
+        {
+          "id": "a",
+          "teks": "Mengandung lapisan bahan kimia lilin dan pigmen pewarna reaktif yang mengotori bubur kertas"
+        },
+        {
+          "id": "b",
+          "teks": "Karena kertas karbon terbuat dari lembaran baja tipis"
+        },
+        {
+          "id": "c",
+          "teks": "Karena kertas karbon dapat memancarkan listrik statis"
+        },
+        {
+          "id": "d",
+          "teks": "Karena berat jenis kertas karbon lebih berat dari air"
+        }
+      ],
+      "jawaban_benar": "a",
+      "umpan_balik": {
+        "benar": "Tepat! Lapisan kimia lilin pada kertas karbon mencemari proses penjernihan bubur kertas.",
+        "salah": "Kertas karbon dilapisi zat kimia khusus yang merusak kemurnian hasil daur ulang kertas."
+      },
+      "gambar": "Asset/Asset kuiz/kertas-karbon.png"
+    },
+    {
+      "id": "smp-031",
+      "level": "pohon",
+      "kategori_id": "b3",
+      "sampah_id": "lampu-tl-neon",
+      "pertanyaan": "Selain gas merkuri, komponen berbahaya apa yang terdapat pada tabung lampu neon panjang (TL)?",
+      "pilihan": [
+        {
+          "id": "a",
+          "teks": "Serbuk lapis fosfor beracun di sisi dalam tabung kaca"
+        },
+        {
+          "id": "b",
+          "teks": "Cairan elektrolit asam sulfat pekat"
+        },
+        {
+          "id": "c",
+          "teks": "Gas oksigen murni bertekanan tinggi"
+        },
+        {
+          "id": "d",
+          "teks": "Serbuk besi magnetik aktif"
+        }
+      ],
+      "jawaban_benar": "a",
+      "umpan_balik": {
+        "benar": "Analisis benar! Tabung TL dilapisi bubuk fosfor kimia yang berbahaya jika terhirup.",
+        "salah": "Bagian dalam lampu TL dilapisi serbuk fosfor beracun selain kandungan uap merkuri."
+      },
+      "gambar": "ASSETS/kuisSMP/lampu-tl-neon.png"
+    },
+    {
+      "id": "smp-032",
+      "level": "pohon",
+      "kategori_id": "organik",
+      "sampah_id": "kulit-singkong",
+      "pertanyaan": "Zat antinutrisi alami apa yang terkandung pada limbah kulit singkong segar sehingga membutuhkan proses pengolahan sebelum jadi pakan?",
+      "pilihan": [
+        {
+          "id": "a",
+          "teks": "Glukosida sianogenik (senyawa pemicu sianida)"
+        },
+        {
+          "id": "b",
+          "teks": "Zat kafein dan nikotin aktif"
+        },
+        {
+          "id": "c",
+          "teks": "Asam klorida pekat"
+        },
+        {
+          "id": "d",
+          "teks": "Logam kadmium berat"
+        }
+      ],
+      "jawaban_benar": "a",
+      "umpan_balik": {
+        "benar": "Cerdas! Kulit singkong mengandung racun sianida alami yang harus diurai melalui pemanasan/pencucian.",
+        "salah": "Kulit singkong mengandung glukosida sianogenik yang melepaskan racun sianida jika dikonsumsi langsung."
+      },
+      "gambar": "Asset/Asset kuiz/kulit-singkong.png"
+    },
+    {
+      "id": "smp-033",
+      "level": "pohon",
+      "kategori_id": "anorganik",
+      "sampah_id": "botol-shampo",
+      "pertanyaan": "Plastik HDPE (#2) pada botol shampoo tahan terhadap bahan kimia pembersih karena strukturnya yang...",
+      "pilihan": [
+        {
+          "id": "a",
+          "teks": "Memiliki kerapatan molekul tinggi dengan rantai polimer kristalin"
+        },
+        {
+          "id": "b",
+          "teks": "Terbuat dari gabungan serat kayu alami berselulosa"
+        },
+        {
+          "id": "c",
+          "teks": "Mudah terhidrolisis oleh air mineral biasa"
+        },
+        {
+          "id": "d",
+          "teks": "Memiliki pori-pori terbuka yang menyerap cairan"
+        }
+      ],
+      "jawaban_benar": "a",
+      "umpan_balik": {
+        "benar": "Tepat! High-Density Polyethylene memiliki struktur kerapatan molekul tinggi yang kokoh dan inert.",
+        "salah": "HDPE memiliki kerapatan struktur molekul tinggi yang membuatnya tahan terhadap berbagai bahan kimia."
+      },
+      "gambar": "Asset/Asset kuiz/botol-shampo.png"
+    },
+    {
+      "id": "smp-034",
+      "level": "pohon",
+      "kategori_id": "ewaste",
+      "sampah_id": "televisi-tabung",
+      "pertanyaan": "Komponen kapasitor tabung CRT (Cathode Ray Tube) pada televisi lama menyimpan risiko bahaya berupa...",
+      "pilihan": [
+        {
+          "id": "a",
+          "teks": "Muatan arus listrik tegangan tinggi tersisa meskipun TV sudah lama dicabut dari stopkontak"
+        },
+        {
+          "id": "b",
+          "teks": "Pancaran gelombang suara ultrasonik pemecah kaca"
+        },
+        {
+          "id": "c",
+          "teks": "Perubahan suhu ruangan menjadi sangat dingin"
+        },
+        {
+          "id": "d",
+          "teks": "Pelepasan gas helium bertekanan besar"
+        }
+      ],
+      "jawaban_benar": "a",
+      "umpan_balik": {
+        "benar": "Analisis tepat! Kapasitor tabung CRT menyimpan tegangan listrik tinggi berbahaya bagi keselamatan pemula.",
+        "salah": "Tabung CRT menyimpan muatan listrik tegangan tinggi statis yang mematikan jika salah ditangani."
+      },
+      "gambar": "Asset/Asset kuiz/televisi-tabung.png"
+    },
+    {
+      "id": "smp-035",
+      "level": "pohon",
+      "kategori_id": "residu",
+      "sampah_id": "permen-karet",
+      "pertanyaan": "Mengapa limbah permen karet sisa kunyah yang dibuang sembarangan sangat sulit dibersihkan dari trotoar?",
+      "pilihan": [
+        {
+          "id": "a",
+          "teks": "Berbahan dasar polimer elastomer sintetis yang elastis dan tidak larut dalam air"
+        },
+        {
+          "id": "b",
+          "teks": "Karena permen karet memancarkan medan magnet bumi"
+        },
+        {
+          "id": "c",
+          "teks": "Karena permen karet dapat bereaksi cepat dengan semen jalan"
+        },
+        {
+          "id": "d",
+          "teks": "Karena permen karet memiliki bobot yang sangat berat"
+        }
+      ],
+      "jawaban_benar": "a",
+      "umpan_balik": {
+        "benar": "Tepat! Polimer elastomer sintetis pada permen karet membuatnya lengket dan tahan terhadap pelapukan air.",
+        "salah": "Polimer karet sintetis pada permen karet tidak larut air dan sangat liat menempel di permukaan."
+      },
+      "gambar": "Asset/Asset kuiz/permen-karet.png"
+    },
+    {
+      "id": "smp-036",
+      "level": "pohon",
+      "kategori_id": "b3",
+      "sampah_id": "pemutih-pakaian",
+      "pertanyaan": "Reaksi kimia berbahaya apa yang terjadi jika cairan pemutih pakaian (klorin) dicampur dengan pembersih lantai (asam)?",
+      "pilihan": [
+        {
+          "id": "a",
+          "teks": "Menghasilkan gas klorin beracun yang mematikan jika terhirup"
+        },
+        {
+          "id": "b",
+          "teks": "Menghasilkan wangi parfum bunga yang sangat harum"
+        },
+        {
+          "id": "c",
+          "teks": "Mengubah cairan campuran menjadi air minum steril"
+        },
+        {
+          "id": "d",
+          "teks": "Memadamkan api di sekitar ruangan secara instan"
+        }
+      ],
+      "jawaban_benar": "a",
+      "umpan_balik": {
+        "benar": "Analisis berbahaya yang tepat! Pencampuran pemutih dan asam melepaskan gas klorin beracun penyerang paru.",
+        "salah": "Mencampur pemutih klorin dan asam pembersih memicu reaksi gas klorin beracun yang sangat berbahaya."
+      },
+      "gambar": "Asset/Asset kuiz/pemutih-pakaian.png"
+    },
+    {
+      "id": "smp-037",
+      "level": "pohon",
+      "kategori_id": "organik",
+      "sampah_id": "kulit-bawang",
+      "pertanyaan": "Ekstrak air rendaman kulit bawang merah dan putih yang dibuang petani sering dimanfaatkan kembali sebagai...",
+      "pilihan": [
+        {
+          "id": "a",
+          "teks": "Pestisida nabati dan Zat Pengatur Tumbuh (ZPT) alami tanaman"
+        },
+        {
+          "id": "b",
+          "teks": "Bahan pengawet makanan kaleng pabrikan"
+        },
+        {
+          "id": "c",
+          "teks": "Pelumas gir rantai sepeda motor"
+        },
+        {
+          "id": "d",
+          "teks": "Pembersih noda karat besi baja"
+        }
+      ],
+      "jawaban_benar": "a",
+      "umpan_balik": {
+        "benar": "Cerdas! Kulit bawang kaya hormon pertumbuhan alami dan zat pengendali hama organik.",
+        "salah": "Limbah kulit bawang mengandung auksin dan giberelin alami yang bagus sebagai ZPT tanaman."
+      },
+      "gambar": "Asset/Asset kuiz/kulit-bawang.png"
+    },
+    {
+      "id": "smp-038",
+      "level": "pohon",
+      "kategori_id": "anorganik",
+      "sampah_id": "kertas-hvs",
+      "pertanyaan": "Metode deinking (penghilangan tinta) pada proses daur ulang kertas HVS menggunakan prinsip kimia berupa...",
+      "pilihan": [
+        {
+          "id": "a",
+          "teks": "Pemisahan partikel tinta dari serat selulosa menggunakan sabun/surfaktan khusus"
+        },
+        {
+          "id": "b",
+          "teks": "Pembakaran seluruh lembaran kertas hingga menjadi abu hitam"
+        },
+        {
+          "id": "c",
+          "teks": "Penyiraman asam klorida pekat untuk melarutkan kertas"
+        },
+        {
+          "id": "d",
+          "teks": "Pemberian medan magnet kuat untuk menarik partikel tinta"
+        }
+      ],
+      "jawaban_benar": "a",
+      "umpan_balik": {
+        "benar": "Tepat! Proses deinking menggunakan surfaktan untuk melepaskan ikatan tinta cetak dari serat kertas.",
+        "salah": "Deinking adalah proses melepaskan partikel tinta dari serat kertas menggunakan surfaktan khusus."
+      },
+      "gambar": "Asset/Asset kuiz/kertas-hvs.png"
+    },
+    {
+      "id": "smp-039",
+      "level": "pohon",
+      "kategori_id": "ewaste",
+      "sampah_id": "lampu-neon-kecil",
+      "pertanyaan": "Lampu CFL (Compact Fluorescent Lamp) hemat energi dikategorikan sebagai limbah B3 karena di dalamnya terdapat...",
+      "pilihan": [
+        {
+          "id": "a",
+          "teks": "Uap merkuri bertekanan rendah"
+        },
+        {
+          "id": "b",
+          "teks": "Kandungan minyak bumi mentah"
+        },
+        {
+          "id": "c",
+          "teks": "Serbuk kayu lapis bertekanan"
+        },
+        {
+          "id": "d",
+          "teks": "Cairan elektrolit aki kendaraan"
+        }
+      ],
+      "jawaban_benar": "a",
+      "umpan_balik": {
+        "benar": "Analisis benar! Lampu CFL menggunakan uap merkuri untuk memicu pijar cahaya UV.",
+        "salah": "Lampu CFL mengandung uap merkuri beracun yang mewajibkan penanganan limbah B3 khusus."
+      },
+      "gambar": "Asset/Asset kuiz/lampu-neon-kecil.png"
+    },
+    {
+      "id": "smp-040",
+      "level": "pohon",
+      "kategori_id": "residu",
+      "sampah_id": "karbon-aktif-bekas",
+      "pertanyaan": "Karbon aktif bekas penyaring air industri yang telah jenuh menyerap limbah berat dikategorikan sebagai...",
+      "pilihan": [
+        {
+          "id": "a",
+          "teks": "Limbah B3 / Residu berbahaya yang mengikat konsentrat polutan"
+        },
+        {
+          "id": "b",
+          "teks": "Pupuk kompos organik siap pakai untuk sayuran"
+        },
+        {
+          "id": "c",
+          "teks": "Bahan baku pakan ternak unggas bergizi"
+        },
+        {
+          "id": "d",
+          "teks": "Media tanam hidroponik yang steril"
+        }
+      ],
+      "jawaban_benar": "a",
+      "umpan_balik": {
+        "benar": "Tepat! Karbon aktif jenuh telah mengikat senyawa beracun pekat sehingga wajib diolah sebagai B3.",
+        "salah": "Karbon aktif yang sudah jenuh menyerap polutan berat harus dikelola sebagai limbah B3."
+      },
+      "gambar": "Asset/Asset kuiz/karbon-aktif-bekas.png"
+    },
+    {
+      "id": "smp-041",
+      "level": "pohon",
+      "kategori_id": "b3",
+      "sampah_id": "kapsul-pestisida",
+      "pertanyaan": "Dampak biomagnifikasi dari limbah pestisida kimia pertanian yang masuk ke rantai makanan adalah...",
+      "pilihan": [
+        {
+          "id": "a",
+          "teks": "Konsentrasi racun semakin meningkat pada organisme pemangsa di puncak rantai makanan"
+        },
+        {
+          "id": "b",
+          "teks": "Racun pestisida akan hancur dan hilang sepenuhnya di tubuh hewan herbivora"
+        },
+        {
+          "id": "c",
+          "teks": "Hewan pemangsa di puncak rantai akan kebal terhadap segala jenis penyakit"
+        },
+        {
+          "id": "d",
+          "teks": "Kadar nutrisi protein hewan meningkat drastis"
+        }
+      ],
+      "jawaban_benar": "a",
+      "umpan_balik": {
+        "benar": "Analisis ekologis tepat! Biomagnifikasi melipatgandakan konsentrasi zat toksik pada tingkat trofik tertinggi.",
+        "salah": "Biomagnifikasi menyebabkan akumulasi racun kimia berlipat ganda pada organisme puncak rantai makanan."
+      },
+      "gambar": "Asset/Asset kuiz/kapsul-pestisida.png"
+    },
+    {
+      "id": "smp-042",
+      "level": "pohon",
+      "kategori_id": "organik",
+      "sampah_id": "bangkai-hewan",
+      "pertanyaan": "Metode penanganan bangkai hewan terinfeksi penyakit berbahaya di area peternakan merujuk pada standar...",
+      "pilihan": [
+        {
+          "id": "a",
+          "teks": "Insinerasi suhu tinggi atau penguburan dalam dengan disinfektan ketat"
+        },
+        {
+          "id": "b",
+          "teks": "Pembuangan langsung ke aliran sungai terdekat"
+        },
+        {
+          "id": "c",
+          "teks": "Pemberian sebagai pakan ikan di kolam terbuka"
+        },
+        {
+          "id": "d",
+          "teks": "Pengeringan di bawah terik matahari terbuka"
+        }
+      ],
+      "jawaban_benar": "a",
+      "umpan_balik": {
+        "benar": "Tepat! Patogen menular pada bangkai hewan wajib dimusnahkan via insinerator atau kubur steril.",
+        "salah": "Bangkai terinfeksi harus diinsinerasi atau dikubur dalam dengan prosedur bio-keamanan tinggi."
+      },
+      "gambar": "Asset/Asset kuiz/bangkai-hewan.png"
+    },
+    {
+      "id": "smp-043",
+      "level": "pohon",
+      "kategori_id": "anorganik",
+      "sampah_id": "botol-pet",
+      "pertanyaan": "Simbol segitiga panah daur ulang dengan angka '1' di tengah pada dasar botol plastik menandakan jenis polimer...",
+      "pilihan": [
+        {
+          "id": "a",
+          "teks": "PETE atau PET (Polyethylene Terephthalate)"
+        },
+        {
+          "id": "b",
+          "teks": "HDPE (High-Density Polyethylene)"
+        },
+        {
+          "id": "c",
+          "teks": "PVC (Polyvinyl Chloride)"
+        },
+        {
+          "id": "d",
+          "teks": "PP (Polypropylene)"
+        }
+      ],
+      "jawaban_benar": "a",
+      "umpan_balik": {
+        "benar": "Cerdas! Kode angka 1 adalah identifikasi resin polimer PET untuk botol air mineral transparan.",
+        "salah": "Kode resin angka 1 menunjukkan material PET (Polyethylene Terephthalate)."
+      },
+      "gambar": "Asset/Asset kuiz/botol-pet.png"
+    },
+    {
+      "id": "smp-044",
+      "level": "pohon",
+      "kategori_id": "ewaste",
+      "sampah_id": "kabel-fiber-optik",
+      "pertanyaan": "Limbah kabel fiber optik rusak berbahan kaca silika murni dikategorikan dalam penanganan khusus karena...",
+      "pilihan": [
+        {
+          "id": "a",
+          "teks": "Serat kaca mikroskopisnya sangat tajam dan berbahaya bagi jaringan kulit/mata"
+        },
+        {
+          "id": "b",
+          "teks": "Mengandung aliran listrik bertegangan tinggi di dalam intinya"
+        },
+        {
+          "id": "c",
+          "teks": "Dapat memancarkan zat radioaktif nuklir aktif"
+        },
+        {
+          "id": "d",
+          "teks": "Bersifat mudah terbakar jika terkena oksigen"
+        }
+      ],
+      "jawaban_benar": "a",
+      "umpan_balik": {
+        "benar": "Analisis tepat! Serat optik kaca silika sangat tajam dan berisiko melukai jaringan tubuh saat terpotong.",
+        "salah": "Fiber optik tersusun atas serat kaca mikro tajam yang memerlukan kehati-hatian khusus saat penanganan."
+      },
+      "gambar": "Asset/Asset kuiz/kabel-fiber-optik.png"
+    },
+    {
+      "id": "smp-045",
+      "level": "pohon",
+      "kategori_id": "residu",
+      "sampah_id": "masker-medis-sekali-pakai",
+      "pertanyaan": "Mengapa masker medis sekali pakai pasca-pandemi dikelompokkan ke dalam penanganan limbah khusus/residu infeksius?",
+      "pilihan": [
+        {
+          "id": "a",
+          "teks": "Potensi kontaminasi mikroorganisme patogen droplet pernapasan manusia"
+        },
+        {
+          "id": "b",
+          "teks": "Seluruh bagian masker terbuat dari lempengan logam murni"
+        },
+        {
+          "id": "c",
+          "teks": "Masker medis dapat diolah kembali menjadi gula pasir"
+        },
+        {
+          "id": "d",
+          "teks": "Bahan kain masker berasal dari ekstrak daun kapas organik"
+        }
+      ],
+      "jawaban_benar": "a",
+      "umpan_balik": {
+        "benar": "Tepat! Masker bekas pakai membawa risiko biologis droplet infeksius yang harus diamankan.",
+        "salah": "Masker medis bekas berpotensi membawa agen infeksius, sehingga dikategorikan limbah khusus."
+      },
+      "gambar": "Asset/Asset kuiz/masker-medis-sekali-pakai.png"
+    },
+    {
+      "id": "smp-046",
+      "level": "pohon",
+      "kategori_id": "b3",
+      "sampah_id": "cairan-developer-foto",
+      "pertanyaan": "Limbah cair pengembang (developer) cuci cetak foto analog mengandung zat kimia perak nitrat yang bersifat...",
+      "pilihan": [
+        {
+          "id": "a",
+          "teks": "Toksik terhadap organisme akuatik dan mencemari perairan jika langsung dibuang"
+        },
+        {
+          "id": "b",
+          "teks": "Aman diminum karena mengandung vitamin pembersih darah"
+        },
+        {
+          "id": "c",
+          "teks": "Berubah menjadi air embun pegunungan yang steril"
+        },
+        {
+          "id": "d",
+          "teks": "Berfungsi sebagai pupuk organik cair super cepat"
+        }
+      ],
+      "jawaban_benar": "a",
+      "umpan_balik": {
+        "benar": "Analisis benar! Garam perak pada cairan kimia foto bersifat racun berat bagi biota air.",
+        "salah": "Cairan cuci foto mengandung logam berat perak nitrat yang sangat toksik bagi ekosistem perairan."
+      },
+      "gambar": "Asset/Asset kuiz/cairan-developer-foto.png"
+    },
+    {
+      "id": "smp-047",
+      "level": "pohon",
+      "kategori_id": "organik",
+      "sampah_id": "kotoran-ternak",
+      "pertanyaan": "Pemanfaatan teknologi Reaktor Biogas dari limbah kotoran ternak menghasilkan gas yang kaya akan kandungan...",
+      "pilihan": [
+        {
+          "id": "a",
+          "teks": "Gas Metana (CH4) sebagai bahan bakar memasak bersih"
+        },
+        {
+          "id": "b",
+          "teks": "Gas Karbon Monoksida (CO) beracun murni"
+        },
+        {
+          "id": "c",
+          "teks": "Gas Klorin disinfektan kolam renang"
+        },
+        {
+          "id": "d",
+          "teks": "Gas Amonia murni untuk pendingin es"
+        }
+      ],
+      "jawaban_benar": "a",
+      "umpan_balik": {
+        "benar": "Cerdas! Fermentasi anaerob kotoran ternak menghasilkan biogas metana alternatif pengganti LPG.",
+        "salah": "Biogas dari kotoran ternak didominasi oleh gas Metana (CH4) yang dimanfaatkan untuk bahan bakar."
+      },
+      "gambar": "Asset/Asset kuiz/kotoran-ternak.png"
+    },
+    {
+      "id": "smp-048",
+      "level": "pohon",
+      "kategori_id": "anorganik",
+      "sampah_id": "kain-perca-polyester",
+      "pertanyaan": "Kain perca sisa konveksi dari bahan serat sintetis Poliester memiliki sifat fisik yang...",
+      "pilihan": [
+        {
+          "id": "a",
+          "teks": "Tidak menyerap air dengan baik, kuat, dan tidak mudah membusuk di tanah"
+        },
+        {
+          "id": "b",
+          "teks": "Sangat mudah hancur dan larut saat terkena embun pagi"
+        },
+        {
+          "id": "c",
+          "teks": "Berubah menjadi serat kapas alami dalam waktu semalam"
+        },
+        {
+          "id": "d",
+          "teks": "Dapat berfungsi sebagai pupuk kompos nitrogen tinggi"
+        }
+      ],
+      "jawaban_benar": "a",
+      "umpan_balik": {
+        "benar": "Tepat! Poliester adalah serat plastik turunan minyak bumi yang tahan lama dan tidak mudah terurai.",
+        "salah": "Kain poliester bersifat sintetik, kuat, kedap air, serta tahan terhadap proses pembusukan alami."
+      },
+      "gambar": "Asset/Asset kuiz/kain-perca-polyester.png"
+    },
+    {
+      "id": "smp-049",
+      "level": "pohon",
+      "kategori_id": "ewaste",
+      "sampah_id": "modem-wifi-rusak",
+      "pertanyaan": "Komponen chip silikon semikonduktor pada perangkat router/modem WiFi rusak termasuk dalam kelompok...",
+      "pilihan": [
+        {
+          "id": "a",
+          "teks": "E-Waste (Sampah Elektronik canggih)"
+        },
+        {
+          "id": "b",
+          "teks": "Sampah Kertas Arsip Perkantoran"
+        },
+        {
+          "id": "c",
+          "teks": "Sampah Organik sisa silikon alam"
+        },
+        {
+          "id": "d",
+          "teks": "Sampah Residu pembakaran arang"
+        }
+      ],
+      "jawaban_benar": "a",
+      "umpan_balik": {
+        "benar": "Analisis tepat! Chip silikon semikonduktor jaringan adalah bagian dari limbah perangkat elektronik.",
+        "salah": "Modem dan chip semikonduktor di dalamnya merupakan bagian dari limbah E-Waste."
+      },
+      "gambar": "Asset/Asset kuiz/modem-wifi-rusak.png"
+    },
+    {
+      "id": "smp-050",
+      "level": "pohon",
+      "kategori_id": "b3",
+      "sampah_id": "asbes-atap-rusak",
+      "pertanyaan": "Bahaya utama yang mengancam kesehatan pernapasan dari serpihan debu atap asbes tua yang rusak adalah...",
+      "pilihan": [
+        {
+          "id": "a",
+          "teks": "Serat mineral mikro asbes memicu penyakit paru-paru asbestosis dan kanker mesotelioma"
+        },
+        {
+          "id": "b",
+          "teks": "Peningkatan kapasitas volume paru-paru secara berlebihan"
+        },
+        {
+          "id": "c",
+          "teks": "Perubahan struktur suara menjadi lebih nyaring"
+        },
+        {
+          "id": "d",
+          "teks": "Pencegahan total segala jenis penyakit flu ringan"
+        }
+      ],
+      "jawaban_benar": "a",
+      "umpan_balik": {
+        "benar": "Tepat sekali! Inhalasi serat mikro asbes sangat karsinogenik dan memicu kanker paru asbestosis.",
+        "salah": "Debu serat asbes yang terhirup sangat karsinogenik dan merusak jaringan paru-paru secara permanen."
+      },
+      "gambar": "Asset/kui/asbes-atap-rusak.png"
+    }
+  ]
+}

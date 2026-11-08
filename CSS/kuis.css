@@ -1,0 +1,1472 @@
+
+/* =========================================
+   PEDULI SAMPAH - HALAMAN KUIS
+   Modern, Fun & Responsive
+========================================= */
+
+/* =========================================
+   1. RESET & DASAR
+========================================= */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+    scroll-padding-top: 110px;
+}
+
+body {
+    background-color: var(--color-bg);
+    color: var(--color-text);
+    font-family: var(--font-body);
+    overflow-x: hidden;
+}
+
+button,
+input {
+    font: inherit;
+}
+
+button {
+    -webkit-tap-highlight-color: transparent;
+}
+
+/* =========================================
+   2. NAVBAR
+========================================= */
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    border: 1px solid #ccc;
+    border-radius: var(--radius-full);
+    padding: 10px 25px;
+    position: sticky;
+    top: 20px;
+    z-index: 999;
+    background-color: white;
+    width: 85%;
+    margin: 20px auto;
+}
+
+.head-nav {
+    display: flex;
+    align-items: center;
+    font-family:var(--font-display);
+    color: var(--color-forest);
+    font-size: 30px;
+}
+
+.head-nav span {
+    color: var( --color-orange);
+}
+
+.nav-ul {
+    display: flex;
+    align-items: center;
+    border: 1px solid #d8d8d8;
+    border-radius: 999px;
+    padding: 6px;
+    background: #eeeeee;
+
+}
+
+.nav-ul ul {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.nav-ul li {
+    list-style: none;
+}
+
+
+.nav-link {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    padding: 8px 14px;
+    box-sizing: border-box;
+    color: #777;
+    text-decoration: none;
+    font-family: Arial, Helvetica, sans-serif;
+    border: 1px solid transparent;
+    border-radius: 999px; 
+}
+
+.nav-link.active {
+    color: #111;
+    background-color: #fff;
+    border-color: #d8d8d8;
+}
+
+.btn-nav {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+
+.btn-nav1 a,
+.btn-nav2 a {
+    text-decoration: none;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.btn-nav1 {
+    border-radius: 999px;
+    border: 1px solid var(--color-forest);
+    padding: 8px 23px;
+}
+
+.btn-nav1 a {
+    color: var(--color-forest);
+}
+
+.btn-nav2 {
+    border-radius: 999px;
+    background-color: var(--color-forest);
+    padding: 8px 23px;
+}
+
+.btn-nav2 a {
+    color: white;
+}
+
+
+#quiz-music {
+    display: none;
+}
+
+
+
+/* =========================================
+   3. MAIN CONTAINER
+========================================= */
+
+main {
+    width: 100%;
+    max-width: var(--w-content);
+
+    margin: 0 auto;
+    padding: 32px 20px 60px;
+}
+
+/* =========================================
+   4. HERO BANNER
+========================================= */
+
+.hero-banner {
+    display: grid;
+    grid-template-columns: minmax(0, 1fr) 260px;
+    align-items: center;
+    gap: 32px;
+
+    padding: 40px;
+
+    margin-bottom: 28px;
+
+    background-color: var(--color-surface);
+    border: 1px solid var(--color-border);
+    border-radius: var(--radius-xl);
+
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.04);
+
+    overflow: hidden;
+}
+
+.hero-content {
+    min-width: 0;
+}
+
+.hero-tag {
+    display: inline-block;
+
+    padding: 6px 14px;
+    margin-bottom: 12px;
+
+    background-color: var(--color-mint);
+    color: var(--color-primary);
+
+    border: 1px solid var(--color-border);
+    border-radius: var(--radius-full);
+
+    font-size: 13px;
+    font-weight: 800;
+}
+
+.hero-title {
+    margin-bottom: 14px;
+
+    font-family: var(--font-display);
+    font-size: clamp(25px, 3.5vw, 36px);
+    font-weight: 800;
+    line-height: 1.3;
+
+    color: var(--color-text);
+}
+
+.hero-title span {
+    color: var(--color-primary);
+}
+
+.hero-desc {
+    max-width: 680px;
+
+    margin-bottom: 25px;
+
+    color: var(--color-text-muted);
+
+    font-size: 16px;
+    line-height: 1.8;
+}
+
+.hero-buttons {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 12px;
+}
+
+.btn-hero-primary {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    gap: 8px;
+
+    min-height: 46px;
+
+    padding: 12px 22px;
+
+    background-color: var(--color-primary);
+    color: #ffffff;
+
+    border: none;
+    border-radius: var(--radius-md);
+
+    font-size: 15px;
+    font-weight: 800;
+    text-align: center;
+    text-decoration: none;
+
+    cursor: pointer;
+
+    transition: 0.25s ease;
+}
+
+.btn-hero-primary:hover {
+    opacity: 0.92;
+    transform: translateY(-3px);
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.12);
+}
+
+.hero-visual {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 12px;
+}
+
+.avatar-wrapper {
+    width: 100%;
+    max-width: 240px;
+    aspect-ratio: 1 / 1;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    background-color: var(--color-mint);
+    border-radius: 50%;
+    overflow: hidden;
+}
+
+.avatar-wrapper img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
+
+.rani-tag {
+    display: inline-block;
+
+    padding: 7px 16px;
+
+    background-color: var(--color-bg);
+    color: var(--color-text-muted);
+
+    border: 1px solid var(--color-border);
+    border-radius: var(--radius-full);
+
+    font-size: 13px;
+    font-weight: 800;
+}
+
+/* =========================================
+   5. PILIHAN LEVEL
+========================================= */
+
+.level-selection-bar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 18px;
+
+    padding: 18px 24px;
+    margin-bottom: 25px;
+
+    background-color: var(--color-surface);
+    border: 1px solid var(--color-border);
+    border-radius: var(--radius-lg);
+}
+
+.level-label {
+    color: var(--color-text);
+    font-size: 16px;
+    font-weight: 800;
+}
+
+.level-button-group {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+.btn-level {
+    min-width: 210px;
+    padding: 12px 18px;
+
+    background-color: var(--color-surface);
+    color: var(--color-text);
+
+    border: 2px solid var(--color-border);
+    border-radius: var(--radius-md);
+
+    font-size: 14px;
+    font-weight: 800;
+
+    cursor: pointer;
+
+    transition: 0.25s ease;
+}
+
+.btn-level:hover {
+    background-color: var(--color-mint);
+    border-color: var(--color-primary);
+    transform: translateY(-2px);
+}
+
+.btn-level.active {
+    background-color: var(--color-primary);
+    color: #ffffff;
+    border-color: var(--color-primary);
+
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+/* =========================================
+   6. AREA KUIS
+========================================= */
+
+.quiz-section {
+    width: 100%;
+    scroll-margin-top: 110px;
+}
+
+.quiz-box {
+    position: relative;
+
+    padding: 38px;
+
+    background-color: #1f7a4d;
+    background-image: linear-gradient(
+        135deg,
+        #278c56 0%,
+        #17683f 100%
+    );
+
+    color: #ffffff;
+
+    border-radius: var(--radius-xl);
+
+    box-shadow: 0 15px 35px rgba(0, 0, 0, 0.12);
+
+    overflow: hidden;
+}
+
+/* =========================================
+   7. HEADER KUIS
+========================================= */
+
+.quiz-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 14px;
+
+    padding-bottom: 18px;
+    margin-bottom: 25px;
+
+    border-bottom: 2px solid rgba(255, 255, 255, 0.22);
+}
+
+.quiz-progress {
+    font-family: var(--font-display);
+    font-size: 20px;
+    font-weight: 800;
+}
+
+.badge-pill {
+    display: inline-flex;
+    align-items: center;
+    gap: 6px;
+
+    padding: 9px 18px;
+
+    background-color: #ffffff;
+    color: #17683f;
+
+    border-radius: 999px;
+
+    font-size: 14px;
+    font-weight: 900;
+}
+
+#session-score {
+    font-size: 16px;
+}
+
+/* =========================================
+   8. PERTANYAAN
+========================================= */
+
+.question-title {
+    margin-bottom: 25px;
+
+    font-family: var(--font-display);
+    font-size: clamp(21px, 3vw, 27px);
+    font-weight: 800;
+
+    line-height: 1.45;
+    text-align: center;
+}
+
+/* =========================================
+   9. MEDIA PERTANYAAN
+========================================= */
+
+.question-media {
+    min-height: 250px;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 15px;
+
+    padding: 25px;
+
+    margin-bottom: 28px;
+
+    background-color: #ffffff;
+    color: var(--color-text);
+
+    border-radius: 22px;
+
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.08);
+}
+
+.question-image-container {
+    width: 100%;
+    max-width: 240px;
+    height: 165px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    overflow: hidden;
+}
+
+.question-image {
+    display: block;
+
+    width: 100%;
+    height: 100%;
+
+    object-fit: contain;
+
+    transition: transform 0.3s ease;
+}
+
+.question-image-container:hover .question-image {
+    transform: scale(1.06);
+}
+
+.question-item-name {
+    padding: 9px 23px;
+
+    background-color: #e2f4e9;
+    color: #17683f;
+
+    border-radius: 999px;
+
+    font-size: 17px;
+    font-weight: 900;
+
+    text-align: center;
+}
+
+/* =========================================
+   10. PILIHAN JAWABAN
+========================================= */
+
+.options-grid {
+    width: 100%;
+
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+
+    gap: 17px;
+
+    margin-bottom: 28px;
+}
+
+/* Tombol pilihan */
+
+.option-card,
+.options-grid > button {
+    width: 100%;
+    min-width: 0;
+    min-height: 82px;
+
+    position: relative;
+
+    display: flex;
+    align-items: center;
+    gap: 15px;
+
+    padding: 17px 20px;
+
+    background-color: #ffffff;
+    color: #244234;
+
+    border: 3px solid #e4eee7;
+    border-radius: 18px;
+
+    font-family: var(--font-body);
+    font-size: 16px;
+    font-weight: 800;
+
+    text-align: left;
+
+    cursor: pointer;
+
+    transition: all 0.25s ease;
+}
+
+/* Hover pilihan */
+
+.option-card:hover,
+.options-grid > button:hover {
+    background-color: #f0fff5;
+    border-color: #82c99a;
+
+    transform: translateY(-3px);
+
+    box-shadow: 0 7px 16px rgba(20, 100, 55, 0.12);
+}
+
+/* Indikator huruf */
+
+.option-indicator {
+    width: 39px;
+    height: 39px;
+    min-width: 39px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    background-color: #e8f3eb;
+    color: #267548;
+
+    border-radius: 12px;
+
+    font-size: 16px;
+    font-weight: 900;
+
+    transition: 0.25s ease;
+}
+
+/* Jawaban terpilih */
+
+.option-card.selected,
+.options-grid > button.selected {
+    background-color: #edfff2;
+    border-color: #2eaa60;
+
+    box-shadow: 0 0 0 4px rgba(46, 170, 96, 0.13);
+
+    transform: translateY(-2px);
+}
+
+.option-card.selected .option-indicator,
+.options-grid > button.selected .option-indicator {
+    background-color: #2eaa60;
+    color: #ffffff;
+}
+
+/* Fokus keyboard */
+
+.option-card:focus-visible,
+.options-grid > button:focus-visible {
+    outline: 3px solid #ffd166;
+    outline-offset: 4px;
+}
+
+/* Tombol terkunci */
+
+.option-card:disabled,
+.options-grid > button:disabled {
+    cursor: not-allowed;
+    opacity: 0.8;
+    transform: none;
+}
+
+/* =========================================
+   11. FEEDBACK JAWABAN
+========================================= */
+
+.feedback-banner {
+    display: none;
+    align-items: flex-start;
+    gap: 16px;
+
+    padding: 20px;
+    margin-bottom: 24px;
+
+    border-radius: var(--radius-lg);
+
+    animation: slideDown 0.3s ease;
+}
+
+@keyframes slideDown {
+    from {
+        opacity: 0;
+        transform: translateY(-10px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.feedback-banner.success {
+    display: flex;
+
+    background-color: var(--color-success-bg);
+    border: 2px solid var(--color-success-border);
+
+    color: var(--color-success-ink);
+}
+
+.feedback-banner.wrong {
+    display: flex;
+
+    background-color: var(--color-wrong-bg);
+    border: 2px solid var(--color-wrong-border);
+
+    color: var(--color-wrong-ink);
+}
+
+.feedback-avatar {
+    width: 180px;
+    height: 180px;
+    flex-shrink: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.feedback-avatar img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
+.feedback-text {
+    min-width: 0;
+}
+
+.feedback-text h4 {
+    margin-bottom: 5px;
+
+    font-family: var(--font-display);
+    font-size: 19px;
+    font-weight: 900;
+}
+
+.feedback-text p {
+    font-size: 15px;
+    font-weight: 700;
+    line-height: 1.65;
+}
+
+/* =========================================
+   12. FOOTER KUIS
+========================================= */
+
+.quiz-footer {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 14px;
+
+    padding-top: 20px;
+
+    border-top: 2px solid rgba(255, 255, 255, 0.22);
+}
+
+.btn-exit,
+.btn-submit {
+    min-height: 47px;
+
+    padding: 12px 24px;
+
+    border-radius: var(--radius-md);
+
+    font-size: 14px;
+    font-weight: 900;
+
+    cursor: pointer;
+
+    transition: 0.25s ease;
+}
+
+.btn-exit {
+    background-color: rgba(0, 0, 0, 0.2);
+    color: #ffffff;
+
+    border: 1px solid rgba(255, 255, 255, 0.35);
+}
+
+.btn-exit:hover {
+    background-color: rgba(0, 0, 0, 0.35);
+}
+
+.btn-submit {
+    background-color: var(--color-yellow);
+    color: var(--color-text);
+
+    border: none;
+}
+
+.btn-submit:hover:not(:disabled) {
+    transform: translateY(-3px);
+    box-shadow: 0 6px 14px rgba(0, 0, 0, 0.15);
+}
+
+.btn-submit:disabled {
+    opacity: 0.5;
+    cursor: not-allowed;
+}
+
+/* =========================================
+   13. MODAL HASIL
+========================================= */
+
+.modal-overlay {
+    display: none;
+
+    position: fixed;
+    inset: 0;
+
+    width: 100%;
+    height: 100%;
+
+    align-items: center;
+    justify-content: center;
+
+    padding: 20px;
+
+    background-color: rgba(31, 41, 55, 0.72);
+
+    backdrop-filter: blur(6px);
+    -webkit-backdrop-filter: blur(6px);
+
+    z-index: 2000;
+
+    overflow-y: auto;
+}
+
+.modal-card {
+    width: 100%;
+    max-width: 520px;
+
+    margin: auto;
+    padding: 35px;
+
+    background-color: var(--color-surface);
+
+    border: 1px solid var(--color-border);
+    border-radius: var(--radius-xl);
+
+    text-align: center;
+
+    box-shadow: 0 25px 50px rgba(0, 0, 0, 0.15);
+
+    animation: modalAppear 0.3s ease;
+}
+
+@keyframes modalAppear {
+    from {
+        opacity: 0;
+        transform: scale(0.94) translateY(15px);
+    }
+
+    to {
+        opacity: 1;
+        transform: scale(1) translateY(0);
+    }
+}
+
+/* =========================================
+   14. STATISTIK HASIL
+========================================= */
+
+.stats-container {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+
+    gap: 12px;
+
+    margin-bottom: 24px;
+}
+
+.stat-box {
+    padding: 15px 8px;
+
+    background-color: var(--color-bg);
+
+    border: 1px solid var(--color-border);
+    border-radius: var(--radius-md);
+}
+
+.stat-number {
+    margin-bottom: 4px;
+
+    font-family: var(--font-display);
+    font-size: 23px;
+    font-weight: 900;
+
+    color: var(--color-text);
+}
+
+.stat-label {
+    font-size: 12px;
+    font-weight: 800;
+
+    color: var(--color-text-muted);
+}
+
+/* =========================================
+   15. TOTAL NILAI
+========================================= */
+
+.total-score-badge {
+    padding: 18px;
+    margin-bottom: 24px;
+
+    background-color: var(--color-mint);
+
+    border: 2px solid var(--color-primary);
+    border-radius: var(--radius-lg);
+}
+
+.total-score-title {
+    margin-bottom: 8px;
+
+    color: var(--color-primary);
+
+    font-size: 14px;
+    font-weight: 900;
+}
+
+.total-score-num {
+    font-family: var(--font-display);
+    font-size: 48px;
+    font-weight: 900;
+
+    color: var(--color-primary);
+
+    line-height: 1;
+}
+
+/* =========================================
+   16. MASKOT HASIL
+========================================= */
+
+.result-rani-circle {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.result-rani-circle img {
+    width: 60%;
+    height: 100%;
+    object-fit: contain;
+}
+
+/* =========================================
+   17. PESAN HASIL
+========================================= */
+
+.result-message {
+    padding: 0 10px;
+    margin-bottom: 26px;
+
+    color: var(--color-text);
+
+    font-size: 17px;
+    font-weight: 800;
+    line-height: 1.7;
+}
+
+/* =========================================
+   18. TOMBOL HASIL
+========================================= */
+
+.result-buttons {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+
+    gap: 12px;
+}
+
+.result-buttons .btn-hero-primary {
+    min-width: 140px;
+}
+
+/* 
+  ====================
+  FOOTER DESIGN STYLE
+  ====================
+*/
+.footer {
+    padding: 20px 32px;
+    background-color: var(--color-surface);
+    border-top: 1px solid var(--color-border-subtle, #d8e5db);
+    font-family: var(--font-display);
+}
+
+.footer-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 12px;
+}
+
+.top-left-footer {
+    color: var(--color-forest);
+}
+
+.top-left-footer span {
+  color: var(--color-orange);
+}
+
+.head-sdg {
+  color: var(--color-yellow);
+}
+
+.sdg-badges {
+  display: flex;
+  gap: 12px;
+}
+
+.sdg-tag {
+  padding: 8px 12px;
+  border-radius: var(--radius-full);
+  background-color: var(--color-leaf);
+  color: var(--color-mint);
+  font-size: 13px;
+}
+
+.footer-bottom {
+  text-align: center;
+  border-top: 1px dashed var(--color-border-subtle, #d8e5db);
+  padding-top: 12px;
+}
+
+.title-footer-bottom {
+  color: var(--color-forest);
+  font-weight: 600;
+}
+
+.title-footer-bottom .subtitle-footer-bottom {
+  color: var(--color-orange);
+}
+
+/* =========================================
+   19. TABLET
+========================================= */
+
+@media (max-width: 1024px) {
+    nav {
+        width: 94%;
+        gap: 12px;
+        padding: 10px 18px;
+    }
+
+    .head-nav {
+        font-size: 25px;
+    }
+
+    .nav-link {
+        padding: 8px 10px;
+        font-size: 13px;
+    }
+
+    .btn-nav1,
+    .btn-nav2 {
+        padding: 8px 13px;
+    }
+
+    .hero-banner {
+        grid-template-columns: minmax(0, 1fr) 210px;
+        padding: 30px;
+    }
+
+    .avatar-wrapper {
+        max-width: 200px;
+    }
+
+    .level-button-group {
+        gap: 8px;
+    }
+
+    .btn-level {
+        min-width: 180px;
+        padding: 11px 12px;
+    }
+}
+
+/* =========================================
+   20. MOBILE
+========================================= */
+
+@media (max-width: 768px) {
+
+    /* NAVBAR */
+
+    nav {
+        width: calc(100% - 24px);
+
+        min-height: auto;
+
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+
+        gap: 10px;
+
+        padding: 12px 14px;
+
+        top: 10px;
+
+        border-radius: 20px;
+    }
+
+    .head-nav {
+        font-size: clamp(19px, 5vw, 23px);
+    }
+
+    .btn-nav {
+        margin-left: auto;
+        gap: 6px;
+    }
+
+    .btn-nav1,
+    .btn-nav2 {
+        padding: 8px 11px;
+    }
+
+    .btn-nav1 a,
+    .btn-nav2 a {
+        font-size: 11px;
+    }
+
+    .nav-ul {
+        order: 3;
+
+        width: 100%;
+
+        display: flex;
+        justify-content: flex-start;
+
+        padding: 5px;
+
+        overflow-x: auto;
+        scrollbar-width: none;
+    }
+
+    .nav-ul::-webkit-scrollbar {
+        display: none;
+    }
+
+    .nav-ul ul {
+        width: max-content;
+
+        display: flex;
+        flex-wrap: nowrap;
+        justify-content: flex-start;
+
+        gap: 4px;
+    }
+
+    .nav-link {
+        padding: 8px 11px;
+        font-size: 12px;
+        white-space: nowrap;
+    }
+
+    /* MAIN */
+
+    main {
+        padding: 22px 14px 40px;
+    }
+
+    /* HERO */
+
+    .hero-banner {
+        grid-template-columns: 1fr;
+
+        gap: 25px;
+
+        padding: 28px 20px;
+
+        border-radius: 22px;
+
+        text-align: center;
+    }
+
+    .hero-title {
+        font-size: clamp(23px, 6vw, 28px);
+    }
+
+    .hero-desc {
+        font-size: 14px;
+        line-height: 1.75;
+    }
+
+    .hero-buttons {
+        justify-content: center;
+        gap: 10px;
+    }
+
+    .btn-hero-primary {
+        min-height: 43px;
+        padding: 11px 16px;
+        font-size: 13px;
+    }
+
+    .avatar-wrapper {
+        max-width: 180px;
+    }
+
+    /* LEVEL */
+
+    .level-selection-bar {
+        flex-direction: column;
+        align-items: stretch;
+
+        padding: 20px 16px;
+
+        gap: 15px;
+
+        border-radius: 18px;
+    }
+
+    .level-label {
+        text-align: center;
+        font-size: 15px;
+    }
+
+    .level-button-group {
+        width: 100%;
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .btn-level {
+        width: 100%;
+        min-width: 0;
+        padding: 12px 14px;
+        font-size: 13px;
+    }
+
+    /* QUIZ */
+
+    .quiz-box {
+        padding: 25px 18px;
+        border-radius: 22px;
+    }
+
+    .quiz-header {
+        margin-bottom: 20px;
+        padding-bottom: 15px;
+    }
+
+    .quiz-progress {
+        font-size: 16px;
+    }
+
+    .badge-pill {
+        padding: 8px 13px;
+        font-size: 12px;
+    }
+
+    .question-title {
+        font-size: 21px;
+        margin-bottom: 20px;
+    }
+
+    /* MEDIA */
+
+    .question-media {
+        min-height: 215px;
+        padding: 20px 14px;
+        border-radius: 18px;
+        margin-bottom: 22px;
+    }
+
+    .question-image-container {
+        max-width: 190px;
+        height: 140px;
+    }
+
+    .question-item-name {
+        font-size: 15px;
+        padding: 8px 17px;
+    }
+
+    /* OPTIONS */
+
+    .options-grid {
+        grid-template-columns: 1fr;
+        gap: 12px;
+        margin-bottom: 22px;
+    }
+
+    .option-card,
+    .options-grid > button {
+        min-height: 68px;
+        padding: 14px 15px;
+
+        font-size: 15px;
+
+        border-radius: 15px;
+    }
+
+    .option-indicator {
+        width: 35px;
+        height: 35px;
+        min-width: 35px;
+
+        border-radius: 10px;
+
+        font-size: 14px;
+    }
+
+    /* FEEDBACK */
+
+    .feedback-banner {
+        padding: 15px;
+        gap: 12px;
+        margin-bottom: 20px;
+    }
+
+    .feedback-avatar {
+        width: 43px;
+        height: 43px;
+        min-width: 43px;
+    }
+
+    .feedback-text h4 {
+        font-size: 16px;
+    }
+
+    .feedback-text p {
+        font-size: 13px;
+    }
+
+    /* FOOTER */
+
+    .quiz-footer {
+        gap: 10px;
+        padding-top: 16px;
+    }
+
+    .btn-exit,
+    .btn-submit {
+        min-height: 43px;
+        padding: 11px 14px;
+        font-size: 12px;
+    }
+
+    /* MODAL */
+
+    .modal-overlay {
+        padding: 14px;
+    }
+
+    .modal-card {
+        padding: 25px 17px;
+        border-radius: 20px;
+    }
+
+    .stats-container {
+        gap: 7px;
+        margin-bottom: 18px;
+    }
+
+    .stat-box {
+        padding: 12px 5px;
+    }
+
+    .stat-number {
+        font-size: 19px;
+    }
+
+    .stat-label {
+        font-size: 10px;
+    }
+
+    .total-score-badge {
+        padding: 15px;
+        margin-bottom: 20px;
+    }
+
+    .total-score-title {
+        font-size: 12px;
+    }
+
+    .total-score-num {
+        font-size: 40px;
+    }
+
+    .result-rani-circle {
+        width: 105px;
+        height: 105px;
+    }
+
+    .result-message {
+        font-size: 14px;
+        padding: 0 5px;
+    }
+
+    .result-buttons {
+        gap: 9px;
+    }
+
+    .result-buttons .btn-hero-primary {
+        min-width: 125px;
+    }
+
+     .footer-content {
+    flex-direction: column;
+    text-align: center;
+    gap: 16px;
+  }
+
+  .sdg-badges {
+    flex-direction: column;
+    align-items: center;
+  }
+}
+
+/* =========================================
+   21. HP KECIL
+========================================= */
+
+@media (max-width: 380px) {
+
+    nav {
+        width: calc(100% - 18px);
+        padding: 10px;
+    }
+
+    .head-nav {
+        font-size: 18px;
+    }
+
+    .btn-nav1,
+    .btn-nav2 {
+        padding: 7px 9px;
+    }
+
+    .btn-nav1 a,
+    .btn-nav2 a {
+        font-size: 10px;
+    }
+
+    .nav-link {
+        padding: 7px 9px;
+        font-size: 11px;
+    }
+
+    .quiz-box {
+        padding: 21px 13px;
+    }
+
+    .quiz-progress {
+        font-size: 14px;
+    }
+
+    .question-title {
+        font-size: 19px;
+    }
+
+    .option-card,
+    .options-grid > button {
+        padding: 12px;
+        font-size: 14px;
+    }
+
+    .btn-exit,
+    .btn-submit {
+        padding: 10px 11px;
+        font-size: 11px;
+    }
+
+    .modal-card {
+        padding: 22px 12px;
+    }
+}
+
+/* =========================================
+   22. AKSESIBILITAS
+========================================= */
+
+@media (prefers-reduced-motion: reduce) {
+    *,
+    *::before,
+    *::after {
+        scroll-behavior: auto !important;
+        animation-duration: 0.01ms !important;
+        transition-duration: 0.01ms !important;
+    }
+}

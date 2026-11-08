@@ -1,0 +1,741 @@
+/* 
+    ====================================================
+    Design Missions Page
+    ==================================================== 
+*/
+
+:root {
+    --color-primary: #1F7A4D;
+    --color-forest: #14532D;
+    --color-mint: #E6F6EC;
+    --color-mint-hover: #D0F0DD;
+    --color-surface: #FFF8EC;
+    --color-bg: #F4F7F4;
+    --color-text: #1F2937;
+    --color-text-muted: #4B5563;
+    --color-border: #D8E5DB;
+    --color-orange: #F59E0B;
+    --color-yellow-badge: #FCD34D;
+    --font-display: 'Baloo 2', cursive, sans-serif;
+    --font-body: 'Plus Jakarta Sans', sans-serif;
+    --w-content: 1200px;
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: var(--color-bg);
+    font-family: var(--font-body);
+    color: var(--color-text);
+    margin: 0;
+    padding: 0;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    border: 1px solid #ccc;
+    border-radius: var(--radius-full);
+    padding: 10px 25px;
+    position: sticky;
+    top: 20px;
+    z-index: 999;
+    background-color: white;
+    width: 85%;
+    margin: 20px auto;
+}
+
+.head-nav {
+    display: flex;
+    align-items: center;
+    font-family:var(--font-display);
+    color: var(--color-forest);
+    font-size: 30px;
+}
+
+.head-nav span {
+    color: var( --color-orange);
+}
+
+.nav-ul {
+    display: flex;
+    align-items: center;
+    border: 1px solid #d8d8d8;
+    border-radius: 999px;
+    padding: 6px;
+    background: #eeeeee;
+
+}
+
+.nav-ul ul {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.nav-ul li {
+    list-style: none;
+}
+
+
+.nav-link {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    padding: 8px 14px;
+    box-sizing: border-box;
+    color: #777;
+    text-decoration: none;
+    font-family: Arial, Helvetica, sans-serif;
+    border: 1px solid transparent;
+    border-radius: 999px; 
+}
+
+.nav-link.active {
+    color: #111;
+    background-color: #fff;
+    border-color: #d8d8d8;
+}
+
+.btn-nav {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+
+.btn-nav1 a,
+.btn-nav2 a {
+    text-decoration: none;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.btn-nav1 {
+    border-radius: 999px;
+    border: 1px solid var(--color-forest);
+    padding: 8px 23px;
+}
+
+.btn-nav1 a {
+    color: var(--color-forest);
+}
+
+.btn-nav2 {
+    border-radius: 999px;
+    background-color: var(--color-forest);
+    padding: 8px 23px;
+}
+
+.btn-nav2 a {
+    color: white;
+}
+
+
+/* 
+    ====================================================
+    MAIN CONTENT STYLES
+    ==================================================== 
+*/
+
+.main-content {
+    max-width: var(--w-content);
+    margin: 0 auto;
+    padding: 32px 16px 64px;
+}
+
+/* Hero Section */
+.misi-hero {
+    background-color: var(--color-primary);
+    border-radius: 24px;
+    padding: 36px 40px;
+    color: #ffffff;
+    display: grid;
+    grid-template-columns: 1fr 280px;
+    gap: 32px;
+    align-items: center;
+    margin-bottom: 32px;
+    box-shadow: 0 10px 25px rgba(31, 122, 77, 0.15);
+}   
+
+.badge-tag {
+    background: rgba(255, 255, 255, 0.2);
+    color: gold;
+    padding: 6px 14px;
+    border-radius: 20px;
+    font-size: 13px;
+    font-weight: 700;
+    display: inline-block;
+    margin-bottom: 12px;
+}
+
+.hero-title {
+    font-size: clamp(2rem, 1.5rem + 2vw, 2.75rem);
+    font-weight: 800;
+    line-height: 1.15;
+    margin: 0 0 12px 0;
+}
+
+.hero-title .highlight {
+    color: var(--color-yellow-badge);
+}
+
+.hero-desc {
+    font-size: 16px;
+    line-height: 1.5;
+    color: #E4F2E6;
+    margin-bottom: 24px;
+    max-width: 58ch;
+}
+
+.hero-stats-card {
+    background: rgba(255, 255, 255, 0.12);
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    border-radius: 16px;
+    padding: 16px 20px;
+}
+
+.stat-info {
+    display: flex;
+    justify-content: space-between;
+    font-size: 14px;
+    font-weight: 700;
+    margin-bottom: 8px;
+}
+
+.progress-bar-bg {
+    height: 12px;
+    background: rgba(255, 255, 255, 0.25);
+    border-radius: 10px;
+    overflow: hidden; 
+}
+
+.progress-bar-fill {
+    height: 100%;
+    background: var(--color-yellow-badge);
+    border-radius: 10px;
+    transition: width 0.4s ease;
+}
+
+/* Tombol Showcase Lencana di Hero */
+.btn-showcase-badge {
+    background: #ffffff;
+    border: 2px solid var(--color-border);
+    border-radius: 20px;
+    padding: 20px;
+    width: 100%;
+    cursor: pointer;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+    text-align: center;
+    transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.btn-showcase-badge:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.12);
+}
+
+.badge-icon-preview {
+    font-size: 40px;  
+}
+
+.badge-btn-text strong {
+    display: block;
+    font-size: 16px;
+    color: var(--color-forest);
+    font-family: var(--font-display);
+}
+
+.badge-btn-text small {
+    font-size: 13px;
+    color: var(--color-text-muted);
+}
+
+/* Tab Controls Missions */
+.misi-controls {
+    margin-bottom: 24px;  
+}
+
+.misi-tabs {
+    display: flex;
+    gap: 12px;
+}
+
+.tab-btn {
+    flex: 1;
+    padding: 14px 20px;
+    border-radius: 16px;
+    border: 2px solid var(--color-border);
+    background: #ffffff;
+    font-family: var(--font-display);
+    font-size: 16px;
+    font-weight: 700;
+    color: var(--color-text-muted);
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+    transition: all 0.2s;
+}
+
+.tab-btn.active {
+    background: var(--color-primary);
+    color: #ffffff;
+    border-color: var(--color-primary);
+    box-shadow: 0 4px 12px rgba(31, 122, 77, 0.2);
+}
+
+.tab-badge {
+    background: #E5E7EB;
+    color: var(--color-text);
+    font-size: 12px;
+    padding: 2px 8px;
+    border-radius: 10px;
+}
+
+.tab-btn.active .tab-badge {
+    background: rgba(255, 255, 255, 0.25);
+    color: #ffffff;
+}
+
+/* Grid Card Mission */
+.misi-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+}
+
+.misi-card {
+    background: #ffffff;
+    border: 2px solid var(--color-border);
+    border-radius: 20px;
+    padding: 24px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    transition: transform 0.2s, border-color 0.2s;
+}
+
+.misi-card:hover {
+    border-color: #A3C1B4;
+}
+
+.misi-card.completed {
+    background: #F0FDF4;
+    border-color: #86EFAC;
+}
+
+.card-top {
+    margin-bottom: 16px;
+}
+
+.badge-reward-tag {
+    display: inline-block;
+    background: var(--color-surface);
+    border: 1px solid var(--color-yellow-badge);
+    padding: 4px 12px;
+    border-radius: 10px;
+    font-size: 12px;
+    font-weight: 700;
+    color: var(--color-text);
+    margin-bottom: 12px;
+}
+
+.misi-card h3 {
+    font-family: var(--font-display);
+    font-size: 20px;
+    margin: 0 0 8px 0;
+    color: var(--color-text);
+}
+
+.misi-card p {
+    font-size: 14px;
+    color: var(--color-text-muted);
+    line-height: 1.5;
+    margin: 0;
+}
+
+.btn-complete {
+    width: 100%;
+    padding: 12px;
+    border-radius: 12px;
+    border: none;
+    background: var(--color-primary);
+    color: #ffffff;
+    font-weight: 700;
+    font-size: 14px;
+    cursor: pointer;
+    transition: background 0.2s;
+}
+
+.btn-complete:hover {
+    background: var(--color-forest);
+}
+
+.btn-complete.done {
+    background: #10B981;
+    cursor: default;
+}
+
+
+/* 
+    ======================================================
+    MODAL GALERI LENCANA (Tanpa Scrollbar + Tombol Hijau)
+    ====================================================== 
+*/
+
+.modal-overlay {
+    position: fixed;
+    inset: 0;
+    background: rgba(20, 83, 45, 0.55);
+    backdrop-filter: blur(4px);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    opacity: 0;
+    visibility: hidden;
+    transition: all 0.3s ease;
+    z-index: 9999;
+    padding: 16px;
+}
+
+.modal-overlay.active {
+    opacity: 1;
+    visibility: visible;
+}
+
+.modal-content.modal-badge {
+    background: #ffffff;
+    border-radius: 24px;
+    padding: 32px 28px 28px;
+    width: 100%;
+    max-width: 680px;
+    max-height: 85vh;
+    position: relative;
+    overflow-y: auto;
+    scrollbar-width: none;
+    -ms-overflow-style: none;
+}
+
+.modal-content.modal-badge::-webkit-scrollbar {
+    display: none;
+}
+
+.btn-close {
+    position: absolute;
+    top: 18px;
+    right: 18px;
+    font-size: 22px;
+    border: none;
+    background: #F3F4F6;
+    width: 36px;
+    height: 36px;
+    border-radius: 50%;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: background 0.2s;
+}
+
+.btn-close:hover {
+    background: #E5E7EB;
+}
+
+.modal-header h2 {
+    font-family: var(--font-display);
+    font-size: 24px;
+    margin: 0 0 6px 0;
+    color: var(--color-forest);
+}
+
+.modal-header p {
+    font-size: 14px;
+    color: var(--color-text-muted);
+    margin: 0 0 24px 0;
+}
+
+.badge-grid-showcase {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 16px;
+    margin-bottom: 24px;
+}
+
+.badge-item {
+    background: var(--color-bg);
+    border: 2px dashed #CBD5E1;
+    border-radius: 16px;
+    padding: 16px;
+    text-align: center;
+    opacity: 0.45;
+    filter: grayscale(100%);
+    transition: all 0.2s;
+}
+
+.badge-item.unlocked {
+    background: #F0FDF4;
+    border: 2px solid #86EFAC;
+    opacity: 1;
+    filter: grayscale(0%);
+}
+
+.badge-item-icon {
+    font-size: 36px;
+    margin-bottom: 6px;
+}
+
+.badge-item-title {
+    font-size: 12px;
+    font-weight: 700;
+    color: var(--color-text);
+}
+
+.modal-footer-action {
+    margin-top: 16px;
+}
+
+.btn-back-mission {
+    background-color: var(--color-primary);
+    color: #ffffff;
+    border: none;
+    width: 100%;
+    padding: 14px;
+    border-radius: 16px;
+    font-family: var(--font-display);
+    font-size: 16px;
+    font-weight: 700;
+    cursor: pointer;
+    transition: background 0.2s, transform 0.1s;
+    box-shadow: 0 4px 12px rgba(31, 122, 77, 0.25);
+}
+
+.btn-back-mission:hover {
+    background-color: var(--color-forest);
+}
+
+.btn-back-mission:active {
+    transform: scale(0.98);
+}
+
+
+/* 
+    ====================================================
+    FOOTER STYLES
+    ==================================================== 
+*/
+
+.footer {
+  padding: 20px 32px;
+  background-color: var(--color-surface);
+  border-top: 1px solid var(--color-border-subtle, #d8e5db);
+}
+
+.footer-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 12px;
+}
+
+.top-left-footer {
+  color: var(--color-forest);
+}
+
+.top-left-footer span {
+  color: var(--color-orange);
+}
+
+.head-sdg {
+  color: var(--color-yellow);
+}
+
+.sdg-badges {
+  display: flex;
+  gap: 12px;
+}
+
+.sdg-tag {
+  padding: 8px 12px;
+  border-radius: var(--radius-full);
+  background-color: var(--color-leaf);
+  color: var(--color-mint);
+  font-size: 13px;
+}
+
+.footer-bottom {
+  text-align: center;
+  border-top: 1px dashed var(--color-border-subtle, #d8e5db);
+  padding-top: 12px;
+}
+
+.title-footer-bottom {
+  color: var(--color-forest);
+  font-weight: 600;
+}
+
+.title-footer-bottom .subtitle-footer-bottom {
+  color: var(--color-orange);
+}
+
+
+/* 
+    ====================================================
+    RESPONSIVE MEDIA QUERIES
+    ==================================================== 
+*/
+@media (max-width: 1024px) {
+    .main-content {
+        padding: 24px 20px 48px;
+    }
+
+    .misi-hero {
+        padding: 30px;
+        gap: 24px;
+    }
+}
+
+@media (max-width: 768px) {
+    nav {
+        width: 98%;
+        box-sizing: border-box;
+        padding: 12px 15px;
+        border-radius: 20px;
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        gap: 10px;
+    }
+
+    .head-nav {
+        font-size: clamp(18px, 5vw, 22px);
+    }
+
+    .nav-ul {
+        order: 3;
+        width: 100%;
+        overflow-x: auto;
+        justify-content: flex-start;
+        padding: 5px;
+        box-sizing: border-box;
+    }
+
+    .nav-ul ul {
+        width: max-content;
+        display: flex;
+        flex-wrap: nowrap;
+        justify-content: center;
+        align-items: center;
+        gap: 4px;
+        padding: 0;
+        margin: 0;
+    }
+    
+    .nav-link {
+        padding: 8px 10px;
+        font-size: 13px;
+        white-space: nowrap;
+        flex-shrink: 0;
+    }
+
+    .btn-nav {
+        margin-left: auto;
+        gap: 6px;
+    }
+
+    .btn-nav1,
+    .btn-nav2 {
+        padding: 7px 10px;
+        white-space: nowrap;
+    }
+
+    .btn-nav1 a,
+    .btn-nav2 a {
+        font-size: 11px;
+    }
+
+    .misi-hero {
+        grid-template-columns: 1fr;
+        padding: 24px 20px;
+    }
+
+    .misi-tabs {
+        flex-direction: column;
+    }
+
+    .misi-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .badge-grid-showcase {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .footer-content {
+        flex-direction: column;
+        text-align: center;
+        gap: 20px;
+    }
+
+    .sdg-badges {
+        flex-direction: column;
+        width: 100%;
+        align-items: center;
+    }
+}
+
+@media (max-width: 480px) {
+    nav {
+        padding: 12px 8px;
+    }
+
+    .nav-link {
+        font-size: 13px;
+    }
+
+    .nav-ul ul {
+        gap: 6px;
+    }
+
+    .btn-nav1 a, .btn-nav2 a {
+        font-size: 14px;
+        padding: 8px 12px;
+    }
+
+    .hero-title {
+        font-size: 1.75rem;
+    }
+
+    .hero-desc {
+        font-size: 14px;
+    }
+
+    .modal-content.modal-badge {
+        padding: 20px 16px;
+        max-height: 90vh;
+    }
+
+    .badge-grid-showcase {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 10px;
+    }
+
+    .badge-item {
+        padding: 12px 8px;
+    }
+
+    .badge-item-icon {
+        font-size: 28px;
+    }
+
+    .badge-item-title {
+        font-size: 11px;
+    }
+}

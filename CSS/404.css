@@ -1,0 +1,232 @@
+
+/* ==============================
+   HALAMAN ERROR 404
+============================== */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    overflow-x: hidden;
+    font-family: var(--font-body);
+}
+
+/* CONTAINER UTAMA */
+
+.container-404 {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    min-height: 100vh;
+    min-height: 750px;
+    overflow: hidden;
+    background: #c9f3e5;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+}
+
+/* BACKGROUND LANGIT */
+
+.hero-sky {
+    position: absolute;
+    inset: 0;
+    z-index: 1;
+}
+
+.hero-sky img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+}
+
+/* POHON */
+
+.hero-trees {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    bottom: 0;
+    left: 0;
+    z-index: 2;
+    pointer-events: none;
+}
+
+.hero-trees img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+    object-position: center bottom;
+    display: block;
+}
+
+/* MASKOT RANI */
+
+.hero-maskot {
+    position: absolute;
+    width: clamp(240px, 34vw, 450px);
+    bottom: 0;
+    left: 3%;
+    z-index: 4;
+    pointer-events: none;
+}
+
+.hero-maskot img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+/* KONTEN 404 */
+
+.hero-content {
+    position: relative;
+    z-index: 5;
+
+    width: 52%;
+    max-width: 650px;
+
+    margin-right: 7%;
+    padding: 40px 15px;
+
+    text-align: center;
+    font-family: var(--font-body);
+}
+
+/* GAMBAR 404 */
+
+.hero-content .img-404 {
+    width: min(100%, 390px);
+    height: auto;
+    object-fit: contain;
+    display: block;
+    margin: 0 auto 15px;
+}
+
+/* JUDUL */
+
+.hero-content h1 {
+    font-size: clamp(32px, 4vw, 48px);
+    font-weight: 800;
+    line-height: 1.2;
+    color: var(--color-forest);
+    margin-bottom: 12px;
+}
+
+/* SUBJUDUL */
+
+.hero-content h3 {
+    font-size: clamp(17px, 2vw, 21px);
+    line-height: 1.5;
+    color: var(--color-forest);
+    margin-bottom: 12px;
+}
+
+/* DESKRIPSI */
+
+.hero-content p {
+    max-width: 520px;
+    margin: 0 auto 25px;
+
+    font-size: 16px;
+    line-height: 1.8;
+    color: #456b58;
+}
+
+/* TOMBOL KEMBALI */
+
+.btn-home {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+
+    padding: 14px 28px;
+
+    border-radius: 50px;
+    border: 2px solid transparent;
+
+    background: var(--color-primary);
+    color: #ffffff;
+
+    font-size: 16px;
+    font-weight: 700;
+    text-decoration: none;
+
+    box-shadow: 0 5px 0 rgba(35, 105, 68, 0.2);
+
+    transition: background 0.3s ease,
+                transform 0.3s ease,
+                box-shadow 0.3s ease;
+}
+
+.btn-home:hover {
+    background: #246b47;
+    transform: translateY(-3px);
+    box-shadow: 0 8px 0 rgba(35, 105, 68, 0.15);
+}
+
+
+
+@media screen and (max-width: 768px) {
+
+    .container-404 {
+        min-height: 850px;
+        height: auto;
+        align-items: flex-start;
+        justify-content: center;
+    }
+
+    .hero-sky img {
+        object-position: center;
+    }
+
+    .hero-trees {
+        height: 40%;
+    }
+
+    .hero-maskot {
+        width: 210px;
+        left: 50%;
+        bottom: 0;
+        transform: translateX(-50%);
+    }
+
+    .hero-content {
+        width: 92%;
+        max-width: 500px;
+        margin: 0 auto;
+        padding: 55px 10px 280px;
+    }
+
+    .hero-content .img-404 {
+        width: min(85%, 300px);
+        margin-bottom: 12px;
+    }
+
+    .hero-content h1 {
+        font-size: 34px;
+        margin-bottom: 10px;
+    }
+
+    .hero-content h3 {
+        font-size: 17px;
+    }
+
+    .hero-content p {
+        font-size: 14px;
+        line-height: 1.7;
+        margin-bottom: 20px;
+    }
+
+    .btn-home {
+        padding: 12px 22px;
+        font-size: 14px;
+    }
+
+}
+
+

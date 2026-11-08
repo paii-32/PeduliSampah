@@ -1,0 +1,1586 @@
+{
+  "meta": {
+    "versi": "1.0",
+    "tingkat": "sd",
+    "diperbarui": "2026-11-03",
+    "total_soal": 50
+  },
+  "aturan": {
+    "soal_per_sesi": 10,
+    "poin_per_benar": 10,
+    "acak_soal": true,
+    "acak_pilihan": true
+  },
+  "pesan_hasil": [
+    {
+      "min_persen": 0,
+      "judul": "Ayo Semangat!",
+      "isi": "Tidak apa-apa salah. Yuk baca panduan lalu coba lagi!",
+      "ekspresi_maskot": "semangat"
+    },
+    {
+      "min_persen": 60,
+      "judul": "Kerja Bagus!",
+      "isi": "Kamu sudah paham banyak hal tentang memilah sampah.",
+      "ekspresi_maskot": "senang"
+    },
+    {
+      "min_persen": 90,
+      "judul": "Pahlawan Hijau!",
+      "isi": "Hampir sempurna! Ajak temanmu ikut memilah sampah ya.",
+      "ekspresi_maskot": "merayakan"
+    }
+  ],
+  "soal": [
+    {
+      "id": "sd-001",
+      "level": "tunas",
+      "kategori_id": "organik",
+      "sampah_id": "kulit-pisang",
+      "pertanyaan": "Kulit pisang sisa makan siang sebaiknya kamu buang ke mana?",
+      "pilihan": [
+        {
+          "id": "a",
+          "teks": "Tong Hijau (Organik)"
+        },
+        {
+          "id": "b",
+          "teks": "Tong Kuning (Anorganik)"
+        },
+        {
+          "id": "c",
+          "teks": "Tong Merah (B3)"
+        },
+        {
+          "id": "d",
+          "teks": "Tong Abu-abu (Residu)"
+        }
+      ],
+      "jawaban_benar": "a",
+      "umpan_balik": {
+        "benar": "Keren! Kulit pisang berasal dari buah alami yang mudah membusuk, jadi masuk ke tong hijau.",
+        "salah": "Ingat ya! Kulit pisang berasal dari alam dan mudah membusuk, jadi tergolong Sampah Organik."
+      },
+      "gambar": "ASSETS/kuis/kulit pisang.png"
+    },
+    {
+      "id": "sd-002",
+      "level": "tunas",
+      "kategori_id": "anorganik",
+      "sampah_id": "botol-plastik",
+      "pertanyaan": "Tong warna apakah yang tepat untuk membuang botol plastik bekas jus?",
+      "pilihan": [
+        {
+          "id": "a",
+          "teks": "Tong Hijau"
+        },
+        {
+          "id": "b",
+          "teks": "Tong Kuning"
+        },
+        {
+          "id": "c",
+          "teks": "Tong Merah"
+        },
+        {
+          "id": "d",
+          "teks": "Tong Biru"
+        }
+      ],
+      "jawaban_benar": "b",
+      "umpan_balik": {
+        "benar": "Hebat! Botol plastik adalah sampah anorganik yang bisa didaur ulang di tong kuning.",
+        "salah": "Yuk ingat lagi! Botol plastik dapat didaur ulang dan dibuang ke Tong Kuning (Anorganik)."
+      },
+      "gambar": "ASSETS/kuis/botol plastik.png"
+    },
+    {
+      "id": "sd-003",
+      "level": "tunas",
+      "kategori_id": "b3",
+      "sampah_id": "baterai-bekas",
+      "pertanyaan": "Apa yang harus kamu lakukan jika menemukan baterai bekas jam di meja belajar?",
+      "pilihan": [
+        {
+          "id": "a",
+          "teks": "Digigit sampai gepeng"
+        },
+        {
+          "id": "b",
+          "teks": "Minta bantuan orang tua untuk menaruh di tempat B3"
+        },
+        {
+          "id": "c",
+          "teks": "Dibuang langsung ke selokan"
+        },
+        {
+          "id": "d",
+          "teks": "Dilempar ke tempat sampah biasa"
+        }
+      ],
+      "jawaban_benar": "b",
+      "umpan_balik": {
+        "benar": "Pintar sekali! Baterai mengandung zat beracun B3, jadi harus ditangani dengan hati-hati.",
+        "salah": "Ingat ya! Baterai mengandung zat kimia beracun, jangan digigit atau dibuang sembarangan."
+      },
+      "gambar": "ASSETS/kuis/baterai bekas.png"
+    },
+    {
+      "id": "sd-004",
+      "level": "tunas",
+      "kategori_id": "organik",
+      "sampah_id": "daun-kering",
+      "pertanyaan": "Daun-daun kering yang jatuh di halaman sekolah termasuk sampah jenis apa?",
+      "pilihan": [
+        {
+          "id": "a",
+          "teks": "Sampah Organik"
+        },
+        {
+          "id": "b",
+          "teks": "Sampah B3"
+        },
+        {
+          "id": "c",
+          "teks": "Sampah Elektronik"
+        },
+        {
+          "id": "d",
+          "teks": "Sampah Daur Ulang Logam"
+        }
+      ],
+      "jawaban_benar": "a",
+      "umpan_balik": {
+        "benar": "Tepat! Daun kering berasal dari pohon dan bisa diolah menjadi pupuk kompos.",
+        "salah": "Daun kering berasal dari tumbuhan alami, sehingga tergolong Sampah Organik."
+      },
+      "gambar": "ASSETS/kuis/daun kering.png"
+    },
+    {
+      "id": "sd-005",
+      "level": "tunas",
+      "kategori_id": "anorganik",
+      "sampah_id": "kaleng-minuman",
+      "pertanyaan": "Sebelum membuang kaleng aluminium bekas soda, langkah baik apa yang dilakukan?",
+      "pilihan": [
+        {
+          "id": "a",
+          "teks": "Membakarnya di dalam kamar"
+        },
+        {
+          "id": "b",
+          "teks": "Membilas sisa cairan dan meremukkannya"
+        },
+        {
+          "id": "c",
+          "teks": "Mengisinya dengan batu kerikil"
+        },
+        {
+          "id": "d",
+          "teks": "Membiarkannya basah dan bersemut"
+        }
+      ],
+      "jawaban_benar": "b",
+      "umpan_balik": {
+        "benar": "Luar biasa! Membilas kaleng mencegah semut dan meremukkannya menghemat tempat tong.",
+        "salah": "Langkah yang benar adalah membilas sisa minumannya dan memipihkannya sebelum dibuang."
+      },
+      "gambar": "ASSETS/kuis/kaleng minuman.png"
+    },
+    {
+      "id": "sd-006",
+      "level": "tunas",
+      "kategori_id": "residu",
+      "sampah_id": "styrofoam-makanan",
+      "pertanyaan": "Mengapa kita sebaiknya mengurangi penggunaan wadah Styrofoam saat membeli jajan?",
+      "pilihan": [
+        {
+          "id": "a",
+          "teks": "Karena harganya sangat mahal"
+        },
+        {
+          "id": "b",
+          "teks": "Karena Styrofoam susah terurai dan tidak bisa didaur ulang"
+        },
+        {
+          "id": "c",
+          "teks": "Karena Styrofoam mudah cair terkena es"
+        },
+        {
+          "id": "d",
+          "teks": "Karena bentuknya terlalu berat"
+        }
+      ],
+      "jawaban_benar": "b",
+      "umpan_balik": {
+        "benar": "Jawabanmu tepat! Styrofoam tergolong sampah residu yang bertahan sangat lama di bumi.",
+        "salah": "Styrofoam adalah sampah residu yang tidak bisa didaur ulang dan merusak lingkungan."
+      },
+      "gambar": "ASSETS/kuis/styrofoam.png"
+    },
+    {
+      "id": "sd-007",
+      "level": "tunas",
+      "kategori_id": "ewaste",
+      "sampah_id": "kabel-charger",
+      "pertanyaan": "Kabel charger mainan yang putus dan rusak termasuk dalam kategori sampah...",
+      "pilihan": [
+        {
+          "id": "a",
+          "teks": "Organik"
+        },
+        {
+          "id": "b",
+          "teks": "Residu"
+        },
+        {
+          "id": "c",
+          "teks": "E-Waste (Elektronik)"
+        },
+        {
+          "id": "d",
+          "teks": "Kertas"
+        }
+      ],
+      "jawaban_benar": "c",
+      "umpan_balik": {
+        "benar": "Joss! Kabel charger adalah perangkat listrik bekas sehingga tergolong E-Waste.",
+        "salah": "Semua kabel dan bekas alat listrik termasuk dalam kelompok E-Waste (Elektronik)."
+      },
+      "gambar": "ASSETS/kuis/kabel charger.png"
+    },
+    {
+      "id": "sd-008",
+      "level": "tunas",
+      "kategori_id": "organik",
+      "sampah_id": "kulit-telur",
+      "pertanyaan": "Cangkang atau kulit telur bekas bekal sekolah bisa dimanfaatkan kembali untuk...",
+      "pilihan": [
+        {
+          "id": "a",
+          "teks": "Campuran pupuk penyubur tanaman"
+        },
+        {
+          "id": "b",
+          "teks": "Bahan pembuat botol plastik"
+        },
+        {
+          "id": "c",
+          "teks": "Mainan mobil-mobilan"
+        },
+        {
+          "id": "d",
+          "teks": "Pengisi kasur tidur"
+        }
+      ],
+      "jawaban_benar": "a",
+      "umpan_balik": {
+        "benar": "Benar! Kulit telur kaya kalsium alami yang bisa dihaluskan untuk menyuburkan tanah.",
+        "salah": "Kulit telur mengandung kalsium alami yang sangat bagus dijadikan pupuk tanaman."
+      },
+      "gambar": "ASSETS/kuis/kulit telur.png"
+    },
+    {
+      "id": "sd-009",
+      "level": "tunas",
+      "kategori_id": "anorganik",
+      "sampah_id": "kardus-bekas",
+      "pertanyaan": "Contoh cara Reuse (menggunakan kembali) kardus bekas sepatu adalah...",
+      "pilihan": [
+        {
+          "id": "a",
+          "teks": "Membakarnya di halaman sekolah"
+        },
+        {
+          "id": "b",
+          "teks": "Menghiasnya menjadi kotak tempat pensil atau mainan"
+        },
+        {
+          "id": "c",
+          "teks": "Membiarkannya basah kehujanan"
+        },
+        {
+          "id": "d",
+          "teks": "Membuangnya ke dalam sungai"
+        }
+      ],
+      "jawaban_benar": "b",
+      "umpan_balik": {
+        "benar": "Pintar! Memanfaatkan kardus bekas jadi kotak mainan adalah contoh nyata prinsip Reuse.",
+        "salah": "Reuse artinya menggunakan kembali. Menghias kardus jadi wadah barang adalah contoh Reuse."
+      },
+      "gambar": "ASSETS/kuis/kardus bekas.png"
+    },
+    {
+      "id": "sd-010",
+      "level": "tunas",
+      "kategori_id": "b3",
+      "sampah_id": "lampu-neon",
+      "pertanyaan": "Mengapa lampu neon bekas yang pecah berbahaya bagi kita?",
+      "pilihan": [
+        {
+          "id": "a",
+          "teks": "Karena mengandung serbuk dan gas racun merkuri"
+        },
+        {
+          "id": "b",
+          "teks": "Karena harganya murah"
+        },
+        {
+          "id": "c",
+          "teks": "Karena ukurannya terlalu panjang"
+        },
+        {
+          "id": "d",
+          "teks": "Karena rasanya manis"
+        }
+      ],
+      "jawaban_benar": "a",
+      "umpan_balik": {
+        "benar": "Tepat! Lampu neon berisi gas merkuri berbahaya jika terhirup atau tersentuh.",
+        "salah": "Di dalam pecahan lampu neon terdapat racun merkuri dan serpihan kaca yang tajam."
+      },
+      "gambar": "ASSETS/kuis/lempu neon.png"
+    },
+    {
+      "id": "sd-011",
+      "level": "tunas",
+      "kategori_id": "organik",
+      "sampah_id": "sisa-sayuran",
+      "pertanyaan": "Potongan batang bayam sisa masak ibu sebaiknya dimasukkan ke...",
+      "pilihan": [
+        {
+          "id": "a",
+          "teks": "Komposter / Tong Organik"
+        },
+        {
+          "id": "b",
+          "teks": "Tong E-Waste"
+        },
+        {
+          "id": "c",
+          "teks": "Tong Khusus B3"
+        },
+        {
+          "id": "d",
+          "teks": "Kantong Plastik Residu"
+        }
+      ],
+      "jawaban_benar": "a",
+      "umpan_balik": {
+        "benar": "Top! Sisa sayuran dapur dari bahan alami sangat bagus diolah menjadi kompos.",
+        "salah": "Sisa sayuran dapur tergolong sampah organik yang pas dibuat kompos tanaman."
+      },
+      "gambar": "ASSETS/kuis/sisa sayuran.png"
+    },
+    {
+      "id": "sd-012",
+      "level": "tunas",
+      "kategori_id": "anorganik",
+      "sampah_id": "kantong-kresek",
+      "pertanyaan": "Cara menerapkan prinsip Reduce (mengurangi) sampah plastik belanja adalah...",
+      "pilihan": [
+        {
+          "id": "a",
+          "teks": "Meminta banyak kantong plastik saat belanja"
+        },
+        {
+          "id": "b",
+          "teks": "Membawa tas kain belanja sendiri dari rumah"
+        },
+        {
+          "id": "c",
+          "teks": "Membuang kresek ke selokan"
+        },
+        {
+          "id": "d",
+          "teks": "Membakar kantong plastik di dapur"
+        }
+      ],
+      "jawaban_benar": "b",
+      "umpan_balik": {
+        "benar": "Mantap! Membawa tas kain sendiri menghemat penggunaan plastik sekali pakai.",
+        "salah": "Reduce artinya mengurangi. Membawa tas belanja sendiri mengurangi timbulan sampah plastik."
+      },
+      "gambar": "ASSETS/kuis/kantong kresek.png"
+    },
+    {
+      "id": "sd-013",
+      "level": "tunas",
+      "kategori_id": "residu",
+      "sampah_id": "tisu-basah",
+      "pertanyaan": "Mengapa tisu basah bekas tidak boleh dibuang ke lubang toilet?",
+      "pilihan": [
+        {
+          "id": "a",
+          "teks": "Karena mengandung serat plastik yang menyumbat saluran"
+        },
+        {
+          "id": "b",
+          "teks": "Karena tisu basah bisa berubah jadi hewan"
+        },
+        {
+          "id": "c",
+          "teks": "Karena tisu basah baunya wangi"
+        },
+        {
+          "id": "d",
+          "teks": "Karena tisu basah terbuat dari kaca"
+        }
+      ],
+      "jawaban_benar": "a",
+      "umpan_balik": {
+        "benar": "Benar! Tisu basah terbuat dari serat sintensis yang tidak larut air sehingga bisa menyumbat pipa.",
+        "salah": "Tisu basah terbuat dari serat sintetis plastik yang tidak hancur kena air dan bikin mampet."
+      },
+      "gambar": "ASSETS/kuis/tisu basah.png"
+    },
+    {
+      "id": "sd-014",
+      "level": "tunas",
+      "kategori_id": "ewaste",
+      "sampah_id": "hp-tua-rusak",
+      "pertanyaan": "Di mana tempat yang paling tepat membuang mainan elektronik atau HP mati?",
+      "pilihan": [
+        {
+          "id": "a",
+          "teks": "Dibakar di kebun belakang"
+        },
+        {
+          "id": "b",
+          "teks": "Di Drop-Box khusus E-Waste"
+        },
+        {
+          "id": "c",
+          "teks": "Ditanam di dalam pot bunga"
+        },
+        {
+          "id": "d",
+          "teks": "Dilemparkan ke sungai"
+        }
+      ],
+      "jawaban_benar": "b",
+      "umpan_balik": {
+        "benar": "Sip! Alat elektronik bekas harus dikumpulkan di drop-box khusus e-waste agar didaur ulang.",
+        "salah": "Barang elektronik mengandung bahan kimia yang berbahaya jika dibakar. Buanglah ke Drop-Box E-Waste."
+      },
+      "gambar": "ASSETS/kuis/hp rusak.png"
+    },
+    {
+      "id": "sd-015",
+      "level": "tunas",
+      "kategori_id": "b3",
+      "sampah_id": "botol-pestisida",
+      "pertanyaan": "Mengapa kaleng semprotan obat nyamuk tidak boleh dilempar ke dalam api?",
+      "pilihan": [
+        {
+          "id": "a",
+          "teks": "Karena kaleng bertekanan bisa meledak hebat"
+        },
+        {
+          "id": "b",
+          "teks": "Karena apinya bisa langsung mati"
+        },
+        {
+          "id": "c",
+          "teks": "Karena warna kalengnya jadi jelek"
+        },
+        {
+          "id": "d",
+          "teks": "Karena apinya jadi berwarna pelangi"
+        }
+      ],
+      "jawaban_benar": "a",
+      "umpan_balik": {
+        "benar": "Tepat sekali! Kaleng semprotan bertekanan gas tinggi dan sangat berbahaya jika kena api.",
+        "salah": "Kaleng semprotan bertekanan tinggi bisa meledak jika terkena panas api!"
+      },
+      "gambar": "ASSETS/kuis/botol pestisida.png"
+    },
+    {
+      "id": "sd-016",
+      "level": "tunas",
+      "kategori_id": "organik",
+      "sampah_id": "ampas-teh",
+      "pertanyaan": "Ampas daun teh sisa minum manis di rumah tergolong jenis sampah...",
+      "pilihan": [
+        {
+          "id": "a",
+          "teks": "Organik"
+        },
+        {
+          "id": "b",
+          "teks": "Anorganik"
+        },
+        {
+          "id": "c",
+          "teks": "B3"
+        },
+        {
+          "id": "d",
+          "teks": "E-Waste"
+        }
+      ],
+      "jawaban_benar": "a",
+      "umpan_balik": {
+        "benar": "Cerdas! Daun teh berasal dari tumbuhan alami sehingga mudah terurai.",
+        "salah": "Daun teh adalah bahan alami yang membusuk secara alami (Organik)."
+      },
+      "gambar": "ASSETS/kuis/ampas teh.png"
+    },
+    {
+      "id": "sd-017",
+      "level": "tunas",
+      "kategori_id": "anorganik",
+      "sampah_id": "kaca-botol",
+      "pertanyaan": "Benda apakah di bawah ini yang dapat didaur ulang menjadi botol baru berkali-kali?",
+      "pilihan": [
+        {
+          "id": "a",
+          "teks": "Botol Kaca Sirup"
+        },
+        {
+          "id": "b",
+          "teks": "Kulit Pisang"
+        },
+        {
+          "id": "c",
+          "teks": "Tisu Basah"
+        },
+        {
+          "id": "d",
+          "teks": "Daun Kering"
+        }
+      ],
+      "jawaban_benar": "a",
+      "umpan_balik": {
+        "benar": "Keren! Bahan kaca dapat dilelehkan dan dicetak kembali berulang kali.",
+        "salah": "Bahan kaca (botol kaca) adalah material anorganik yang bisa didaur ulang berulang kali."
+      },
+      "gambar": "ASSETS/kuis/kaca botol.png"
+    },
+    {
+      "id": "sd-018",
+      "level": "tunas",
+      "kategori_id": "residu",
+      "sampah_id": "sikat-gigi-bekas",
+      "pertanyaan": "Sikat gigi plastik yang bulunya sudah mekar tergolong jenis sampah...",
+      "pilihan": [
+        {
+          "id": "a",
+          "teks": "Residu"
+        },
+        {
+          "id": "b",
+          "teks": "Organik"
+        },
+        {
+          "id": "c",
+          "teks": "B3"
+        },
+        {
+          "id": "d",
+          "teks": "E-Waste"
+        }
+      ],
+      "jawaban_benar": "a",
+      "umpan_balik": {
+        "benar": "Tepat! Sikat gigi plastik bekas sulit dipisahkan jalurnya sehingga dibuang ke tong residu.",
+        "salah": "Sikat gigi sulit didaur ulang pabrik biasa sehingga tergolong Sampah Residu."
+      },
+      "gambar": "ASSETS/kuis/sikat gigi.png"
+    },
+    {
+      "id": "sd-019",
+      "level": "tunas",
+      "kategori_id": "ewaste",
+      "sampah_id": "headset-rusak",
+      "pertanyaan": "Di dalam earphone atau headset bekas terdapat komponen logam kecil yaitu...",
+      "pilihan": [
+        {
+          "id": "a",
+          "teks": "Magnet dan Kawat Tembaga"
+        },
+        {
+          "id": "b",
+          "teks": "Air Es"
+        },
+        {
+          "id": "c",
+          "teks": "Daun Kering"
+        },
+        {
+          "id": "d",
+          "teks": "Tepung Terigu"
+        }
+      ],
+      "jawaban_benar": "a",
+      "umpan_balik": {
+        "benar": "Pintar! Di dalam earphone terdapat kabel tembaga halus penghantar listrik dan magnet.",
+        "salah": "Earphone mengandung magnet kecil dan kawat tembaga penyalur suara."
+      },
+      "gambar": "ASSETS/kuis/headset rusak.png"
+    },
+    {
+      "id": "sd-020",
+      "level": "tunas",
+      "kategori_id": "organik",
+      "sampah_id": "potongan-rumput",
+      "pertanyaan": "Hal baik apa yang bisa kita lakukan pada rumput sisa memangkas taman?",
+      "pilihan": [
+        {
+          "id": "a",
+          "teks": "Dijadikan bahan campuran pupuk kompos"
+        },
+        {
+          "id": "b",
+          "teks": "Dibakar di dalam rumah"
+        },
+        {
+          "id": "c",
+          "teks": "Dibungkus plastik lalu dilempar ke selokan"
+        },
+        {
+          "id": "d",
+          "teks": "Dibuang ke laut"
+        }
+      ],
+      "jawaban_benar": "a",
+      "umpan_balik": {
+        "benar": "Luar biasa! Potongan rumput menjaga kelembapan tanah dan cepat membusuk jadi pupuk.",
+        "salah": "Rumput potongan berasal dari tanaman alami, jadi sangat pas dibuat kompos tanaman."
+      },
+      "gambar": "ASSETS/kuis/potongan rumput.png"
+    },
+    {
+      "id": "sd-021",
+      "level": "tunas",
+      "kategori_id": "anorganik",
+      "sampah_id": "kotak-susu-uht",
+      "pertanyaan": "Sebelum membuang kotak karton bekas susu UHT, kita sebaiknya...",
+      "pilihan": [
+        {
+          "id": "a",
+          "teks": "Membilas sisa susunya dan memipihkan kotaknya"
+        },
+        {
+          "id": "b",
+          "teks": "Membiarkan susunya basi berbau"
+        },
+        {
+          "id": "c",
+          "teks": "Mengisinya dengan air panas sampai penuh"
+        },
+        {
+          "id": "d",
+          "teks": "Membakarnya langsung"
+        }
+      ],
+      "jawaban_benar": "a",
+      "umpan_balik": {
+        "benar": "Bagus! Membilas karton susu mencegah lalat dan memipihkannya menghemat wadah.",
+        "salah": "Bilas dulu sisa susunya agar tidak berbau dan dihinggapi lalat, lalu pipihkan."
+      },
+      "gambar": "ASSETS/kuis/kotak susu.png"
+    },
+    {
+      "id": "sd-022",
+      "level": "tunas",
+      "kategori_id": "b3",
+      "sampah_id": "botol-pembersih-lantai",
+      "pertanyaan": "Apa bahaya dari cairan pembersih toilet bagi kulit kita?",
+      "pilihan": [
+        {
+          "id": "a",
+          "teks": "Bisa bikin gatal dan kulit perih iritasi"
+        },
+        {
+          "id": "b",
+          "teks": "Bikin kulit jadi halus sekali"
+        },
+        {
+          "id": "c",
+          "teks": "Tidak ada bahayanya sama sekali"
+        },
+        {
+          "id": "d",
+          "teks": "Bikin kulit berganti warna hijau"
+        }
+      ],
+      "jawaban_benar": "a",
+      "umpan_balik": {
+        "benar": "Benar! Pembersih toilet mengandung bahan kimia asam keras yang memicu perih di kulit.",
+        "salah": "Cairan pembersih mengandung zat kimia keras yang memicu gatal dan perih pada kulit."
+      },
+      "gambar": "ASSETS/kuis/botol pembersih.png"
+    },
+    {
+      "id": "sd-023",
+      "level": "tunas",
+      "kategori_id": "residu",
+      "sampah_id": "popok-bayi",
+      "pertanyaan": "Popok adik bayi bekas pakai termasuk sampah residu karena...",
+      "pilihan": [
+        {
+          "id": "a",
+          "teks": "Kotor dan tidak bisa didaur ulang"
+        },
+        {
+          "id": "b",
+          "teks": "Bentuknya sangat lucu"
+        },
+        {
+          "id": "c",
+          "teks": "Bisa dijadikan makanan ikan"
+        },
+        {
+          "id": "d",
+          "teks": "Bisa dibuat jadi kertas gambar"
+        }
+      ],
+      "jawaban_benar": "a",
+      "umpan_balik": {
+        "benar": "Tepat! Popok bekas kotoran tidak higienis untuk didaur ulang sehingga masuk tong residu.",
+        "salah": "Popok bekas mengandung gel kotoran biologis sehingga dikategorikan sampah Residu."
+      },
+      "gambar": "ASSETS/kuis/popok bayi.png"
+    },
+    {
+      "id": "sd-024",
+      "level": "tunas",
+      "kategori_id": "ewaste",
+      "sampah_id": "senter-plastik",
+      "pertanyaan": "Sebelum membuang senter mainan yang rusak, apa yang wajib dilepas dulu?",
+      "pilihan": [
+        {
+          "id": "a",
+          "teks": "Batu Baterai di dalamnya"
+        },
+        {
+          "id": "b",
+          "teks": "Kaca lensa depannya"
+        },
+        {
+          "id": "c",
+          "teks": "Tali pegangannya"
+        },
+        {
+          "id": "d",
+          "teks": "Stiker gambarnya"
+        }
+      ],
+      "jawaban_benar": "a",
+      "umpan_balik": {
+        "benar": "Pintar! Batu baterai harus dilepas agar cairannya tidak bocor merusak tanah.",
+        "salah": "Keluarkan selalu baterainya terlebih dahulu sebelum membuang alat mainan elektronik."
+      },
+      "gambar": "ASSETS/kuis/senter plastik.png"
+    },
+    {
+      "id": "sd-025",
+      "level": "tunas",
+      "kategori_id": "organik",
+      "sampah_id": "nasi-basi",
+      "pertanyaan": "Nasi basi sisa di meja makan bisa diolah menjadi...",
+      "pilihan": [
+        {
+          "id": "a",
+          "teks": "Pupuk organik cair untuk tanaman"
+        },
+        {
+          "id": "b",
+          "teks": "Bahan pembuat kabel"
+        },
+        {
+          "id": "c",
+          "teks": "Sedotan minuman"
+        },
+        {
+          "id": "d",
+          "teks": "Penghapus pensil"
+        }
+      ],
+      "jawaban_benar": "a",
+      "umpan_balik": {
+        "benar": "Hebat! Nasi basi mengandung kuman baik pengurai alami yang jadi pupuk tanaman.",
+        "salah": "Nasi basi dapat difermentasi menjadi pupuk cair alami untuk menyuburkan tanaman."
+      },
+      "gambar": "ASSETS/kuis/nasi basi.png"
+    },
+    {
+      "id": "sd-026",
+      "level": "tunas",
+      "kategori_id": "anorganik",
+      "sampah_id": "majalah-bekas",
+      "pertanyaan": "Kertas majalah bekas bergambar termasuk sampah yang bisa...",
+      "pilihan": [
+        {
+          "id": "a",
+          "teks": "Didaur ulang menjadi kertas baru"
+        },
+        {
+          "id": "b",
+          "teks": "Dibuat menjadi botol kaca"
+        },
+        {
+          "id": "c",
+          "teks": "Dimakan langsung"
+        },
+        {
+          "id": "d",
+          "teks": "Ditanam jadi pohon baru"
+        }
+      ],
+      "jawaban_benar": "a",
+      "umpan_balik": {
+        "benar": "Tepat! Kertas majalah bekas diolah pabrik daur ulang menjadi kertas daur ulang.",
+        "salah": "Kertas bekas tergolong sampah anorganik yang bisa didaur ulang menjadi kertas baru."
+      },
+      "gambar": "ASSETS/kuis/buku bekas.png"
+    },
+    {
+      "id": "sd-027",
+      "level": "tunas",
+      "kategori_id": "organik",
+      "sampah_id": "tulang-ayam",
+      "pertanyaan": "Tulang ayam sisa makan malam di rumah dibuang ke tong warna...",
+      "pilihan": [
+        {
+          "id": "a",
+          "teks": "Hijau (Organik)"
+        },
+        {
+          "id": "b",
+          "teks": "Kuning (Anorganik)"
+        },
+        {
+          "id": "c",
+          "teks": "Merah (B3)"
+        },
+        {
+          "id": "d",
+          "teks": "Biru (E-Waste)"
+        }
+      ],
+      "jawaban_benar": "a",
+      "umpan_balik": {
+        "benar": "Keren! Tulang hewan berasal dari makhluk hidup sehingga termasuk sampah organik.",
+        "salah": "Sisa makanan hewan seperti tulang ayam termasuk dalam kategori Sampah Organik."
+      },
+      "gambar": "ASSETS/kuis/tulang.png"
+    },
+    {
+      "id": "sd-028",
+      "level": "tunas",
+      "kategori_id": "anorganik",
+      "sampah_id": "tutup-botol",
+      "pertanyaan": "Membuat kerajinan tangan dari tutup botol plastik bekas adalah contoh...",
+      "pilihan": [
+        {
+          "id": "a",
+          "teks": "Reuse (Memakai ulang barang)"
+        },
+        {
+          "id": "b",
+          "teks": "Mengotori rumah"
+        },
+        {
+          "id": "c",
+          "teks": "Merusak bumi"
+        },
+        {
+          "id": "d",
+          "teks": "Membakar sampah"
+        }
+      ],
+      "jawaban_benar": "a",
+      "umpan_balik": {
+        "benar": "Pintar! Mengubah barang bekas jadi hiasan bermanfaat adalah contoh kreatif dari Reuse.",
+        "salah": "Membuat hiasan dari tutup botol adalah bentuk menggunakan kembali (Reuse) barang bekas."
+      },
+      "gambar": "ASSETS/kuis/tutup botol.png"
+    },
+    {
+      "id": "sd-029",
+      "level": "tunas",
+      "kategori_id": "b3",
+      "sampah_id": "obat-sirup-bekas",
+      "pertanyaan": "Botol berisi sisa obat kimia cair yang sudah lewat tanggalnya tergolong...",
+      "pilihan": [
+        {
+          "id": "a",
+          "teks": "Sampah B3"
+        },
+        {
+          "id": "b",
+          "teks": "Sampah Organik"
+        },
+        {
+          "id": "c",
+          "teks": "Minuman Segar"
+        },
+        {
+          "id": "d",
+          "teks": "Sampah Kertas"
+        }
+      ],
+      "jawaban_benar": "a",
+      "umpan_balik": {
+        "benar": "Benar! Obat-obatan kadaluarsa mengandung zat kimia aktif yang masuk kategori B3.",
+        "salah": "Obat-obatan kadaluarsa tergolong bahan kimia B3 yang harus dibuang secara khusus."
+      },
+      "gambar": "ASSETS/kuis/botol obat.png"
+    },
+    {
+      "id": "sd-030",
+      "level": "tunas",
+      "kategori_id": "residu",
+      "sampah_id": "bungkus-snack",
+      "pertanyaan": "Bungkus plastik jajanan chiki yang mengkilap di bagian dalam biasanya dibuang ke...",
+      "pilihan": [
+        {
+          "id": "a",
+          "teks": "Tong Residu (Abu-abu)"
+        },
+        {
+          "id": "b",
+          "teks": "Tong Organik (Hijau)"
+        },
+        {
+          "id": "c",
+          "teks": "Tong Pohon"
+        },
+        {
+          "id": "d",
+          "teks": "Pot Bunga"
+        }
+      ],
+      "jawaban_benar": "a",
+      "umpan_balik": {
+        "benar": "Bagus! Bungkus snack berlapis perak plastik sangat susah didaur ulang sehingga masuk residu.",
+        "salah": "Bungkus snack foil-plastik tergolong sampah residu karena sulit dipisahkan bahannya."
+      },
+      "gambar": "ASSETS/kuis/bungkus snack.png"
+    },
+    {
+      "id": "sd-031",
+      "level": "tunas",
+      "kategori_id": "organik",
+      "sampah_id": "kulit-mangga",
+      "pertanyaan": "Apa yang terjadi jika kulit mangga dikubur di dalam tanah dekat pohon?",
+      "pilihan": [
+        {
+          "id": "a",
+          "teks": "Akan membusuk dan menyuburkan tanaman"
+        },
+        {
+          "id": "b",
+          "teks": "Akan berubah jadi batu keras"
+        },
+        {
+          "id": "c",
+          "teks": "Akan membuat pohon mati"
+        },
+        {
+          "id": "d",
+          "teks": "Akan meledak"
+        }
+      ],
+      "jawaban_benar": "a",
+      "umpan_balik": {
+        "benar": "Tepat! Kulit mangga diurai oleh cacing tanah menjadi hara penyubur pohon.",
+        "salah": "Sampah organik seperti kulit mangga terurai alami di tanah dan menjadi pupuk."
+      },
+      "gambar": "ASSETS/kuis/kulit mangga.png"
+    },
+    {
+      "id": "sd-032",
+      "level": "tunas",
+      "kategori_id": "anorganik",
+      "sampah_id": "sedotan-plastik",
+      "pertanyaan": "Mengapa kita disarankan memakai sedotan stainless atau bambu?",
+      "pilihan": [
+        {
+          "id": "a",
+          "teks": "Agar tidak menambah sampah sedotan plastik sekali pakai"
+        },
+        {
+          "id": "b",
+          "teks": "Karena sedotan bambu bisa dimakan"
+        },
+        {
+          "id": "c",
+          "teks": "Karena sedotan plastik rasanya asin"
+        },
+        {
+          "id": "d",
+          "teks": "Karena harganya selalu gratis"
+        }
+      ],
+      "jawaban_benar": "a",
+      "umpan_balik": {
+        "benar": "Hebat! Memakai sedotan cuci ulang menekan tumpukan sampah plastik di laut.",
+        "salah": "Menggunakan sedotan bambu/metal mengurangi penggunaan sedotan plastik sekali pakai."
+      },
+      "gambar": "ASSETS/kuis/sedotan plastik.png"
+    },
+    {
+      "id": "sd-033",
+      "level": "tunas",
+      "kategori_id": "ewaste",
+      "sampah_id": "remote-tv-bekas",
+      "pertanyaan": "Remote TV mainan yang tombolnya sudah lepas tergolong sampah...",
+      "pilihan": [
+        {
+          "id": "a",
+          "teks": "E-Waste (Elektronik)"
+        },
+        {
+          "id": "b",
+          "teks": "Organik"
+        },
+        {
+          "id": "c",
+          "teks": "Residu Dapur"
+        },
+        {
+          "id": "d",
+          "teks": "Daun"
+        }
+      ],
+      "jawaban_benar": "a",
+      "umpan_balik": {
+        "benar": "Benar! Remote TV memiliki papan sirkuit listrik kecil di dalamnya.",
+        "salah": "Remote TV merupakan alat elektronik bekas yang tergolong E-Waste."
+      },
+      "gambar": "ASSETS/kuis/remote tv.png"
+    },
+    {
+      "id": "sd-034",
+      "level": "tunas",
+      "kategori_id": "organik",
+      "sampah_id": "biji-rambutan",
+      "pertanyaan": "Biji buah rambutan yang kamu buang setelah dimakan tergolong sampah...",
+      "pilihan": [
+        {
+          "id": "a",
+          "teks": "Organik"
+        },
+        {
+          "id": "b",
+          "teks": "Anorganik"
+        },
+        {
+          "id": "c",
+          "teks": "B3"
+        },
+        {
+          "id": "d",
+          "teks": "Elektronik"
+        }
+      ],
+      "jawaban_benar": "a",
+      "umpan_balik": {
+        "benar": "Sip! Biji buah berasal dari tanaman buah alami (Organik).",
+        "salah": "Biji buah-buahan tergolong sampah alami yaitu Organik."
+      },
+      "gambar": "ASSETS/kuis/biji rambutan.png"
+    },
+    {
+      "id": "sd-035",
+      "level": "tunas",
+      "kategori_id": "anorganik",
+      "sampah_id": "sendok-plastik",
+      "pertanyaan": "Sendok plastik bekas makan es krim yang bersih masuk ke tong warna...",
+      "pilihan": [
+        {
+          "id": "a",
+          "teks": "Kuning (Anorganik)"
+        },
+        {
+          "id": "b",
+          "teks": "Hijau (Organik)"
+        },
+        {
+          "id": "c",
+          "teks": "Merah (B3)"
+        },
+        {
+          "id": "d",
+          "teks": "Cokelat"
+        }
+      ],
+      "jawaban_benar": "a",
+      "umpan_balik": {
+        "benar": "Tepat! Sendok plastik terbuat dari bahan anorganik yang bisa diolah kembali.",
+        "salah": "Sendok plastik terbuat dari anorganik dan tempatnya di Tong Kuning."
+      },
+      "gambar": "ASSETS/kuis/sendok plastik.png"
+    },
+    {
+      "id": "sd-036",
+      "level": "tunas",
+      "kategori_id": "b3",
+      "sampah_id": "semprotan-pengharum",
+      "pertanyaan": "Kaleng gas semprotan pengharum ruangan bekas memiliki simbol bahaya...",
+      "pilihan": [
+        {
+          "id": "a",
+          "teks": "Mudah meledak jika dipanaskan (B3)"
+        },
+        {
+          "id": "b",
+          "teks": "Aman untuk mainan anak"
+        },
+        {
+          "id": "c",
+          "teks": "Bisa langsung diminum"
+        },
+        {
+          "id": "d",
+          "teks": "Bisa dijadikan sarung bantal"
+        }
+      ],
+      "jawaban_benar": "a",
+      "umpan_balik": {
+        "benar": "Pintar! Kaleng aerosol berisi gas bertekanan tinggi yang tergolong B3.",
+        "salah": "Kaleng semprotan bertekanan gas mudah meledak jika terkena sumber api (B3)."
+      },
+      "gambar": "ASSETS/kuis/semprotan pengharum.png"
+    },
+    {
+      "id": "sd-037",
+      "level": "tunas",
+      "kategori_id": "residu",
+      "sampah_id": "puntung-pensil",
+      "pertanyaan": "Serutan pensil kayu bercampur karet penghapus sisa di meja dibuang ke...",
+      "pilihan": [
+        {
+          "id": "a",
+          "teks": "Tong Sampah Biasa / Residu"
+        },
+        {
+          "id": "b",
+          "teks": "Tong E-Waste"
+        },
+        {
+          "id": "c",
+          "teks": "Wadah Minuman"
+        },
+        {
+          "id": "d",
+          "teks": "Dalam Tas Sekolah"
+        }
+      ],
+      "jawaban_benar": "a",
+      "umpan_balik": {
+        "benar": "Tepat! Serutan pensil campur karet sisa dapat dibuang ke tong tempat sampah umum.",
+        "salah": "Serutan kayu kecil bercampur karet masuk ke tempat sampah umum (Residu)."
+      },
+      "gambar": "ASSETS/kuis/puntung pensil.png"
+    },
+    {
+      "id": "sd-038",
+      "level": "tunas",
+      "kategori_id": "organik",
+      "sampah_id": "daun-pisang",
+      "pertanyaan": "Daun pisang bekas pembungkus nasi uduk pagi hari tergolong sampah...",
+      "pilihan": [
+        {
+          "id": "a",
+          "teks": "Organik"
+        },
+        {
+          "id": "b",
+          "teks": "Anorganik"
+        },
+        {
+          "id": "c",
+          "teks": "B3"
+        },
+        {
+          "id": "d",
+          "teks": "E-Waste"
+        }
+      ],
+      "jawaban_benar": "a",
+      "umpan_balik": {
+        "benar": "Joss! Daun pisang adalah bahan pembungkus alami ramah lingkungan.",
+        "salah": "Daun pisang berasal dari tumbuhan alami sehingga tergolong Sampah Organik."
+      },
+      "gambar": "ASSETS/kuis/daun pisang.png"
+    },
+    {
+      "id": "sd-039",
+      "level": "tunas",
+      "kategori_id": "anorganik",
+      "sampah_id": "gelas-plastik",
+      "pertanyaan": "Gelas plastik bekas es teh manis yang sudah dicuci bersih bisa dimasukkan ke tong...",
+      "pilihan": [
+        {
+          "id": "a",
+          "teks": "Kuning (Anorganik)"
+        },
+        {
+          "id": "b",
+          "teks": "Hijau (Organik)"
+        },
+        {
+          "id": "c",
+          "teks": "Merah (B3)"
+        },
+        {
+          "id": "d",
+          "teks": "Hitam"
+        }
+      ],
+      "jawaban_benar": "a",
+      "umpan_balik": {
+        "benar": "Tepat! Gelas plastik bening disukai bank sampah untuk didaur ulang.",
+        "salah": "Gelas plastik adalah sampah anorganik yang dibuang ke Tong Kuning."
+      },
+      "gambar": "ASSETS/kuis/gelas plastik.png"
+    },
+    {
+      "id": "sd-040",
+      "level": "tunas",
+      "kategori_id": "ewaste",
+      "sampah_id": "jam-tangan-rusak",
+      "pertanyaan": "Jam tangan digital yang mesinnya mati dan karatan tergolong sampah...",
+      "pilihan": [
+        {
+          "id": "a",
+          "teks": "E-Waste (Elektronik)"
+        },
+        {
+          "id": "b",
+          "teks": "Organik"
+        },
+        {
+          "id": "c",
+          "teks": "Kertas"
+        },
+        {
+          "id": "d",
+          "teks": "Sayur"
+        }
+      ],
+      "jawaban_benar": "a",
+      "umpan_balik": {
+        "benar": "Sip! Jam digital berisi chip elektronik dan baterai kecil.",
+        "salah": "Jam tangan elektronik bekas merupakan jenis sampah E-Waste."
+      },
+      "gambar": "ASSETS/kuis/jam tangan.png"
+    },
+    {
+      "id": "sd-041",
+      "level": "tunas",
+      "kategori_id": "organik",
+      "sampah_id": "sisa-roti",
+      "pertanyaan": "Roti tawar yang sudah kadaluarsa dan berjamur sebaiknya dibuang ke...",
+      "pilihan": [
+        {
+          "id": "a",
+          "teks": "Tong Organik (Hijau)"
+        },
+        {
+          "id": "b",
+          "teks": "Tong Anorganik (Kuning)"
+        },
+        {
+          "id": "c",
+          "teks": "Tong B3 (Merah)"
+        },
+        {
+          "id": "d",
+          "teks": "Tong Biru"
+        }
+      ],
+      "jawaban_benar": "a",
+      "umpan_balik": {
+        "benar": "Keren! Makanan sisa basi membusuk secara alami di tempat sampah organik.",
+        "salah": "Sisa makanan seperti roti basi tergolong sampah Organik."
+      },
+      "gambar": "ASSETS/kuis/sisa roti.png"
+    },
+    {
+      "id": "sd-042",
+      "level": "tunas",
+      "kategori_id": "anorganik",
+      "sampah_id": "piring-plastik",
+      "pertanyaan": "Piring plastik ulang tahun yang sudah retak termasuk jenis sampah...",
+      "pilihan": [
+        {
+          "id": "a",
+          "teks": "Anorganik"
+        },
+        {
+          "id": "b",
+          "teks": "Organik"
+        },
+        {
+          "id": "c",
+          "teks": "B3"
+        },
+        {
+          "id": "d",
+          "teks": "Sayuran"
+        }
+      ],
+      "jawaban_benar": "a",
+      "umpan_balik": {
+        "benar": "Benar! Bahan berbahan plastik sintetis tergolong anorganik.",
+        "salah": "Barang olahan plastik tergolong sampah Anorganik."
+      },
+      "gambar": "ASSETS/kuis/piring plastik.png"
+    },
+    {
+      "id": "sd-043",
+      "level": "tunas",
+      "kategori_id": "b3",
+      "sampah_id": "termometer-pecah",
+      "pertanyaan": "Jika melihat isi cairan termometer kaca tumpah di lantai, kita harus...",
+      "pilihan": [
+        {
+          "id": "a",
+          "teks": "Memberitahu guru/orang tua karena berisi cairan racun merkuri"
+        },
+        {
+          "id": "b",
+          "teks": "Memegang airnya dengan tangan telanjang"
+        },
+        {
+          "id": "c",
+          "teks": "Jilat airnya"
+        },
+        {
+          "id": "d",
+          "teks": "Membiarkannya tanpa lapor"
+        }
+      ],
+      "jawaban_benar": "a",
+      "umpan_balik": {
+        "benar": "Pintar! Air raksa pada termometer beracun B3 dan tidak boleh disentuh tangan.",
+        "salah": "Termometer manual berisi racun raksa B3 yang berbahaya jika tersentuh."
+      },
+      "gambar": "ASSETS/kuiS/termometer pecah.png"
+    },
+    {
+      "id": "sd-044",
+      "level": "tunas",
+      "kategori_id": "residu",
+      "sampah_id": "kain-lap-kotor",
+      "pertanyaan": "Kain lap oli kompor yang sudah robek parah dan sangat kotor dibuang ke...",
+      "pilihan": [
+        {
+          "id": "a",
+          "teks": "Tong Residu"
+        },
+        {
+          "id": "b",
+          "teks": "Tong Organik"
+        },
+        {
+          "id": "c",
+          "teks": "Sungai"
+        },
+        {
+          "id": "d",
+          "teks": "Atap Rumah"
+        }
+      ],
+      "jawaban_benar": "a",
+      "umpan_balik": {
+        "benar": "Tepat! Kain lap yang penuh sisa minyak sulit dicuci/didaur ulang jadi masuk residu.",
+        "salah": "Barang tekstil kotor berminyak tergolong Sampah Residu."
+      },
+      "gambar": "ASSETS/kuiS/kain lap kotor.png"
+    },
+    {
+      "id": "sd-045",
+      "level": "tunas",
+      "kategori_id": "organik",
+      "sampah_id": "kulit-jeruk",
+      "pertanyaan": "Kulit jeruk sisa makan buah bisa dimanfaatkan untuk...",
+      "pilihan": [
+        {
+          "id": "a",
+          "teks": "Membuat pengharum alami komposter"
+        },
+        {
+          "id": "b",
+          "teks": "Bahan ban mobil"
+        },
+        {
+          "id": "c",
+          "teks": "Baterai laptop"
+        },
+        {
+          "id": "d",
+          "teks": "Layar handphone"
+        }
+      ],
+      "jawaban_benar": "a",
+      "umpan_balik": {
+        "benar": "Luar biasa! Aroma segar kulit jeruk dapat menutupi bau sampah komposter.",
+        "salah": "Kulit jeruk adalah sampah organik wangi yang bagus diolah jadi pengharum alami."
+      },
+      "gambar": "ASSETS/kuiS/kulit jeruk.png"
+    },
+    {
+      "id": "sd-046",
+      "level": "tunas",
+      "kategori_id": "anorganik",
+      "sampah_id": "kotak-sepatu",
+      "pertanyaan": "Kotak kertas bekas kemasan sepatu baru dapat didaur ulang di pabrik menjadi...",
+      "pilihan": [
+        {
+          "id": "a",
+          "teks": "Kertas karton daur ulang"
+        },
+        {
+          "id": "b",
+          "teks": "Batu bata"
+        },
+        {
+          "id": "c",
+          "teks": "Minyak goreng"
+        },
+        {
+          "id": "d",
+          "teks": "Kaca jendela"
+        }
+      ],
+      "jawaban_benar": "a",
+      "umpan_balik": {
+        "benar": "Mantap! Kertas dan karton bekas dilebur menjadi kertas baru.",
+        "salah": "Kardus bekas tergolong anorganik yang didaur ulang menjadi produk kertas baru."
+      },
+      "gambar": "ASSETS/kuiS/kotak sepatu.png"
+    },
+    {
+      "id": "sd-047",
+      "level": "tunas",
+      "kategori_id": "ewaste",
+      "sampah_id": "lampu-senter-led",
+      "pertanyaan": "Lampu LED kecil dari mainan yang sudah terputus kabelnya termasuk sampah...",
+      "pilihan": [
+        {
+          "id": "a",
+          "teks": "E-Waste"
+        },
+        {
+          "id": "b",
+          "teks": "Organik"
+        },
+        {
+          "id": "c",
+          "teks": "Residu Dapur"
+        },
+        {
+          "id": "d",
+          "teks": "Makanan"
+        }
+      ],
+      "jawaban_benar": "a",
+      "umpan_balik": {
+        "benar": "Sip! Komponen lampu LED adalah partikel elektronik bekas.",
+        "salah": "Lampu LED kecil merupakan bagian dari sampah elektronik (E-Waste)."
+      },
+      "gambar": "ASSETS/kuiS/senter plastik.png"
+    },
+    {
+      "id": "sd-048",
+      "level": "tunas",
+      "kategori_id": "organik",
+      "sampah_id": "biji-semangka",
+      "pertanyaan": "Biji buah semangka yang kamu lepeh saat makan buah tergolong sampah...",
+      "pilihan": [
+        {
+          "id": "a",
+          "teks": "Organik"
+        },
+        {
+          "id": "b",
+          "teks": "Anorganik"
+        },
+        {
+          "id": "c",
+          "teks": "B3"
+        },
+        {
+          "id": "d",
+          "teks": "Residu"
+        }
+      ],
+      "jawaban_benar": "a",
+      "umpan_balik": {
+        "benar": "Tepat! Biji semangka dari buah alami mudah membusuk di tanah.",
+        "salah": "Biji semangka adalah bahan alami tumbuhan, tergolong Sampah Organik."
+      },
+      "gambar": "ASSETS/kuiS/biji semangka.png"
+    },
+    {
+      "id": "sd-049",
+      "level": "tunas",
+      "kategori_id": "anorganik",
+      "sampah_id": "pipa-plastik",
+      "pertanyaan": "Potongan pipa plastik mainan anak tergolong sampah...",
+      "pilihan": [
+        {
+          "id": "a",
+          "teks": "Anorganik"
+        },
+        {
+          "id": "b",
+          "teks": "Organik"
+        },
+        {
+          "id": "c",
+          "teks": "B3"
+        },
+        {
+          "id": "d",
+          "teks": "Kertas"
+        }
+      ],
+      "jawaban_benar": "a",
+      "umpan_balik": {
+        "benar": "Bagus! Bahan plastik tidak membusuk secara alami.",
+        "salah": "Plastik adalah buatan manusia yang tergolong sampah Anorganik."
+      },
+      "gambar": "ASSETS/kuiS/pipa bekas.png"
+    },
+    {
+      "id": "sd-050",
+      "level": "tunas",
+      "kategori_id": "residu",
+      "sampah_id": "puntung-rokok",
+      "pertanyaan": "Puntung rokok bekas yang ditemukan disapu di jalanan tergolong sampah...",
+      "pilihan": [
+        {
+          "id": "a",
+          "teks": "Residu"
+        },
+        {
+          "id": "b",
+          "teks": "Organik"
+        },
+        {
+          "id": "c",
+          "teks": "E-Waste"
+        },
+        {
+          "id": "d",
+          "teks": "Makanan"
+        }
+      ],
+      "jawaban_benar": "a",
+      "umpan_balik": {
+        "benar": "Benar! Filter puntung rokok terbuat dari busa sintetis yang kotor dan masuk residu.",
+        "salah": "Puntung rokok mengandung filter sintesis kotor yang tergolong Sampah Residu."
+      },
+      "gambar": "ASSETS/kuiS/puntung rokok.png"
+    }
+  ]
+}

@@ -1,0 +1,287 @@
+{
+"meta": {
+"versi": "1.0",
+"diperbarui": "2026-10-30",
+"total_misi": 16
+},
+"peringkat": [
+{ "min_poin": 0, "nama": "Panda Pemula", "ikon": "🐼", "deskripsi": "Baru memulai perjalanan memilah sampah." },
+{ "min_poin": 50, "nama": "Penjaga Daun", "ikon": "🍃", "deskripsi": "Mulai aktif memilah sampah di rumah dan sekolah." },
+{ "min_poin": 150, "nama": "Pahlawan Hijau", "ikon": "🌏", "deskripsi": "Konsisten melakukan aksi hijau sehari-hari." },
+{ "min_poin": 300, "nama": "Duta Bumi", "ikon": "🏆", "deskripsi": "Penggerak lingkungan hidup dan inspirasi teman-teman!" }
+],
+"misi": [
+{
+"id": "m-w-001",
+"jenis": "wajib",
+"judul": "Kenali 5 Kategori Sampah",
+"deskripsi": "Pelajari dan pahami perbedaan antara sampah Organik, Anorganik, B3, Residu, dan E-Waste di menu Panduan Pilah.",
+"langkah": [
+"Buka halaman 'Panduan Pilah' di SampahKu.",
+"Baca ciri-ciri dan contoh dari kelima kategori sampah.",
+"Ingat warna tong sampah untuk masing-masing kategori."
+],
+"poin": 20,
+"tingkat": ["SD", "SMP"],
+"butuh_pendamping": false,
+"kaitan_sdg": [12],
+"kategori_id": null,
+"tips_keamanan": null
+},
+{
+"id": "m-w-002",
+"jenis": "wajib",
+"judul": "Selesaikan 1 Sesi Kuis Edukasi",
+"deskripsi": "Uji pengetahuanmu dengan menjawab 10 soal kuis pemilahan sampah sampai selesai.",
+"langkah": [
+"Pilih menu 'Kuis' dan tentukan levelmu (Tunas atau Pohon).",
+"Jawab 10 pertanyaan kuis sampai melihat layar hasil.",
+"Pelajari ulasan jawaban yang belum tepat."
+],
+"poin": 25,
+"tingkat": ["SD", "SMP"],
+"butuh_pendamping": false,
+"kaitan_sdg": [12, 13],
+"kategori_id": null,
+"tips_keamanan": null
+},
+{
+"id": "m-h-001",
+"jenis": "harian",
+"judul": "Bawa Botol Minum Isi Ulang",
+"deskripsi": "Gunakan tumbler atau botol minum sendiri saat beraktivitas hari ini tanpa membeli air kemasan sekali pakai.",
+"langkah": [
+"Isi air minum bersih di botolmu dari rumah.",
+"Bawa botol minum saat berangkat ke sekolah atau main.",
+"Habiskan airnya dan isi ulang jika ada fasilitas dispenser."
+],
+"poin": 10,
+"tingkat": ["SD", "SMP"],
+"butuh_pendamping": false,
+"kaitan_sdg": [12],
+"kategori_id": "anorganik",
+"tips_keamanan": null
+},
+{
+"id": "m-h-002",
+"jenis": "harian",
+"judul": "Pilah Sisa Buah & Sayur",
+"deskripsi": "Kumpulkan sisa kulit buah atau potongan sayur makan siangmu dan buang ke tong sampah organik.",
+"langkah": [
+"Perhatikan sisa makanan atau kulit buah dari piringmu.",
+"Pastikan tidak ada pembungkus plastik yang menempel.",
+"Buang sisa buah/sayur ke Tong Sampah Organik (Hijau)."
+],
+"poin": 10,
+"tingkat": ["SD", "SMP"],
+"butuh_pendamping": false,
+"kaitan_sdg": [12],
+"kategori_id": "organik",
+"tips_keamanan": null
+},
+{
+"id": "m-h-003",
+"jenis": "harian",
+"judul": "Habiskan Makanan Tanpa Sisa",
+"deskripsi": "Ambil porsi makanan secukupnya dan habiskan tanpa meninggalkan sisa di piring.",
+"langkah": [
+"Ambil nasi dan lauk sesuai porsi kemampuan makanmu.",
+"Nikmati makanan hingga bersih tak tersisa di piring.",
+"Ucapkan syukur atas makanan yang kamu nikmati."
+],
+"poin": 15,
+"tingkat": ["SD", "SMP"],
+"butuh_pendamping": false,
+"kaitan_sdg": [12, 13],
+"kategori_id": "organik",
+"tips_keamanan": null
+},
+{
+"id": "m-h-004",
+"jenis": "harian",
+"judul": "Matikan Lampu Kamar yang Tidak Terpakai",
+"deskripsi": "Hemat energi dengan mematikan lampu kamar saat siang hari atau saat ditinggal keluar.",
+"langkah": [
+"Cek lampu kamarmu saat sinar matahari sudah terang.",
+"Tekan sakelar ke posisi OFF jika tidak digunakan.",
+"Buka jendela agar udara dan cahaya alami masuk."
+],
+"poin": 10,
+"tingkat": ["SD", "SMP"],
+"butuh_pendamping": false,
+"kaitan_sdg": [13],
+"kategori_id": null,
+"tips_keamanan": "Pastikan tanganmu dalam kondisi kering saat memegang sakelar listrik!"
+},
+{
+"id": "m-m-001",
+"jenis": "mingguan",
+"judul": "Siapkan 2 Wadah Sampah Terpisah di Rumah",
+"deskripsi": "Bersama keluarga, sediakan minimal dua tempat sampah terpisah di rumah (Organik & Anorganik).",
+"langkah": [
+"Siapkan dua tempat sampah atau dus bekas.",
+"Beri label 'ORGANIK' di satu tempat dan 'ANORGANIK' di tempat lainnya.",
+"Ajak orang tua dan saudaramu memilah sampah harian di rumah."
+],
+"poin": 30,
+"tingkat": ["SD", "SMP"],
+"butuh_pendamping": true,
+"kaitan_sdg": [12],
+"kategori_id": null,
+"tips_keamanan": "Minta bantuan orang tua saat memberi label dan menata tempat sampah."
+},
+{
+"id": "m-m-002",
+"jenis": "mingguan",
+"judul": "Kumpulkan Baterai Bekas ke Wadah Khusus",
+"deskripsi": "Cari baterai jam/mainan habis pakai di rumah dan kumpulkan dalam satu wadah B3 khusus tertutup.",
+"langkah": [
+"Cari baterai bekas yang tercecer di laci rumah bersama orang tua.",
+"Siapkan botol atau toples plastik bekas yang ada tutupnya.",
+"Masukkan semua baterai bekas ke dalam toples dan beri label 'KHUSUS BATERAI B3'."
+],
+"poin": 35,
+"tingkat": ["SD", "SMP"],
+"butuh_pendamping": true,
+"kaitan_sdg": [12],
+"kategori_id": "b3",
+"tips_keamanan": "Jangan memegang baterai yang bocor atau berkarat! Gunakan sarung tangan dan pendampingan orang dewasa."
+},
+{
+"id": "m-m-003",
+"jenis": "mingguan",
+"judul": "Setor Sampah Anorganik ke Bank Sampah / Pemulung",
+"deskripsi": "Kumpulkan botol plastik, kardus, dan kaleng bekas selama seminggu lalu serahkan ke bank sampah atau pemulung.",
+"langkah": [
+"Kumpulkan dan bersihkan botol plastik serta kardus bekas selama seminggu.",
+"Ikat kardus rapi dan pipihkan botol plastik.",
+"Serahkan ke Bank Sampah sekolah/RT atau berikan kepada petugas pemulung."
+],
+"poin": 40,
+"tingkat": ["SD", "SMP"],
+"butuh_pendamping": true,
+"kaitan_sdg": [12],
+"kategori_id": "anorganik",
+"tips_keamanan": null
+},
+{
+"id": "m-m-004",
+"jenis": "mingguan",
+"judul": "Gunakan Tas Belanja Kain Saat ke Minimarket",
+"deskripsi": "Saat berbelanja kebutuhan mingguan bersama keluarga, selalu bawa tas kain dari rumah.",
+"langkah": [
+"Siapkan tas belanja dari bahan kain sebelum berangkat ke toko/pasar.",
+"Tolak penggunaan kantong plastik kresek saat berada di kasir.",
+"Masukkan semua barang belanjaan ke dalam tas kainmu."
+],
+"poin": 25,
+"tingkat": ["SD", "SMP"],
+"butuh_pendamping": false,
+"kaitan_sdg": [12],
+"kategori_id": "anorganik",
+"tips_keamanan": null
+},
+{
+"id": "m-m-005",
+"jenis": "mingguan",
+"judul": "Buat Kerajinan Dari Barang Bekas (Upcycling)",
+"deskripsi": "Ubah satu barang anorganik bekas (seperti kardus atau botol) menjadi benda berguna baru.",
+"langkah": [
+"Pilih bahan bekas seperti botol plastik atau kardus kemasan.",
+"Cari ide kerajinan (vas bunga, tempat pensil, atau tempat HP).",
+"Buat dan hias kerajinanmu bersama teman atau keluarga."
+],
+"poin": 35,
+"tingkat": ["SD", "SMP"],
+"butuh_pendamping": true,
+"kaitan_sdg": [12],
+"kategori_id": "anorganik",
+"tips_keamanan": "Berhati-hatilah saat menggunakan gunting atau pemotong! Minta bantuan orang dewasa."
+},
+{
+"id": "m-b-001",
+"jenis": "bulanan",
+"judul": "Mulai Pembuatan Kompos Sederhana di Rumah",
+"deskripsi": "Kelola sampah organik rumah tangga selama sebulan menjadi pupuk kompos untuk tanaman.",
+"langkah": [
+"Siapkan pot atau ember bekas berlubang di dasar tanah.",
+"Masukkan selapis tanah, selapis sampah organik (kulit buah/daun), dan tutup lagi dengan tanah.",
+"Lakukan rutin setiap minggu dan siram sedikit air sampai membusuk jadi pupuk."
+],
+"poin": 50,
+"tingkat": ["SD", "SMP"],
+"butuh_pendamping": true,
+"kaitan_sdg": [12, 13],
+"kategori_id": "organik",
+"tips_keamanan": "Gunakan sarung tangan berkebun atau cetok kecil saat memindahkan tanah."
+},
+{
+"id": "m-b-002",
+"jenis": "bulanan",
+"judul": "Kumpulkan Sampah Elektronik (E-Waste) Rumah",
+"deskripsi": "Kumpulkan kabel charger rusak, HP tua, atau earphone mati di rumah dan bawa ke Drop-Box E-Waste.",
+"langkah": [
+"Periksa laci rumah bersama orang tua untuk menemukan barang elektronik bekas yang mati.",
+"Kumpulkan dalam kotak khusus berlabel E-Waste.",
+"Bawa dan masukkan ke Drop-Box E-Waste yang ada di fasilitas umum kota atau sekolah."
+],
+"poin": 60,
+"tingkat": ["SD", "SMP"],
+"butuh_pendamping": true,
+"kaitan_sdg": [12],
+"kategori_id": "ewaste",
+"tips_keamanan": "Jangan pernah membongkar paksa mesin elektronik tua! Serahkan dalam kondisi utuh bersama orang tua."
+},
+{
+"id": "m-b-003",
+"jenis": "bulanan",
+"judul": "Ajak 3 Teman Memulai Aksi Pemilahan",
+"deskripsi": "Bagikan pengetahuanmu tentang memilah sampah kepada 3 orang teman atau sepupu.",
+"langkah": [
+"Tunjukkan website SampahKu kepada 3 orang temanmu.",
+"Jelaskan cara membedakan sampah Organik, Anorganik, dan B3.",
+"Ajak mereka ikut mencoba menjawab Kuis Edukasi."
+],
+"poin": 50,
+"tingkat": ["SD", "SMP"],
+"butuh_pendamping": false,
+"kaitan_sdg": [12, 13],
+"kategori_id": null,
+"tips_keamanan": null
+},
+{
+"id": "m-b-004",
+"jenis": "bulanan",
+"judul": "Buat 1 Botol Ecobrick Dari Plastik Lembaran",
+"deskripsi": "Isi botol plastik bekas dengan sachet dan plastik lembaran hingga padat dan keras.",
+"langkah": [
+"Bersihkan dan keringkan sachet atau kantong plastik bekas.",
+"Gunting menjadi potongan kecil-kecil.",
+"Masukkan dan padatkan potongan plastik ke dalam botol bekas menggunakan tongkat kayu sampai keras."
+],
+"poin": 55,
+"tingkat": ["SD", "SMP"],
+"butuh_pendamping": true,
+"kaitan_sdg": [12],
+"kategori_id": "residu",
+"tips_keamanan": "Pastikan bahan plastik yang dimasukkan dalam kondisi kering agar tidak berjamur."
+},
+{
+"id": "m-b-005",
+"jenis": "bulanan",
+"judul": "Lakukan Aksi Aksi Bersih Lingkungan (Clean-Up)",
+"deskripsi": "Ikuti aksi pembersihan lingkungan bersama keluarga, RT, atau klub sekolah selama 1 hari.",
+"langkah": [
+"Ikuti kegiatan kerja bakti di lingkungan rumah atau sekolah.",
+"Gunakan sarung tangan dan kantong sampah terpisah.",
+"Pilah sampah yang berhasil terkumpul selama kerja bakti."
+],
+"poin": 60,
+"tingkat": ["SD", "SMP"],
+"butuh_pendamping": true,
+"kaitan_sdg": [12, 13],
+"kategori_id": null,
+"tips_keamanan": "Wajib menggunakan sarung tangan pelindung dan cuci tangan sampai bersih setelah selesai!"
+}
+]
+}

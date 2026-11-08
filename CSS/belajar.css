@@ -1,0 +1,524 @@
+/* 
+  ==========================================
+  HALAMAN BELAJAR SAMPAH (belajar.css)
+  ========================================== 
+*/
+
+@import url(CSS/style.css);
+
+body {
+  background-color: var(--color-bg);
+  font-family: var(--font-display);
+}
+
+.main-content {
+  max-width: var(--w-content);
+  margin: 0 auto;
+  padding: var(--space-5, 24px) var(--space-3, 12px) var(--space-8, 64px);
+}
+
+
+/* 
+  =================================
+  Hero Banner Section Design Style
+  =================================
+*/
+.belajar-hero-content {
+  background-color: var(--color-primary);
+  border-radius: var(--radius-xl, 24px);
+  padding: var(--space-6, 32px) var(--space-7, 48px);
+  color: #ffffff;
+  display: grid;
+  grid-template-columns: 1fr 340px;
+  gap: var(--space-6, 32px);
+  align-items: center;
+  margin-bottom: var(--space-7, 48px);
+  box-shadow: var(--shadow-overlay);
+}
+
+.hero-left .hero-title {
+  font-family: var(--font-display, "Baloo 2", sans-serif);
+  font-size: clamp(2.2rem, 1.8rem + 2vw, 3.25rem);
+  font-weight: 800;
+  line-height: 1.1;
+  margin-bottom: var(--space-3, 12px);
+}
+
+.highlight-belajar {
+  color: gold;
+}
+
+.line-belajar {
+  width: 100%;
+  max-width: 500px;
+  height: 3px;
+  background-color: var(--color-surface);
+  border-radius: 20px;
+  margin-bottom: 16px;
+}
+
+.hero-desc {
+  font-size: 18px;
+  line-height: 1.5;
+  color: #e4f2e6;
+  margin-bottom: var(--space-5, 24px);
+  max-width: 65ch;
+}
+
+.hero-actions {
+  display: flex;
+  align-items: center;
+  gap: var(--space-4, 16px);
+}
+
+.btn-petualangan-belajar {
+  background-color: var(--color-surface);
+  padding: 16px;
+  border-radius: 12px;
+  width: 180px;
+  text-align: center;
+  text-decoration: none;
+  color: var(--color-text-belajar);
+  font-size: 16px;
+  font-weight: 600;
+  transition: 0.3s ease;
+}
+
+.btn-petualangan-belajar:hover {
+  background-color: var(--color-mint-hover);
+}
+
+.btn-action-materi {
+  color: var(--color-surface);
+  border: 1px solid var(--color-surface);
+  padding: 16px;
+  border-radius: 12px;
+  width: 180px;
+  text-align: center;
+  text-decoration: none;
+  font-size: 16px;
+  font-weight: 600;
+  transition: 0.3s ease;
+}
+
+.btn-action-materi:hover {
+  background-color: var(--color-focus);
+}
+
+.hero-right .hero-card-img {
+  background: #ffffff;
+  border-radius: var(--radius-lg, 20px);
+  padding: 16px;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.15);
+  text-align: center;
+}
+
+.hero-right .mascot-img {
+  width: 100%;
+  height: 280px;
+  border-radius: 14px;
+  object-fit: cover;
+}
+
+.hero-right .mascot-tip {
+  display: flex;
+  align-items: flex-start;
+  gap: 8px;
+  background: var(--color-bg, #fff8ec);
+  color: var(--color-text, #1f2937);
+  padding: 10px 14px;
+  border-radius: 12px;
+  margin-top: 12px;
+  text-align: left;
+  font-size: 13px;
+}
+
+
+/* 
+  ====================================
+  Materi Section & Grid Cards Design
+  ====================================
+*/
+.materi-section {
+  margin-bottom: var(--space-8, 64px);
+  font-family: var(--font-body);
+}
+
+.materi-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: var(--space-5, 24px);
+}
+
+.materi-card {
+  background: var(--color-surface, #ffffff);
+  padding: 8px;
+  border: 1px solid var(--color-border-subtle, #d8e5db);
+  border-radius: var(--radius-lg, 20px);
+  display: flex;
+  flex-direction: column;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.materi-card:hover {
+  transform: scale(1.01);
+  box-shadow: var(--shadow-hover, 0 4px 12px rgba(20, 83, 45, 0.12));
+}
+
+.card-thumb {
+  height: 160px;
+  background: var(--color-mint, #e6f6ec);
+  overflow: hidden;
+  border-radius: var(--radius-lg, 20px);
+}
+
+.card-thumb img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.card-body {
+  padding: var(--space-4, 16px);
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
+}
+
+.card-body h3 {
+  font-family: var(--font-display, "Baloo 2", sans-serif);
+  font-size: 20px;
+  font-weight: 700;
+  color: var(--color-text, #1f2937);
+  margin-bottom: var(--space-2, 8px);
+}
+
+.card-body p {
+  font-size: 14px;
+  color: var(--color-text-muted, #4b5563);
+  line-height: 1.4;
+  margin-bottom: var(--space-4, 16px);
+  flex-grow: 1;
+}
+
+.btn-open {
+  background-color: var(--color-primary);
+  color: var(--color-surface);
+  border: 1px solid var(--color-border-subtle, #d8e5db);
+  padding: 10px 16px;
+  border-radius: var(--radius-md, 16px);
+  font-weight: 600;
+  font-size: 15px;
+  cursor: pointer;
+  transition: all 0.2s ease;
+  width: 100%;
+  text-align: center;
+}
+
+.btn-open:hover {
+  background-color: var(--color-forest, #1f7a4d);
+  color: #ffffff;
+}
+
+
+/* 
+  ==========================
+  Pop-UP Modal Design Style
+  ==========================
+*/
+
+.modal-overlay {
+  position: fixed;
+  inset: 0;
+  background: rgba(20, 83, 45, 0.4);
+  backdrop-filter: blur(4px);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  opacity: 0;
+  visibility: hidden;
+  transition: all 0.3s ease;
+  z-index: var(--z-dialog, 70);
+  padding: 16px;
+  box-sizing: border-box;
+}
+
+.modal-overlay.active {
+  opacity: 1;
+  visibility: visible;
+}
+
+.modal-content {
+  background: #ffffff;
+  padding: 28px;
+  border-radius: var(--radius-xl, 24px);
+  max-width: 520px;
+  width: 100%;
+  position: relative;
+  transform: translateY(-20px);
+  transition: transform 0.3s ease;
+  box-shadow: var(--shadow-overlay, 0 12px 32px rgba(20, 83, 45, 0.2));
+  box-sizing: border-box;
+}
+
+.modal-overlay.active .modal-content {
+  transform: translateY(0);
+}
+
+.btn-close {
+  position: absolute;
+  top: 18px;
+  right: 20px;
+  font-size: 28px;
+  border: none;
+  background: none;
+  color: var(--color-text-muted, #4b5563);
+  cursor: pointer;
+}
+
+.modal-header h2 {
+  font-family: var(--font-display, "Baloo 2", sans-serif);
+  font-size: 24px;
+  color: var(--color-forest, #14532d);
+  margin-bottom: 16px;
+}
+
+.modal-body .modal-img {
+  width: 100%;
+  max-height: 220px;
+  object-fit: cover;
+  border-radius: var(--radius-md, 16px);
+  margin-bottom: 16px;
+}
+
+.modal-body p {
+  font-size: 16px;
+  line-height: 1.6;
+  color: var(--color-text, #1f2937);
+  margin-bottom: 24px;
+}
+
+.modal-footer {
+  text-align: right;
+}
+
+
+/* 
+  =====================
+  Footer Design Style
+  =====================
+*/
+.footer {
+  padding: 20px 32px;
+  background-color: var(--color-surface);
+  border-top: 1px solid var(--color-border-subtle, #d8e5db);
+}
+
+.footer-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 12px;
+}
+
+.top-left-footer {
+  color: var(--color-forest);
+}
+
+.top-left-footer span {
+  color: var(--color-orange);
+}
+
+.head-sdg {
+  color: var(--color-yellow);
+}
+
+.sdg-badges {
+  display: flex;
+  gap: 12px;
+}
+
+.sdg-tag {
+  padding: 8px 12px;
+  border-radius: var(--radius-full);
+  background-color: var(--color-leaf);
+  color: var(--color-mint);
+  font-size: 13px;
+}
+
+.footer-bottom {
+  text-align: center;
+  border-top: 1px dashed var(--color-border-subtle, #d8e5db);
+  padding-top: 12px;
+}
+
+.title-footer-bottom {
+  color: var(--color-forest);
+  font-weight: 600;
+}
+
+.title-footer-bottom .subtitle-footer-bottom {
+  color: var(--color-orange);
+}
+
+
+/* 
+  =================================================
+  6. RESPONSIVE DESIGN (Navbar, Hero, Grid, Footer)
+  =================================================
+*/
+
+/* Table & iPad Layout Website */
+@media (max-width: 1024px) {
+  .main-content {
+    padding: 20px 16px;
+  }
+
+  .belajar-hero-content {
+    grid-template-columns: 1fr;
+    padding: 28px;
+    text-align: center;
+  }
+
+  .line-belajar {
+    margin: 0 auto 16px;
+  }
+
+  .hero-desc {
+    margin: 0 auto 24px;
+  }
+
+  .hero-actions {
+    justify-content: center;
+  }
+
+  .hero-right {
+    max-width: 360px;
+    margin: 0 auto;
+    width: 100%;
+  }
+
+  .materi-grid {
+    grid-template-columns: repeat(3, 1fr);
+    gap: 16px;
+  }
+}
+
+/* Mobile Layout Website */
+@media (max-width: 768px) {
+  nav {
+        width: 98%;
+        box-sizing: border-box;
+        padding: 12px 15px;
+        border-radius: 20px;
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        gap: 10px;
+    }
+
+    .head-nav {
+        font-size: clamp(18px, 5vw, 22px);
+    }
+
+    .nav-ul {
+        order: 3;
+        width: 100%;
+        overflow-x: auto;
+        justify-content: flex-start;
+        padding: 5px;
+        box-sizing: border-box;
+    }
+
+    .nav-ul ul {
+        width: max-content;
+        display: flex;
+        flex-wrap: nowrap;
+        justify-content: center;
+        align-items: center;
+        gap: 4px;
+        padding: 0;
+        margin: 0;
+    }
+    
+    .nav-link {
+        padding: 8px 10px;
+        font-size: 13px;
+        white-space: nowrap;
+        flex-shrink: 0;
+    }
+
+    .btn-nav {
+        margin-left: auto;
+        gap: 6px;
+    }
+
+    .btn-nav1,
+    .btn-nav2 {
+        padding: 7px 10px;
+        white-space: nowrap;
+    }
+
+    .btn-nav1 a,
+    .btn-nav2 a {
+        font-size: 11px;
+    }
+
+  .hero-actions {
+    flex-direction: column;
+    width: 100%;
+  }
+
+  .btn-petualangan-belajar,
+  .btn-action-materi {
+    width: 100%;
+  }
+
+  .materi-grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 12px;
+  }
+
+  .footer-content {
+    flex-direction: column;
+    text-align: center;
+    gap: 16px;
+  }
+
+  .sdg-badges {
+    flex-direction: column;
+    align-items: center;
+  }
+}
+
+/* Mobile Small Layout Website */
+@media (max-width: 480px) {
+  nav {
+    padding: 12px 8px;
+  }
+
+  .nav-link {
+    font-size: 13px;
+  }
+
+  .nav-ul ul {
+    gap: 6px;
+  }
+
+  .btn-nav1 a, .btn-nav2 a {
+    font-size: 14px;
+    padding: 8px 12px;
+  }
+
+  .materi-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .hero-title {
+    font-size: 1.8rem;
+  }
+
+  .hero-desc {
+    font-size: 14px;
+  }
+}
