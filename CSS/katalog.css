@@ -1130,7 +1130,7 @@ nav {
 
 /* Mobile Medium / Smartphone (<= 768px) */
 @media (max-width: 768px) {
-  nav {
+   nav {
         width: 90%;
         box-sizing: border-box;
         padding: 15px 18px;
