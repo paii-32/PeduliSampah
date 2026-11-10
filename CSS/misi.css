@@ -607,7 +607,7 @@ nav {
         width: 90%;
         box-sizing: border-box;
         padding: 15px 18px;
-        border-radius: var(--radius-full);
+        border-radius: var(--radius-lg);
         display: flex;
         flex-wrap: wrap;
         align-items: center;
