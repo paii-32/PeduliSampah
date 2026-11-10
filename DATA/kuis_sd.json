@@ -92,7 +92,7 @@
         "benar": "Hebat! Botol plastik adalah sampah anorganik yang bisa didaur ulang di tong kuning.",
         "salah": "Yuk ingat lagi! Botol plastik dapat didaur ulang dan dibuang ke Tong Kuning (Anorganik)."
       },
-      "gambar": "ASSETS/kuis/botol plastik.png"
+      "gambar": "kuis/botol plastik.png"
     },
     {
       "id": "sd-003",
@@ -123,7 +123,7 @@
         "benar": "Pintar sekali! Baterai mengandung zat beracun B3, jadi harus ditangani dengan hati-hati.",
         "salah": "Ingat ya! Baterai mengandung zat kimia beracun, jangan digigit atau dibuang sembarangan."
       },
-      "gambar": "ASSETS/kuis/baterai bekas.png"
+      "gambar": "kuis/baterai bekas.png"
     },
     {
       "id": "sd-004",
@@ -154,7 +154,7 @@
         "benar": "Tepat! Daun kering berasal dari pohon dan bisa diolah menjadi pupuk kompos.",
         "salah": "Daun kering berasal dari tumbuhan alami, sehingga tergolong Sampah Organik."
       },
-      "gambar": "ASSETS/kuis/daun kering.png"
+      "gambar": "kuis/daun kering.png"
     },
     {
       "id": "sd-005",
@@ -185,7 +185,7 @@
         "benar": "Luar biasa! Membilas kaleng mencegah semut dan meremukkannya menghemat tempat tong.",
         "salah": "Langkah yang benar adalah membilas sisa minumannya dan memipihkannya sebelum dibuang."
       },
-      "gambar": "ASSETS/kuis/kaleng minuman.png"
+      "gambar": "kuis/kaleng minuman.png"
     },
     {
       "id": "sd-006",
@@ -216,7 +216,7 @@
         "benar": "Jawabanmu tepat! Styrofoam tergolong sampah residu yang bertahan sangat lama di bumi.",
         "salah": "Styrofoam adalah sampah residu yang tidak bisa didaur ulang dan merusak lingkungan."
       },
-      "gambar": "ASSETS/kuis/styrofoam.png"
+      "gambar": "kuis/styrofoam.png"
     },
     {
       "id": "sd-007",
@@ -247,7 +247,7 @@
         "benar": "Joss! Kabel charger adalah perangkat listrik bekas sehingga tergolong E-Waste.",
         "salah": "Semua kabel dan bekas alat listrik termasuk dalam kelompok E-Waste (Elektronik)."
       },
-      "gambar": "ASSETS/kuis/kabel charger.png"
+      "gambar": "kuis/kabel charger.png"
     },
     {
       "id": "sd-008",
@@ -278,7 +278,7 @@
         "benar": "Benar! Kulit telur kaya kalsium alami yang bisa dihaluskan untuk menyuburkan tanah.",
         "salah": "Kulit telur mengandung kalsium alami yang sangat bagus dijadikan pupuk tanaman."
       },
-      "gambar": "ASSETS/kuis/kulit telur.png"
+      "gambar": "kuis/kulit telur.png"
     },
     {
       "id": "sd-009",
@@ -309,7 +309,7 @@
         "benar": "Pintar! Memanfaatkan kardus bekas jadi kotak mainan adalah contoh nyata prinsip Reuse.",
         "salah": "Reuse artinya menggunakan kembali. Menghias kardus jadi wadah barang adalah contoh Reuse."
       },
-      "gambar": "ASSETS/kuis/kardus bekas.png"
+      "gambar": "kuis/kardus bekas.png"
     },
     {
       "id": "sd-010",
@@ -340,7 +340,7 @@
         "benar": "Tepat! Lampu neon berisi gas merkuri berbahaya jika terhirup atau tersentuh.",
         "salah": "Di dalam pecahan lampu neon terdapat racun merkuri dan serpihan kaca yang tajam."
       },
-      "gambar": "ASSETS/kuis/lempu neon.png"
+      "gambar": "kuis/lempu neon.png"
     },
     {
       "id": "sd-011",
@@ -371,7 +371,7 @@
         "benar": "Top! Sisa sayuran dapur dari bahan alami sangat bagus diolah menjadi kompos.",
         "salah": "Sisa sayuran dapur tergolong sampah organik yang pas dibuat kompos tanaman."
       },
-      "gambar": "ASSETS/kuis/sisa sayuran.png"
+      "gambar": "kuis/sisa sayuran.png"
     },
     {
       "id": "sd-012",
@@ -402,7 +402,7 @@
         "benar": "Mantap! Membawa tas kain sendiri menghemat penggunaan plastik sekali pakai.",
         "salah": "Reduce artinya mengurangi. Membawa tas belanja sendiri mengurangi timbulan sampah plastik."
       },
-      "gambar": "ASSETS/kuis/kantong kresek.png"
+      "gambar": "kuis/kantong kresek.png"
     },
     {
       "id": "sd-013",
@@ -433,7 +433,7 @@
         "benar": "Benar! Tisu basah terbuat dari serat sintensis yang tidak larut air sehingga bisa menyumbat pipa.",
         "salah": "Tisu basah terbuat dari serat sintetis plastik yang tidak hancur kena air dan bikin mampet."
       },
-      "gambar": "ASSETS/kuis/tisu basah.png"
+      "gambar": "kuis/tisu basah.png"
     },
     {
       "id": "sd-014",
@@ -464,7 +464,7 @@
         "benar": "Sip! Alat elektronik bekas harus dikumpulkan di drop-box khusus e-waste agar didaur ulang.",
         "salah": "Barang elektronik mengandung bahan kimia yang berbahaya jika dibakar. Buanglah ke Drop-Box E-Waste."
       },
-      "gambar": "ASSETS/kuis/hp rusak.png"
+      "gambar": "kuis/hp rusak.png"
     },
     {
       "id": "sd-015",
@@ -495,7 +495,7 @@
         "benar": "Tepat sekali! Kaleng semprotan bertekanan gas tinggi dan sangat berbahaya jika kena api.",
         "salah": "Kaleng semprotan bertekanan tinggi bisa meledak jika terkena panas api!"
       },
-      "gambar": "ASSETS/kuis/botol pestisida.png"
+      "gambar": "kuis/botol pestisida.png"
     },
     {
       "id": "sd-016",
@@ -526,7 +526,7 @@
         "benar": "Cerdas! Daun teh berasal dari tumbuhan alami sehingga mudah terurai.",
         "salah": "Daun teh adalah bahan alami yang membusuk secara alami (Organik)."
       },
-      "gambar": "ASSETS/kuis/ampas teh.png"
+      "gambar": "kuis/ampas teh.png"
     },
     {
       "id": "sd-017",
@@ -557,7 +557,7 @@
         "benar": "Keren! Bahan kaca dapat dilelehkan dan dicetak kembali berulang kali.",
         "salah": "Bahan kaca (botol kaca) adalah material anorganik yang bisa didaur ulang berulang kali."
       },
-      "gambar": "ASSETS/kuis/kaca botol.png"
+      "gambar": "kuis/kaca botol.png"
     },
     {
       "id": "sd-018",
@@ -588,7 +588,7 @@
         "benar": "Tepat! Sikat gigi plastik bekas sulit dipisahkan jalurnya sehingga dibuang ke tong residu.",
         "salah": "Sikat gigi sulit didaur ulang pabrik biasa sehingga tergolong Sampah Residu."
       },
-      "gambar": "ASSETS/kuis/sikat gigi.png"
+      "gambar": "kuis/sikat gigi.png"
     },
     {
       "id": "sd-019",
@@ -619,7 +619,7 @@
         "benar": "Pintar! Di dalam earphone terdapat kabel tembaga halus penghantar listrik dan magnet.",
         "salah": "Earphone mengandung magnet kecil dan kawat tembaga penyalur suara."
       },
-      "gambar": "ASSETS/kuis/headset rusak.png"
+      "gambar": "kuis/headset rusak.png"
     },
     {
       "id": "sd-020",
@@ -650,7 +650,7 @@
         "benar": "Luar biasa! Potongan rumput menjaga kelembapan tanah dan cepat membusuk jadi pupuk.",
         "salah": "Rumput potongan berasal dari tanaman alami, jadi sangat pas dibuat kompos tanaman."
       },
-      "gambar": "ASSETS/kuis/potongan rumput.png"
+      "gambar": "kuis/potongan rumput.png"
     },
     {
       "id": "sd-021",
@@ -681,7 +681,7 @@
         "benar": "Bagus! Membilas karton susu mencegah lalat dan memipihkannya menghemat wadah.",
         "salah": "Bilas dulu sisa susunya agar tidak berbau dan dihinggapi lalat, lalu pipihkan."
       },
-      "gambar": "ASSETS/kuis/kotak susu.png"
+      "gambar": "kuis/kotak susu.png"
     },
     {
       "id": "sd-022",
@@ -712,7 +712,7 @@
         "benar": "Benar! Pembersih toilet mengandung bahan kimia asam keras yang memicu perih di kulit.",
         "salah": "Cairan pembersih mengandung zat kimia keras yang memicu gatal dan perih pada kulit."
       },
-      "gambar": "ASSETS/kuis/botol pembersih.png"
+      "gambar": "kuis/botol pembersih.png"
     },
     {
       "id": "sd-023",
@@ -743,7 +743,7 @@
         "benar": "Tepat! Popok bekas kotoran tidak higienis untuk didaur ulang sehingga masuk tong residu.",
         "salah": "Popok bekas mengandung gel kotoran biologis sehingga dikategorikan sampah Residu."
       },
-      "gambar": "ASSETS/kuis/popok bayi.png"
+      "gambar": "kuis/popok bayi.png"
     },
     {
       "id": "sd-024",
@@ -774,7 +774,7 @@
         "benar": "Pintar! Batu baterai harus dilepas agar cairannya tidak bocor merusak tanah.",
         "salah": "Keluarkan selalu baterainya terlebih dahulu sebelum membuang alat mainan elektronik."
       },
-      "gambar": "ASSETS/kuis/senter plastik.png"
+      "gambar": "kuis/senter plastik.png"
     },
     {
       "id": "sd-025",
@@ -805,7 +805,7 @@
         "benar": "Hebat! Nasi basi mengandung kuman baik pengurai alami yang jadi pupuk tanaman.",
         "salah": "Nasi basi dapat difermentasi menjadi pupuk cair alami untuk menyuburkan tanaman."
       },
-      "gambar": "ASSETS/kuis/nasi basi.png"
+      "gambar": "kuis/nasi basi.png"
     },
     {
       "id": "sd-026",
@@ -836,7 +836,7 @@
         "benar": "Tepat! Kertas majalah bekas diolah pabrik daur ulang menjadi kertas daur ulang.",
         "salah": "Kertas bekas tergolong sampah anorganik yang bisa didaur ulang menjadi kertas baru."
       },
-      "gambar": "ASSETS/kuis/buku bekas.png"
+      "gambar": "kuis/buku bekas.png"
     },
     {
       "id": "sd-027",
@@ -867,7 +867,7 @@
         "benar": "Keren! Tulang hewan berasal dari makhluk hidup sehingga termasuk sampah organik.",
         "salah": "Sisa makanan hewan seperti tulang ayam termasuk dalam kategori Sampah Organik."
       },
-      "gambar": "ASSETS/kuis/tulang.png"
+      "gambar": "kuis/tulang.png"
     },
     {
       "id": "sd-028",
@@ -898,7 +898,7 @@
         "benar": "Pintar! Mengubah barang bekas jadi hiasan bermanfaat adalah contoh kreatif dari Reuse.",
         "salah": "Membuat hiasan dari tutup botol adalah bentuk menggunakan kembali (Reuse) barang bekas."
       },
-      "gambar": "ASSETS/kuis/tutup botol.png"
+      "gambar": "kuis/tutup botol.png"
     },
     {
       "id": "sd-029",
@@ -929,7 +929,7 @@
         "benar": "Benar! Obat-obatan kadaluarsa mengandung zat kimia aktif yang masuk kategori B3.",
         "salah": "Obat-obatan kadaluarsa tergolong bahan kimia B3 yang harus dibuang secara khusus."
       },
-      "gambar": "ASSETS/kuis/botol obat.png"
+      "gambar": "kuis/botol obat.png"
     },
     {
       "id": "sd-030",
@@ -960,7 +960,7 @@
         "benar": "Bagus! Bungkus snack berlapis perak plastik sangat susah didaur ulang sehingga masuk residu.",
         "salah": "Bungkus snack foil-plastik tergolong sampah residu karena sulit dipisahkan bahannya."
       },
-      "gambar": "ASSETS/kuis/bungkus snack.png"
+      "gambar": "kuis/bungkus snack.png"
     },
     {
       "id": "sd-031",
@@ -991,7 +991,7 @@
         "benar": "Tepat! Kulit mangga diurai oleh cacing tanah menjadi hara penyubur pohon.",
         "salah": "Sampah organik seperti kulit mangga terurai alami di tanah dan menjadi pupuk."
       },
-      "gambar": "ASSETS/kuis/kulit mangga.png"
+      "gambar": "kuis/kulit mangga.png"
     },
     {
       "id": "sd-032",
@@ -1022,7 +1022,7 @@
         "benar": "Hebat! Memakai sedotan cuci ulang menekan tumpukan sampah plastik di laut.",
         "salah": "Menggunakan sedotan bambu/metal mengurangi penggunaan sedotan plastik sekali pakai."
       },
-      "gambar": "ASSETS/kuis/sedotan plastik.png"
+      "gambar": "kuis/sedotan plastik.png"
     },
     {
       "id": "sd-033",
@@ -1053,7 +1053,7 @@
         "benar": "Benar! Remote TV memiliki papan sirkuit listrik kecil di dalamnya.",
         "salah": "Remote TV merupakan alat elektronik bekas yang tergolong E-Waste."
       },
-      "gambar": "ASSETS/kuis/remote tv.png"
+      "gambar": "kuis/remote tv.png"
     },
     {
       "id": "sd-034",
@@ -1084,7 +1084,7 @@
         "benar": "Sip! Biji buah berasal dari tanaman buah alami (Organik).",
         "salah": "Biji buah-buahan tergolong sampah alami yaitu Organik."
       },
-      "gambar": "ASSETS/kuis/biji rambutan.png"
+      "gambar": "kuis/biji rambutan.png"
     },
     {
       "id": "sd-035",
@@ -1115,7 +1115,7 @@
         "benar": "Tepat! Sendok plastik terbuat dari bahan anorganik yang bisa diolah kembali.",
         "salah": "Sendok plastik terbuat dari anorganik dan tempatnya di Tong Kuning."
       },
-      "gambar": "ASSETS/kuis/sendok plastik.png"
+      "gambar": "kuis/sendok plastik.png"
     },
     {
       "id": "sd-036",
@@ -1146,7 +1146,7 @@
         "benar": "Pintar! Kaleng aerosol berisi gas bertekanan tinggi yang tergolong B3.",
         "salah": "Kaleng semprotan bertekanan gas mudah meledak jika terkena sumber api (B3)."
       },
-      "gambar": "ASSETS/kuis/semprotan pengharum.png"
+      "gambar": "kuis/semprotan pengharum.png"
     },
     {
       "id": "sd-037",
@@ -1177,7 +1177,7 @@
         "benar": "Tepat! Serutan pensil campur karet sisa dapat dibuang ke tong tempat sampah umum.",
         "salah": "Serutan kayu kecil bercampur karet masuk ke tempat sampah umum (Residu)."
       },
-      "gambar": "ASSETS/kuis/puntung pensil.png"
+      "gambar": "kuis/puntung pensil.png"
     },
     {
       "id": "sd-038",
@@ -1208,7 +1208,7 @@
         "benar": "Joss! Daun pisang adalah bahan pembungkus alami ramah lingkungan.",
         "salah": "Daun pisang berasal dari tumbuhan alami sehingga tergolong Sampah Organik."
       },
-      "gambar": "ASSETS/kuis/daun pisang.png"
+      "gambar": "kuis/daun pisang.png"
     },
     {
       "id": "sd-039",
@@ -1239,7 +1239,7 @@
         "benar": "Tepat! Gelas plastik bening disukai bank sampah untuk didaur ulang.",
         "salah": "Gelas plastik adalah sampah anorganik yang dibuang ke Tong Kuning."
       },
-      "gambar": "ASSETS/kuis/gelas plastik.png"
+      "gambar": "kuis/gelas plastik.png"
     },
     {
       "id": "sd-040",
@@ -1270,7 +1270,7 @@
         "benar": "Sip! Jam digital berisi chip elektronik dan baterai kecil.",
         "salah": "Jam tangan elektronik bekas merupakan jenis sampah E-Waste."
       },
-      "gambar": "ASSETS/kuis/jam tangan.png"
+      "gambar": "kuis/jam tangan.png"
     },
     {
       "id": "sd-041",
@@ -1301,7 +1301,7 @@
         "benar": "Keren! Makanan sisa basi membusuk secara alami di tempat sampah organik.",
         "salah": "Sisa makanan seperti roti basi tergolong sampah Organik."
       },
-      "gambar": "ASSETS/kuis/sisa roti.png"
+      "gambar": "kuis/sisa roti.png"
     },
     {
       "id": "sd-042",
@@ -1332,7 +1332,7 @@
         "benar": "Benar! Bahan berbahan plastik sintetis tergolong anorganik.",
         "salah": "Barang olahan plastik tergolong sampah Anorganik."
       },
-      "gambar": "ASSETS/kuis/piring plastik.png"
+      "gambar": "kuis/piring plastik.png"
     },
     {
       "id": "sd-043",
@@ -1363,7 +1363,7 @@
         "benar": "Pintar! Air raksa pada termometer beracun B3 dan tidak boleh disentuh tangan.",
         "salah": "Termometer manual berisi racun raksa B3 yang berbahaya jika tersentuh."
       },
-      "gambar": "ASSETS/kuiS/termometer pecah.png"
+      "gambar": "kuis/termometer pecah.png"
     },
     {
       "id": "sd-044",
@@ -1394,7 +1394,7 @@
         "benar": "Tepat! Kain lap yang penuh sisa minyak sulit dicuci/didaur ulang jadi masuk residu.",
         "salah": "Barang tekstil kotor berminyak tergolong Sampah Residu."
       },
-      "gambar": "ASSETS/kuiS/kain lap kotor.png"
+      "gambar": "kuis/kain lap kotor.png"
     },
     {
       "id": "sd-045",
@@ -1425,7 +1425,7 @@
         "benar": "Luar biasa! Aroma segar kulit jeruk dapat menutupi bau sampah komposter.",
         "salah": "Kulit jeruk adalah sampah organik wangi yang bagus diolah jadi pengharum alami."
       },
-      "gambar": "ASSETS/kuiS/kulit jeruk.png"
+      "gambar": "kuis/kulit jeruk.png"
     },
     {
       "id": "sd-046",
@@ -1456,7 +1456,7 @@
         "benar": "Mantap! Kertas dan karton bekas dilebur menjadi kertas baru.",
         "salah": "Kardus bekas tergolong anorganik yang didaur ulang menjadi produk kertas baru."
       },
-      "gambar": "ASSETS/kuiS/kotak sepatu.png"
+      "gambar": "kuis/kotak sepatu.png"
     },
     {
       "id": "sd-047",
@@ -1487,7 +1487,7 @@
         "benar": "Sip! Komponen lampu LED adalah partikel elektronik bekas.",
         "salah": "Lampu LED kecil merupakan bagian dari sampah elektronik (E-Waste)."
       },
-      "gambar": "ASSETS/kuiS/senter plastik.png"
+      "gambar": "kuis/senter plastik.png"
     },
     {
       "id": "sd-048",
@@ -1518,7 +1518,7 @@
         "benar": "Tepat! Biji semangka dari buah alami mudah membusuk di tanah.",
         "salah": "Biji semangka adalah bahan alami tumbuhan, tergolong Sampah Organik."
       },
-      "gambar": "ASSETS/kuiS/biji semangka.png"
+      "gambar": "kuis/biji semangka.png"
     },
     {
       "id": "sd-049",
@@ -1549,7 +1549,7 @@
         "benar": "Bagus! Bahan plastik tidak membusuk secara alami.",
         "salah": "Plastik adalah buatan manusia yang tergolong sampah Anorganik."
       },
-      "gambar": "ASSETS/kuiS/pipa bekas.png"
+      "gambar": "kuis/pipa bekas.png"
     },
     {
       "id": "sd-050",
@@ -1580,7 +1580,7 @@
         "benar": "Benar! Filter puntung rokok terbuat dari busa sintetis yang kotor dan masuk residu.",
         "salah": "Puntung rokok mengandung filter sintesis kotor yang tergolong Sampah Residu."
       },
-      "gambar": "ASSETS/kuiS/puntung rokok.png"
+      "gambar": "kuis/puntung rokok.png"
     }
   ]
 }
