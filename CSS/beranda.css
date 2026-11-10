@@ -952,3 +952,391 @@ nav {
 
 
 
+/* == RESPONSIVE == */
+
+
+@media (max-width: 768px) {
+
+    nav {
+        width: 90%;
+        box-sizing: border-box;
+        padding: 15px 18px;
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        gap: 10px;
+    }
+
+    .head-nav {
+        font-size: clamp(18px, 5vw, 22px);
+    }
+
+    .nav-ul {
+        order: 3;
+        width: 100%;
+        overflow-x: auto;
+        justify-content: flex-start;
+        padding: 5px;
+        box-sizing: border-box;
+    }
+
+    .nav-ul ul {
+        width: max-content;
+        display: flex;
+        flex-wrap: nowrap;
+        justify-content: center;
+        align-items: center;
+        gap: 4px;
+        padding: 0;
+        margin: 0;
+    }
+    
+    .nav-link {
+        padding: 8px 10px;
+        font-size: 13px;
+        white-space: nowrap;
+        flex-shrink: 0;
+    }
+
+    .btn-nav {
+        margin-left: auto;
+        gap: 6px;
+    }
+
+    .btn-nav1,
+    .btn-nav2 {
+        padding: 7px 10px;
+        white-space: nowrap;
+    }
+
+    .btn-nav1 a,
+    .btn-nav2 a {
+        font-size: 11px;
+    }
+
+
+    /* == BERANDA UTAMA / HERO == */
+
+
+
+    .hero {
+        height: 100vh;
+        min-height: 750px;
+        margin-top: -155px;
+    }
+
+    .hero-sky img {
+        height: 100%;
+        object-fit: cover;
+    }
+
+
+    .hero-trees {
+        height: 55%;
+    }
+
+    .hero-content {
+        top: 47%;
+        width: 90%;
+        max-width: 500px;
+    }
+
+    .hero-content h1 {
+        font-size: clamp(29px, 7vw, 38px);
+        line-height: 1.2;
+        margin-bottom: 15px;
+    }
+
+    .hero-content p {
+        font-size: 14px;
+        line-height: 1.6;
+        margin-bottom: 20px;
+    }
+
+    .hero-content button {
+        padding: 12px 23px;
+        font-size: 14px;
+    }
+
+    .hero-trash {
+        width: 125px;
+        left: -10px;
+    }
+
+    .hero-trash img {
+        width: 110%;
+    }
+
+    .hero-maskot {
+        width: 145px;
+        right: -5px;
+    }
+
+    .hero-maskot img {
+        width: 160%;
+        transform: translateX(-40px);
+    }
+
+
+    /* == JELAJAHI SAMPAH == */
+
+    .Jelajahi-sampah {
+        margin: 65px 0;
+        padding: 0 15px;
+    }
+
+    .Jelajahi-sampah h1 {
+        font-size: 25px;
+    }
+
+    .card-jelajahi {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+        width: 100%;
+        gap: 12px;
+        margin: 30px auto;
+    }
+
+    .Jelajahi {
+        padding: 16px;
+    }
+
+    .icon-jelajahi1,
+    .icon-jelajahi2,
+    .icon-jelajahi3,
+    .icon-jelajahi4 {
+        width: 38px;
+        min-height: 38px;
+    }
+
+    .Jelajahi h3 {
+        font-size: 15px;
+    }
+
+    .Jelajahi p {
+        font-size: 12px;
+        line-height: 1.5;
+    }
+
+    .btn-jelajahi1 a,
+    .btn-jelajahi2 a,
+    .btn-jelajahi3 a,
+    .btn-jelajahi4 a {
+        font-size: 12px;
+    }
+
+
+    /* == PERTANYAAN == */
+
+    .pertanyaan {
+        width: 92%;
+        margin: 65px auto;
+        padding: 15px 10px;
+    }
+
+    .pertanyaan h1 {
+        font-size: 23px;
+    }
+
+    .pertanyaan-p {
+        font-size: 13px;
+        line-height: 1.5;
+    }
+
+    .container-pertanyaan {
+        width: 100%;
+        padding: 5px;
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+        gap: 12px;
+        margin: 20px auto;
+    }
+
+    .card-pertanyaan1,
+    .card-pertanyaan2,
+    .card-pertanyaan3,
+    .card-pertanyaan4 {
+        padding: 15px;
+    }
+
+    .icon-pertanyaan {
+        width: 38px;
+        min-height: 38px;
+    }
+
+    .card-pertanyaan1 h3,
+    .card-pertanyaan2 h3,
+    .card-pertanyaan3 h3,
+    .card-pertanyaan4 h3 {
+        font-size: 14px;
+    }
+
+    .card-pertanyaan1 p,
+    .card-pertanyaan2 p,
+    .card-pertanyaan3 p,
+    .card-pertanyaan4 p {
+        font-size: 12px;
+        line-height: 1.5;
+    }
+
+
+    /* == WARNA DAN JENIS SAMPAH == */
+
+    .warna-jenis-sampah {
+        width: 92%;
+        margin: 65px auto;
+    }
+
+    .head-warjen {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 12px;
+    }
+
+    .head-warjen-left h1 {
+        font-size: 23px;
+        line-height: 1.3;
+    }
+
+    .head-warjen-left p {
+        font-size: 13px;
+    }
+
+    .head-warjen-right a {
+        font-size: 13px;
+    }
+
+    .container-warjen-sampah {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+        gap: 12px;
+        margin-top: 25px;
+    }
+
+    .card-warjen1,
+    .card-warjen2,
+    .card-warjen3,
+    .card-warjen4,
+    .card-warjen5 {
+        height: 190px;
+        padding: 12px;
+    }
+
+    .card-warjen1 h3,
+    .card-warjen2 h3,
+    .card-warjen3 h3,
+    .card-warjen4 h3,
+    .card-warjen5 h3 {
+        font-size: 15px;
+    }
+
+    .card-warjen-p {
+        font-size: 12px;
+        line-height: 1.5;
+    }
+
+    .kategori-sampah1,
+    .kategori-sampah2,
+    .kategori-sampah3,
+    .kategori-sampah4,
+    .kategori-sampah5 {
+        width: 85%;
+        font-size: 11px;
+        margin: auto auto 5px;
+    }
+
+
+    /* == TIPS == */
+
+    .tips {
+        width: 92%;
+        margin: 65px auto;
+    }
+
+    .container-tips {
+        flex-direction: column;
+        align-items: stretch;
+        padding: 22px 18px;
+        gap: 25px;
+    }
+
+    .container-tips-left {
+        width: 100%;
+    }
+
+    .popup-tips {
+        width: fit-content;
+        max-width: 100%;
+        padding: 7px 12px;
+    }
+
+    .popup-tips-p {
+        font-size: 12px;
+    }
+
+    .container-tips-left h2 {
+        font-size: 24px;
+        line-height: 1.3;
+        padding: 15px 0;
+    }
+
+    .container-tips-left-p {
+        width: 100%;
+        min-width: 0;
+        font-size: 14px;
+        line-height: 1.6;
+    }
+
+    .btn-tips {
+        flex-wrap: wrap;
+        gap: 10px;
+        padding-top: 18px;
+    }
+
+    .btn-tips1,
+    .btn-tips2 {
+        padding: 10px 12px;
+    }
+
+    .btn-tips1 a,
+    .btn-tips2 a {
+        font-size: 12px;
+    }
+
+    .container-tips-right {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap: 15px;
+        transform: none;
+    }
+
+    .pesan-maskot {
+        position: relative;
+        top: auto;
+        right: auto;
+        width: min(260px, 90%);
+        padding: 13px 16px;
+        font-size: 13px;
+    }
+
+    .pesan-maskot::after {
+        left: 50%;
+    }
+
+    .container-tips-right img {
+        width: min(230px, 70%);
+        height: auto;
+    }
+
+
+    .footer-content {
+    flex-direction: column;
+    text-align: center;
+    gap: 16px;
+  }
+
+  .sdg-badges {
+    flex-direction: column;
+    align-items: center;
+  }
+}
