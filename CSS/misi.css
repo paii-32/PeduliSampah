@@ -603,46 +603,26 @@ nav {
 }
 
 @media (max-width: 768px) {
-    nav {
-        width: 98%;
-        box-sizing: border-box;
-        padding: 12px 15px;
-        border-radius: 20px;
+     nav {
+        width: calc(100% - 24px);
+
+        min-height: auto;
+
         display: flex;
         flex-wrap: wrap;
         align-items: center;
+
         gap: 10px;
+
+        padding: 12px 14px;
+
+        top: 10px;
+
+        border-radius: 20px;
     }
 
     .head-nav {
-        font-size: clamp(18px, 5vw, 22px);
-    }
-
-    .nav-ul {
-        order: 3;
-        width: 100%;
-        overflow-x: auto;
-        justify-content: flex-start;
-        padding: 5px;
-        box-sizing: border-box;
-    }
-
-    .nav-ul ul {
-        width: max-content;
-        display: flex;
-        flex-wrap: nowrap;
-        justify-content: center;
-        align-items: center;
-        gap: 4px;
-        padding: 0;
-        margin: 0;
-    }
-    
-    .nav-link {
-        padding: 8px 10px;
-        font-size: 13px;
-        white-space: nowrap;
-        flex-shrink: 0;
+        font-size: clamp(19px, 5vw, 23px);
     }
 
     .btn-nav {
@@ -652,13 +632,46 @@ nav {
 
     .btn-nav1,
     .btn-nav2 {
-        padding: 7px 10px;
-        white-space: nowrap;
+        padding: 8px 11px;
     }
 
     .btn-nav1 a,
     .btn-nav2 a {
         font-size: 11px;
+    }
+
+    .nav-ul {
+        order: 3;
+
+        width: 100%;
+
+        display: flex;
+        justify-content: flex-start;
+
+        padding: 5px;
+
+        overflow-x: auto;
+        scrollbar-width: none;
+    }
+
+    .nav-ul::-webkit-scrollbar {
+        display: none;
+    }
+
+    .nav-ul ul {
+        width: max-content;
+
+        display: flex;
+        flex-wrap: nowrap;
+        justify-content: flex-start;
+
+        gap: 4px;
+    }
+
+    .nav-link {
+        padding: 8px 11px;
+        font-size: 12px;
+        white-space: nowrap;
     }
 
     .misi-hero {
