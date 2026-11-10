@@ -20,58 +20,36 @@
 
 <body>
 
-    <!-- NAVBAR -->
+    <!-- navbar -->
     <nav>
 
-        <h2 class="head-nav">
-            Peduli <span>Sampah</span>
-        </h2>
+        <h2 class="head-nav">Peduli <span>Sampah</span></h2>
 
         <div class="nav-ul">
             <ul>
-                <li>
-                    <a class="nav-link" href="index.html">Home</a>
-                </li>
-
-                <li>
-                    <a class="nav-link" href="#">Belajar</a>
-                </li>
-
-                <li>
-                    <a class="nav-link" href="#">Kategori</a>
-                </li>
-
-                <li>
-                    <a class="nav-link active" href="#">Kuis</a>
-                </li>
-
-                <li>
-                    <a class="nav-link" href="#">Misi</a>
-                </li>
-
-                <li>
-                    <a class="nav-link" href="tips.html">Tips</a>
-                </li>
+                <li><a class="nav-link" href="index.html">Home</a></li>
+                <li><a class="nav-link" href="belajar.html">Belajar</a></li>
+                <li><a class="nav-link" href="katalog.html">Kategori</a></li>
+                <li><a class="nav-link active" href="kuis.html">Kuiz</a></li>
+                <li><a class="nav-link" href="misi.html">Misi</a></li>
+                <li><a class="nav-link" href="tips.html">Tips</a></li>
             </ul>
         </div>
 
         <div class="btn-nav">
-
             <div class="btn-nav1">
-                <a href="#">Jelajahi</a>
+                <a href="belajar.html">Jelajahi Materi</a>
             </div>
 
             <div class="btn-nav2">
-                <a href="#">Lihat Misi</a>
+                <a href="misi.html">Lihat Misi</a>
             </div>
-
         </div>
-
     </nav>
 
     <!-- Musik Latar Kuis -->
     <video id="quiz-music" autoplay muted loop playsinline>
-        <source src="ASSETS/audio/musik-kuis.mp4" type="video/mp4">
+        <source src="audio/musik-kuis.mp4" type="video/mp4">
     </video>
     
 
@@ -121,7 +99,7 @@
 
                 <div class="avatar-wrapper">
                     <img
-                        src="ASSETS/Maskot/maskot1.png"
+                        src="Maskot/maskot1.png"
                         alt="Maskot Rani SampahKu"
                     >
                 </div>
@@ -240,7 +218,7 @@
                     <div class="feedback-avatar">
                         <img
                             id="feedback-mascot"
-                            src="ASSETS/Maskot/maskot-memberi-tahu.png"
+                            src="Maskot/maskot-memberi-tahu.png"
                             alt="Maskot RANI"
                         >
                     </div>
@@ -372,7 +350,7 @@
             <!-- ILUSTRASI HASIL -->
             <div class="result-rani-circle">
 
-                <img src="ASSETS/Maskot/maskot3.png" alt="">
+                <img src="Maskot/maskot3.png" alt="">
             </div>
 
 
@@ -412,9 +390,24 @@
 
     </div>
 
+    <!-- Footer -->
+        <footer class="footer">
+        <div class="footer-content">
+            <p><strong class="top-left-footer">Peduli<span>Sampah</span></strong> - Edukasi Lingkungan Interaktif untuk Generasi Bersih Indonesia</p>
+            <div class="sdg-badges">
+                <span class="sdg-tag"><strong class="head-sdg">SDG 12: </strong>Konsumsi & Produksi Bertanggung Jawab</span>
+                <span class="sdg-tag"><strong class="head-sdg">SDG 13: </strong>Penanganan Perubahan Iklim</span>
+            </div> 
+        </div>
+
+        <div class="footer-bottom">
+            <p>&copy; 2026 <span class="title-footer-bottom">Peduli<span class="subtitle-footer-bottom">Sampah</span></span>. Semua hak dilindungi. Bersama Rani Red Panda menjaga bumi tetap asri.</p>
+        </div>
+    </footer>
+
 
     <!-- JAVASCRIPT -->
-    <script src="../JS/kuis.js"></script>
+    <script src="JS/kuis.js"></script>
 
 </body>
 </html>
