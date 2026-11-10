@@ -377,7 +377,7 @@ document.addEventListener("DOMContentLoaded", () => {
         feedbackDesc.textContent =
             feedback.benar || "Bagus! Jawaban kamu benar!";
 
-        feedbackMascot.src = "ASSETS/Maskot/maskot3.png";
+        feedbackMascot.src = "Maskot/maskot3.png";
 
         feedbackBanner.classList.remove("wrong");
         feedbackBanner.classList.add("correct");
@@ -387,7 +387,7 @@ document.addEventListener("DOMContentLoaded", () => {
         feedbackDesc.textContent =
             feedback.salah || "Tetap semangat belajar!";
 
-        feedbackMascot.src = "ASSETS/Maskot/maskot7.png";
+        feedbackMascot.src = "Maskot/maskot7.png";
 
         feedbackBanner.classList.remove("correct");
         feedbackBanner.classList.add("wrong");
