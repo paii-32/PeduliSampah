@@ -960,6 +960,7 @@ nav {
     nav {
         width: 90%;
         box-sizing: border-box;
+        border-radius: 20px;
         padding: 15px 18px;
         display: flex;
         flex-wrap: wrap;
