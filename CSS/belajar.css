@@ -72,7 +72,7 @@ body {
 }
 
 .btn-petualangan-belajar {
-  background-color: var(--color-surface);
+  background-color: white;
   padding: 16px;
   border-radius: 12px;
   width: 180px;
