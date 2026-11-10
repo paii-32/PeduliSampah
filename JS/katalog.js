@@ -24,7 +24,7 @@ const btnCloseDetail = document.getElementById('close-modal-detail');
 // Menghubungkan Data JSON dari sampah.json
 async function loadSampahData() {
   try {
-    const response = await fetch('data/sampah.json');
+    const response = await fetch('DATA/sampah.json');
     const data = await response.json();
     
     dataSampah = data.sampah;
