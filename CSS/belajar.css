@@ -72,7 +72,7 @@ body {
 }
 
 .btn-petualangan-belajar {
-  background-color: var(--color-surfac);
+  background-color: var(--color-surface);
   padding: 16px;
   border-radius: 12px;
   width: 180px;
@@ -82,6 +82,7 @@ body {
   font-size: 16px;
   font-weight: 600;
   transition: 0.3s ease;
+  color: #14532d;
 }
 
 .btn-petualangan-belajar:hover {
